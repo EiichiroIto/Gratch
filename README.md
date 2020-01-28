@@ -12,6 +12,8 @@ Metacello new
     load.
 ```
 
+Then copy Examples directory of this repository to your image directory.
+
 ## Examples
 1. Select Open from File menu.
 2. Click Examples button on the file open dialog.
