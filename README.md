@@ -27,7 +27,7 @@ Then copy Examples directory of this repository to your image directory.
 MIT License
 
 ## Screenshots
-### Shortest Path First algorithm like Dijkstra's algorithm
+### Shortest Path algorithm based on Dijkstra's algorithm
 ![04-dijkstra.png](https://raw.githubusercontent.com/EiichiroIto/Gratch/master/src/images/04-dijkstra.png)
 
 ### Animations on other algorithms
