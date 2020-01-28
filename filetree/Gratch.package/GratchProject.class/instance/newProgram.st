@@ -1,0 +1,3 @@
+private
+newProgram
+	^ GrProgram new

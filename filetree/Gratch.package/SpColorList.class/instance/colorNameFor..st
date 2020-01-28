@@ -1,0 +1,3 @@
+private
+colorNameFor: anObject
+	^ anObject

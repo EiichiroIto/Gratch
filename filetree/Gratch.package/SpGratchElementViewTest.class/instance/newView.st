@@ -1,0 +1,3 @@
+private
+newView
+	^ SpGratchElementView new

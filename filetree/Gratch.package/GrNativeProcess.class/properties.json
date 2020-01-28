@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "ScratchBaseProcess",
+	"category" : "Gratch-Process",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"runningEvents",
+		"transition",
+		"grWorld"
+	],
+	"name" : "GrNativeProcess",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+accessing
+modelBounds
+	^ self bounds

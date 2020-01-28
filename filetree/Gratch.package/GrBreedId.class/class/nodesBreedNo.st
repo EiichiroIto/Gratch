@@ -1,0 +1,3 @@
+accessing
+nodesBreedNo
+	^ 2

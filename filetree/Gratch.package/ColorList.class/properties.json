@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Gratch-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"DefaultList"
+	],
+	"instvars" : [
+		"colors"
+	],
+	"name" : "ColorList",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+accessing
+graphScript
+	^ project graph

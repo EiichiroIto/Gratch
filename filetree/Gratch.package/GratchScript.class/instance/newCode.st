@@ -1,0 +1,3 @@
+program
+newCode
+	^ GratchCode new

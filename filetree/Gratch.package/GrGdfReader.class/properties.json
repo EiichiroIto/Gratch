@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Gratch-Converter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"state",
+		"columns",
+		"grWorld",
+		"nodes"
+	],
+	"name" : "GrGdfReader",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+private
+newManipulator
+	^ GrGraphManipulator new

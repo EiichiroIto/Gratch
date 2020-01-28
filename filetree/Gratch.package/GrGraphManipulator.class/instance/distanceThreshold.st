@@ -1,0 +1,3 @@
+private
+distanceThreshold
+	^ 20

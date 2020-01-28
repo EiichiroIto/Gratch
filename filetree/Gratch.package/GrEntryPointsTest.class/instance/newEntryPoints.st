@@ -1,0 +1,3 @@
+private
+newEntryPoints
+	^ GrEntryPoints new

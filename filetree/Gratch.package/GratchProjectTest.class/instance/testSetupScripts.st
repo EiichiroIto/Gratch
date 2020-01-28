@@ -1,0 +1,3 @@
+test
+testSetupScripts
+	self testApplication

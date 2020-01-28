@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ScratchNativeThread",
+	"category" : "Gratch-Process",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"breedId",
+		"grWorld"
+	],
+	"name" : "GrNativeThread",
+	"type" : "normal"
+}

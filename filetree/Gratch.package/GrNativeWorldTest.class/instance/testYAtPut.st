@@ -1,0 +1,3 @@
+test
+testYAtPut
+	self testYAt.

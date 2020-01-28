@@ -1,0 +1,3 @@
+test
+testPrivStepBlock
+	self testWhenStepsDo

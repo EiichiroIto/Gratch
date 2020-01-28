@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "ScratchProject",
+	"category" : "Gratch-Project",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"edges",
+		"graph",
+		"nodes"
+	],
+	"name" : "GratchProject",
+	"type" : "normal"
+}

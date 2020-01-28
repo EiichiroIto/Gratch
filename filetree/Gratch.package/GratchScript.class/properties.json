@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ScratchScript",
+	"category" : "Gratch-Project",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"breed",
+		"labels"
+	],
+	"name" : "GratchScript",
+	"type" : "normal"
+}

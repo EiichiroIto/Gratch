@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GrElements",
+	"category" : "Gratch-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GrEdges",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+accessing
+graphBreedNo
+	^ 1

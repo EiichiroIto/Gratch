@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "SpScratchFrame",
+	"category" : "Gratch-Spec2",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"logo",
+		"menu",
+		"buttonSave",
+		"buttonOpen"
+	],
+	"name" : "SpGratchFrame",
+	"type" : "normal"
+}

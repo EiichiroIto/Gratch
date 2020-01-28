@@ -1,0 +1,3 @@
+test
+testToggleLabel
+	self testHasLabel

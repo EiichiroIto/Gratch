@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GratchScript",
+	"category" : "Gratch-Project",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GrEdgesScript",
+	"type" : "normal"
+}

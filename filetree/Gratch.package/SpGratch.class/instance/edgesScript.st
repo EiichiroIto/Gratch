@@ -1,0 +1,3 @@
+accessing
+edgesScript
+	^ project edges

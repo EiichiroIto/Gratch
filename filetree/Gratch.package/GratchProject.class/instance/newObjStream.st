@@ -1,0 +1,3 @@
+private
+newObjStream
+	^ GrObjStream new

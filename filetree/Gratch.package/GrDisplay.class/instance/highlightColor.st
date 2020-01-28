@@ -1,0 +1,3 @@
+private
+highlightColor
+	^ Color white

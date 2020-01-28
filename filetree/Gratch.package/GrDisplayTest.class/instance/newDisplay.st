@@ -1,0 +1,3 @@
+private
+newDisplay
+	^ GrDisplay new

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Gratch-Process",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"codes",
+		"entryPoints"
+	],
+	"name" : "GrProgram",
+	"type" : "normal"
+}

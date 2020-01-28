@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Gratch-Converter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"ColumnType"
+	],
+	"instvars" : [
+		"nodes",
+		"edges",
+		"grWorld",
+		"stream",
+		"nodeColumns",
+		"edgeColumns"
+	],
+	"name" : "GrGdfWriter",
+	"type" : "normal"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "GrWorld",
+	"category" : "Gratch-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"breeds",
+		"raisedEvents"
+	],
+	"name" : "GrNativeWorld",
+	"type" : "normal"
+}

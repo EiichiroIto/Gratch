@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Breed",
+	"category" : "Gratch-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"defaultColor",
+		"breedNo"
+	],
+	"name" : "GrElements",
+	"type" : "normal"
+}

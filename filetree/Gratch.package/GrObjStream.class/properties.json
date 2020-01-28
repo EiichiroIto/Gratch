@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ObjStream",
+	"category" : "Gratch-Project",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GrObjStream",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+accessing
+adjacentNodesCommandNo
+	^ 3

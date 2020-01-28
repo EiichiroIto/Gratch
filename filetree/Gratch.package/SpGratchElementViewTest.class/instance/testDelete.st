@@ -1,0 +1,3 @@
+test
+testDelete
+	self testWhenDeletedDo

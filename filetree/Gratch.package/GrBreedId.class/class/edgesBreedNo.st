@@ -1,0 +1,3 @@
+accessing
+edgesBreedNo
+	^ 3

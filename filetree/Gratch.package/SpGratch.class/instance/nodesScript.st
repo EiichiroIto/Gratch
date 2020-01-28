@@ -1,0 +1,3 @@
+accessing
+nodesScript
+	^ project nodes

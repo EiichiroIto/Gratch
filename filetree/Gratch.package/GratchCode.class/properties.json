@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ScratchCode",
+	"category" : "Gratch-Process",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GratchCode",
+	"type" : "normal"
+}

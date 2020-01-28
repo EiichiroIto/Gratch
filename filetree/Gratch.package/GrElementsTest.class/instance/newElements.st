@@ -1,0 +1,3 @@
+private
+newElements
+	^ GrElements new

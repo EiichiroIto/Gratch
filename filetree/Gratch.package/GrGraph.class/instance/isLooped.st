@@ -1,0 +1,3 @@
+microworld
+isLooped
+	^ false

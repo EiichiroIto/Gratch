@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ScratchExporter",
+	"category" : "Gratch-Converter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GratchGDFExporter",
+	"type" : "normal"
+}

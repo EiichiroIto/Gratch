@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "GrElements",
+	"category" : "Gratch-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"defaultPosition"
+	],
+	"name" : "GrNodes",
+	"type" : "normal"
+}

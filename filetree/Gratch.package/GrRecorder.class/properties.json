@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Gratch-Morphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"writer",
+		"rate",
+		"count",
+		"extent",
+		"grWorld",
+		"model"
+	],
+	"name" : "GrRecorder",
+	"type" : "normal"
+}

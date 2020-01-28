@@ -1,0 +1,3 @@
+accessing
+nameVarNo
+	^ 3

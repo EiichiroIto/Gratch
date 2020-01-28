@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "EiichiroIto 1/23/2020 09:26",
+	"super" : "SpScratchApp",
+	"category" : "Gratch-Spec2",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"grWorld",
+		"events",
+		"lastMSec",
+		"lastTicks",
+		"recorder"
+	],
+	"name" : "SpGratch",
+	"type" : "normal"
+}

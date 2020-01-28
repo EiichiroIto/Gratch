@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "FromScratch-Converter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"parser",
+		"stream",
+		"indents",
+		"position",
+		"wantsLinefeed",
+		"indentLevel"
+	],
+	"name" : "ScratchSexpGenerator",
+	"type" : "normal"
+}

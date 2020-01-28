@@ -1,0 +1,3 @@
+initialization
+defaultZoomIndex
+	^ 6

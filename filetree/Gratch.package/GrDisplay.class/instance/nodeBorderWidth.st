@@ -1,0 +1,3 @@
+private
+nodeBorderWidth
+	^ 1

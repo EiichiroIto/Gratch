@@ -1,0 +1,3 @@
+private
+privEdgePoints
+	^ edgePoints

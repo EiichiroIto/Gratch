@@ -1,0 +1,3 @@
+test
+testWheelUp
+	self testZoomIn

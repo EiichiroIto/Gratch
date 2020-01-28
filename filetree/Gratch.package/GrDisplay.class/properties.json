@@ -1,0 +1,25 @@
+{
+	"commentStamp" : "",
+	"super" : "Morph",
+	"category" : "Gratch-Morphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"info",
+		"graphExtent",
+		"graphCenter",
+		"edgePoints",
+		"nodePoint",
+		"grWorld",
+		"grManipulator",
+		"zoomIndex",
+		"zoom",
+		"nodeLabels",
+		"edgeLabels",
+		"stepTime",
+		"stepBlock"
+	],
+	"name" : "GrDisplay",
+	"type" : "normal"
+}

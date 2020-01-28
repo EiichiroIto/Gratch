@@ -1,0 +1,3 @@
+test
+testColorAtPut
+	self testColorAt

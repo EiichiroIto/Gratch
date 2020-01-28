@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Gratch-Morphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"grDisplay",
+		"graphCenter",
+		"startPoint",
+		"mode",
+		"node",
+		"grWorld",
+		"model",
+		"whenDoubleClickDo",
+		"getBreedNoBlock"
+	],
+	"name" : "GrGraphManipulator",
+	"type" : "normal"
+}

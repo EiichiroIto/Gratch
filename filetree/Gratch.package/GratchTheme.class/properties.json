@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ScratchTheme",
+	"category" : "Gratch-Morphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GratchTheme",
+	"type" : "normal"
+}

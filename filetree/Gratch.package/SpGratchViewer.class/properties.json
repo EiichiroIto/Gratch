@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "",
+	"super" : "SpScratchViewer",
+	"category" : "Gratch-Spec2",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"buttonBasic",
+		"buttonControl",
+		"buttonColor",
+		"buttonPatch",
+		"buttonOperators",
+		"buttonMisc",
+		"buttonVariables",
+		"buttonSensing",
+		"buttonNodes",
+		"buttonEdges"
+	],
+	"name" : "SpGratchViewer",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+private
+privGraphCenter
+	^ graphCenter

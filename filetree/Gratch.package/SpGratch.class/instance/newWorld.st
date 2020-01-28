@@ -1,0 +1,3 @@
+private
+newWorld
+	^ GrNativeWorld new

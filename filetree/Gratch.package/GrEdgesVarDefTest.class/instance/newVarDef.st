@@ -1,0 +1,3 @@
+private
+newVarDef
+	^ GrEdgesVarDef new

@@ -1,0 +1,3 @@
+test
+testPointAtPut
+	self testPointAt.

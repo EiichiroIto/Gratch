@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BaseId",
+	"category" : "Gratch-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GrCommandId",
+	"type" : "normal"
+}

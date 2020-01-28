@@ -1,0 +1,3 @@
+test
+testScripts
+	self testAddScript

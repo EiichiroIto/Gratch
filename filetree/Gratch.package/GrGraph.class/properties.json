@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Breed",
+	"category" : "Gratch-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"ticks",
+		"grWorld"
+	],
+	"name" : "GrGraph",
+	"type" : "normal"
+}

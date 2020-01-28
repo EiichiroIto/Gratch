@@ -1,0 +1,3 @@
+private
+privNode
+	^ node
