@@ -39,8 +39,8 @@ blockSpecs
 			('node %n ''s %N'			r	getNode:var: 0 '')
 			('# of nodes'					r	numberOfNodes)
 			-
-			('node of minimum %N'		r	nodeOfMin: '')
-			('node of maximum %N'		r	nodeOfMax: '')
+			('node with smallest %N'	r	nodeWithMin: '')
+			('node with largest %N'		r	nodeWithMax: '')
 			-
 			('nearest from %n'			r	nearestNodeFrom: 0)
 			('within %n from %n'		r	within:from: 10 0)
@@ -48,8 +48,8 @@ blockSpecs
 			('edge %n ''s %E'			r	getEdge:var: 0 '')
 			('# of edges'					r	numberOfEdges)
 			-
-			('edge of minimum %E'		r	edgeOfMin: '')
-			('edge of maximum %E'		r	edgeOfMax: '')
+			('edge with smallest %E'	r	edgeWithMin: '')
+			('edge with largest %E'		r	edgeWithMax: '')
 		'color'
 			('set color %c of node %n'	-	setColor:node:			15 0)
 			('set color %c of edge %n'	-	setColor:edge:			15 0)

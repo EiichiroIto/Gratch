@@ -1,8 +1,8 @@
 sensing ops
-nodeOfMin: var
+nodeWithMax: var
 	| m v |
 	m := targetMorph project nodes.
 	v := var choice.
 	^ bcGenerator
-		minVar: (m varId varNoFor: v)
+		maxVar: (m varId varNoFor: v)
 		breed: GrBreedId nodesBreedNo

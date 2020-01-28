@@ -1,5 +1,5 @@
 sensing ops
-edgeOfMin: var
+edgeWithMin: var
 	| m v |
 	m := targetMorph project edges.
 	v := var choice.

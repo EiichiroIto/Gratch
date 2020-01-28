@@ -1,5 +1,5 @@
 sensing ops
-edgeOfMax: var
+edgeWithMax: var
 	| m v |
 	m := targetMorph project edges.
 	v := var choice.
