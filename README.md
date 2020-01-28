@@ -1,5 +1,5 @@
 # Gratch
-Block-style programming environment for tackling graph structure and graph algorithm, based on MIT Scratch. 
+Block-style programming environment for tackling graph structure and algorithm, based on MIT Scratch. 
 
 (This is an alpha release for checking concepts.)
 
@@ -25,6 +25,13 @@ Then copy Examples directory of this repository to your image directory.
 
 ## License
 MIT License
+
+## Programs
+### Graph coloring algorithm based on Welsh-Powell algorithm
+#### for graph
+![welsh-powell1.png](https://raw.githubusercontent.com/EiichiroIto/Gratch/master/src/images/welsh-powell1.png)
+#### for node
+![welsh-powell2.png](https://raw.githubusercontent.com/EiichiroIto/Gratch/master/src/images/welsh-powell2.png)
 
 ## Screenshots
 ### Shortest Path algorithm based on Dijkstra's algorithm
