@@ -1,0 +1,29 @@
+(Gratch (Graph Nodes Edges)
+	((for Graph ()
+	      ((when startup
+		 ((clearNodes)
+		  (createNodes: 30)))))
+	 (for Nodes (a b vx vy)
+	      ((when setup
+		 ((createEdgeTo: (otherNode))
+		  (setColor: (colorRandom))))
+	       (when loop
+		 ((setVar:to: a (within:from: 50 (getId)))
+		  (setVar:to: b (divide:by: -100 (multiply:and: (distanceTo: (getVar a)) (distanceTo: (getVar a)))))
+		  (changeVar:by: vx (multiply:and: (getVar b) (computeFunction:of: cos (directionTo: (getVar a)))))
+		  (changeVar:by: vy (multiply:and: (getVar b) (computeFunction:of: sin (directionTo: (getVar a)))))))
+	       (when loop
+		 ((changeXposBy: (getVar vx))
+		  (changeYposBy: (getVar vy))
+		  (setVar:to: vx 0)
+		  (setVar:to: vy 0)))))
+	 (for Edges (tmp)
+	      ((when loop
+		 ((setVar:to: tmp (multiply:and: (multiply:and: 0.05 (minus:with: (distance) 50)) (computeFunction:of: cos (direction))))
+		  (changeNode:var:by: (getN1) vx (getVar tmp))
+		  (changeNode:var:by: (getN2) vx (minus:with: 0 (getVar tmp)))
+		  (setVar:to: tmp (multiply:and: (multiply:and: 0.05 (minus:with: (distance) 50)) (computeFunction:of: sin (direction))))
+		  (changeNode:var:by: (getN1) vy (getVar tmp))
+		  (changeNode:var:by: (getN2) vy (minus:with: 0 (getVar tmp)))))
+	       (when setup
+		 ((setColor: (colorGray))))))))

@@ -1,0 +1,26 @@
+(Gratch (Graph Nodes Edges)
+	((for Graph (cur)
+	      ((when loop
+		 ((setVar:to: cur (edgeOfMax: value2))
+		  (setVar:to: cur (getEdge:var: (getVar cur) value2))
+		  (doIf (equal:to: (getVar cur) 0)
+			((stopAll)))))
+	       (when startup
+		 ())))
+	 (for Nodes ()
+	      ())
+	 (for Edges (old1 old2 value value2)
+	      ((when loop
+		 ((doIf (equal:to: (getVar value2) (getGraphVar: cur))
+			((setVar:to: value2 0)
+			 (setVar:to: old1 (getN1))
+			 (setVar:to: old2 (getN2))
+			 (setN1: 0)
+			 (setN2: 0)
+			 (doIf (not: (graphIsConnected))
+			       ((setN1: (getVar old1))
+				(setN2: (getVar old2))
+				(setColor: 15)))))))
+	       (when setup
+		 ((setVar:to: value2 (getVar value))
+		  (setColor: 9)))))))
