@@ -2,7 +2,7 @@
 	((for Graph (c2 color cur mode (list colors))
 	      ((when loop
 		 ((doIf (equal:to: (getVar mode) 1)
-			((setVar:to: cur (nodeOfMax: degrees))
+			((setVar:to: cur (nodeWithMax: degrees))
 			 (doIf (not: (equal:to: (getColorOfNode: (getVar cur)) (colorWhite)))
 			       ((stopAll)))
 			 (setVar:to: color (getLine:ofList: 1 colors))
@@ -15,7 +15,7 @@
 			((setVar:to: mode 3)
 			 (stopThread)))
 		  (doIf (equal:to: (getVar mode) 3)
-			((setVar:to: c2 (nodeOfMax: d2))
+			((setVar:to: c2 (nodeWithMax: d2))
 			 (doIf (equal:to: (getNode:var: (getVar c2) d2) 0)
 			       ((setVar:to: mode 1)))))))
 	       (when startup

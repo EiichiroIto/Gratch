@@ -6,7 +6,7 @@ Block-style programming environment for tackling graph structure and algorithm, 
 ![Entire Screen](https://raw.githubusercontent.com/EiichiroIto/Gratch/master/src/images/Gratch.png)
 
 ## Install repository on Pharo
-Gratch sources available on github(https://github.com/EiichiroIto/Gratch/filetree).
+Gratch sources available on github (https://github.com/EiichiroIto/Gratch/).
 ```
 Metacello new
     baseline: 'Gratch';

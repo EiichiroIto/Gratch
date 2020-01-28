@@ -1,7 +1,7 @@
 (Gratch (Graph Nodes Edges)
 	((for Graph (cur)
 	      ((when loop
-		 ((setVar:to: cur (edgeOfMax: value2))
+		 ((setVar:to: cur (edgeWithMax: value2))
 		  (setVar:to: cur (getEdge:var: (getVar cur) value2))
 		  (doIf (equal:to: (getVar cur) 0)
 			((stopAll)))))
