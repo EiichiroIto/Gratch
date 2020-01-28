@@ -1,6 +1,8 @@
 # Gratch
 Block-style programming environment for tackling graph structure and graph algorithm, based on MIT Scratch. 
 
+(This is an alpha release for checking concepts.)
+
 ![Entire Screen](https://raw.githubusercontent.com/EiichiroIto/Gratch/master/src/images/Gratch.png)
 
 ## Install repository on Pharo
