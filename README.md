@@ -1,7 +1,7 @@
 # Gratch
 Block-style programming environment for tackling graph structure and algorithm, based on MIT Scratch. 
 
-(This is an alpha release for checking concepts.)
+(This is an alpha release to evaluate concepts.)
 
 ![Entire Screen](https://raw.githubusercontent.com/EiichiroIto/Gratch/master/src/images/Gratch.png)
 
