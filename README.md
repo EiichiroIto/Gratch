@@ -1,7 +1,7 @@
 # Gratch
 Block-style programming environment for tackling graph structure and algorithm, based on MIT Scratch. 
 
-(This is an alpha release to evaluate concepts.)
+(This is an alpha release for concept evaluation.)
 
 ![Entire Screen](https://raw.githubusercontent.com/EiichiroIto/Gratch/master/src/images/Gratch.png)
 
@@ -15,6 +15,11 @@ Metacello new
 ```
 
 Then copy Examples directory of this repository to your image directory.
+
+## [Beware] Before update
+* You need keep script files before update, because project files are incompatible with any previous versions.
+* To keep script files, select "File - Export - Export Scripts in S-EXP".
+* To recovery the file, select "File - Import - Import Scripts"
 
 ## Examples
 1. Select Open from File menu.
