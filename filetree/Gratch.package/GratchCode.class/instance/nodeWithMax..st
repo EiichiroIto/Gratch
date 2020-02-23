@@ -1,8 +1,8 @@
 sensing ops
 nodeWithMax: var
 	| m v |
-	m := targetMorph project nodes.
+	m := script project nodes.
 	v := var choice.
-	^ bcGenerator
+	^ generator
 		maxVar: (m varId varNoFor: v)
 		breed: GrBreedId nodesBreedNo

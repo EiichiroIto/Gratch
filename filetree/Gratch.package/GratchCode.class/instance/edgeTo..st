@@ -1,3 +1,3 @@
 sensing ops
 edgeTo: node
-	^ bcGenerator edgeTo: (node argString: parser)
+	^ generator edgeTo: (node argString: parser)

@@ -1,5 +1,5 @@
 basic ops
 setYpos: num
-	bcGenerator
-		setVar: targetMorph varId class yVarNo
+	generator
+		setVar: script varId class yVarNo
 		to: [ num argString: parser ]

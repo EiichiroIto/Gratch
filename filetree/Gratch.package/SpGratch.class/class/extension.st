@@ -1,3 +1,3 @@
 accessing
 extension
-	^ 'grt'
+	^ 'gr'

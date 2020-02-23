@@ -1,3 +1,3 @@
 sensing ops
 ticks
-	^ bcGenerator getGraphVar: GrGraphVarDef ticksVarNo
+	^ generator getGraphVar: GrGraphVarDef ticksVarNo

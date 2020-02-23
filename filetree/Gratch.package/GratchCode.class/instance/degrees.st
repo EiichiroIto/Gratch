@@ -1,3 +1,3 @@
 sensing ops
 degrees
-	^ bcGenerator degreesOf: [ self getId ]
+	^ generator degreesOf: [ self getId ]

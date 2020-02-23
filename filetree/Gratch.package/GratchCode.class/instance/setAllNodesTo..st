@@ -4,7 +4,7 @@ setAllNodesTo: aList
 	v := aList choice.
 	v isEmpty
 		ifTrue: [ self error ].
-	bcGenerator
+	generator
 		setElements: GrCommandId allNodesCommandNo
 		arg: 0
-		toList: (targetMorph varId varNoFor: v)
+		toList: (script varId varNoFor: v)

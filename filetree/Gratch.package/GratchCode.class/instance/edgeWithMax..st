@@ -1,8 +1,8 @@
 sensing ops
 edgeWithMax: var
 	| m v |
-	m := targetMorph project edges.
+	m := script project edges.
 	v := var choice.
-	^ bcGenerator
+	^ generator
 		maxVar: (m varId varNoFor: v)
 		breed: GrBreedId edgesBreedNo

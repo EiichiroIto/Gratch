@@ -4,7 +4,7 @@ adjacentNodesTo: node into: aList
 	v := aList choice.
 	v isEmpty
 		ifTrue: [ self error ].
-	bcGenerator
+	generator
 		setElements: GrCommandId adjacentNodesCommandNo
 		arg: [ node argString: parser ]
-		toList: (targetMorph varId varNoFor: v)
+		toList: (script varId varNoFor: v)

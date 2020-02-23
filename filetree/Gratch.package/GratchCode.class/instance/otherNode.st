@@ -1,3 +1,3 @@
 sensing ops
 otherNode
-	^ bcGenerator otherNode
+	^ generator otherNode

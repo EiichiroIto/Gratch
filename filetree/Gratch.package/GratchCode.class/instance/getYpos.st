@@ -1,3 +1,3 @@
 sensing ops
 getYpos
-	^ bcGenerator getVar: targetMorph varId yVarNo
+	^ generator getVar: script varId yVarNo

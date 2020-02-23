@@ -1,5 +1,5 @@
 color ops
 setColor: color
-	bcGenerator
-		setVar: targetMorph varId class colorVarNo
+	generator
+		setVar: script varId class colorVarNo
 		to: [ color argString: parser ]

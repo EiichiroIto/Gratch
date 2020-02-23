@@ -1,9 +1,9 @@
 variable ops
 changeEdge: id var: var by: aNumber
 	| m v |
-	m := targetMorph project edges.
+	m := script project edges.
 	v := var choice.
-	bcGenerator
+	generator
 		changeVar: (m varId varNoFor: v)
 		breedNo: GrBreedId edgesBreedNo
 		at: [ id argString: parser ]

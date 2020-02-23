@@ -1,8 +1,8 @@
 sensing ops
 nodeWithMin: var
 	| m v |
-	m := targetMorph project nodes.
+	m := script project nodes.
 	v := var choice.
-	^ bcGenerator
+	^ generator
 		minVar: (m varId varNoFor: v)
 		breed: GrBreedId nodesBreedNo

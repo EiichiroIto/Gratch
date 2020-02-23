@@ -1,5 +1,5 @@
 sensing ops
 distance
-	^ bcGenerator
+	^ generator
 		distanceFrom: [self getN1]
 		to: [self getN2]
