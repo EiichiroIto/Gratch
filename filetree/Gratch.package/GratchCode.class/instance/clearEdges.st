@@ -1,3 +1,3 @@
 basic ops
 clearEdges
-	bcGenerator clearEdges.
+	generator clearEdges.

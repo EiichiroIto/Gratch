@@ -1,3 +1,3 @@
 sensing ops
 getName
-	^ bcGenerator getVar: GrNodesVarDef nameVarNo
+	^ generator getVar: GrNodesVarDef nameVarNo

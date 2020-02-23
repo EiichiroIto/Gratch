@@ -1,5 +1,5 @@
 basic ops
 kill: tno breed: bno
-	bcGenerator
+	generator
 		kill: [ tno argString: parser ]
 		breed: [ bno argString: parser ].

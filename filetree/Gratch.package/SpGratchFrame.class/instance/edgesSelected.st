@@ -1,3 +1,3 @@
 private
 edgesSelected
-	self currentTarget: application edgesScript
+	self target: application edgesScript

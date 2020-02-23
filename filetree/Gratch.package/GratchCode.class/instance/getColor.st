@@ -1,3 +1,3 @@
 color ops
 getColor
-	^ bcGenerator getVar: targetMorph varId class colorVarNo
+	^ generator getVar: script varId class colorVarNo

@@ -1,9 +1,9 @@
 variable ops
 setNode: id var: var to: aNumber
 	| m v |
-	m := targetMorph project nodes.
+	m := script project nodes.
 	v := var choice.
-	bcGenerator
+	generator
 		setVar: (m varId varNoFor: v)
 		breedNo: GrBreedId nodesBreedNo
 		at: [ id argString: parser ]

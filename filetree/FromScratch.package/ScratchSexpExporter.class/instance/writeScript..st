@@ -7,29 +7,18 @@ writeScript: aScript
 		nextPut: Character space;
 		nextPut: $(.
 	self writetVarNames: aScript.
-	stream
-		nextPut: $);
-		nextPut: Character lf;
-		nextPut: Character space;
-		nextPut: Character space;
-		nextPut: Character space;
-		nextPut: $(.
+	stream nextPut: $).
+	self writeIndent.
+	stream nextPut: $(.
 	aScript subBlocks
 		do: [ :each | 
 			code := ScratchSexpGenerator new parse: each initialIndent: 3.
 			stream nextPutAll: code ]
-		separatedBy: [ stream
-				nextPut: Character lf;
-				nextPut: Character space;
-				nextPut: Character space;
-				nextPut: Character space ].
+		separatedBy: [ self writeIndent ].
+	self writeIndent.
 	aScript eventBlocks
 		do: [ :each | 
 			code := ScratchSexpGenerator new parse: each initialIndent: 3.
 			stream nextPutAll: code ]
-		separatedBy: [ stream
-				nextPut: Character lf;
-				nextPut: Character space;
-				nextPut: Character space;
-				nextPut: Character space ].
+		separatedBy: [ self writeIndent ].
 	stream nextPutAll: '))'

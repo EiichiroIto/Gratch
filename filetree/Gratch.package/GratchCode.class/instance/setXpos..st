@@ -1,5 +1,5 @@
 basic ops
 setXpos: num
-	bcGenerator
-		setVar: targetMorph varId class xVarNo
+	generator
+		setVar: script varId class xVarNo
 		to: [ num argString: parser ]

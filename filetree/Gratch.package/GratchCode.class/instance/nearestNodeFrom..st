@@ -1,3 +1,3 @@
 sensing ops
 nearestNodeFrom: node
-	^ bcGenerator nearestNodeFrom: [ node argString: parser ]
+	^ generator nearestNodeFrom: [ node argString: parser ]

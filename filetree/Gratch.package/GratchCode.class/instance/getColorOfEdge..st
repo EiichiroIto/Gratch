@@ -1,6 +1,6 @@
 color ops
 getColorOfEdge: id
-	^ bcGenerator
+	^ generator
 		getVar: GrEdgesVarDef colorVarNo
 		breedNo: GrBreedId edgesBreedNo
 		at: [ id argString: parser ]

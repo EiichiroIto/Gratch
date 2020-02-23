@@ -1,3 +1,3 @@
 basic ops
 createNodes: size
-	bcGenerator createNodes: [ size argString: parser ].
+	generator createNodes: [ size argString: parser ].

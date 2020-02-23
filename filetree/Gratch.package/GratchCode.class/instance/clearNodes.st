@@ -1,3 +1,3 @@
 basic ops
 clearNodes
-	bcGenerator clearNodes.
+	generator clearNodes.

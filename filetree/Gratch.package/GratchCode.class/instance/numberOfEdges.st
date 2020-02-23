@@ -1,6 +1,6 @@
 sensing ops
 numberOfEdges
-	^ bcGenerator
+	^ generator
 		getVar: [ GrGraphVarDef countAliveVarNo ]
 		breedNo: GrBreedId graphBreedNo
 		at: GrBreedId edgesBreedNo

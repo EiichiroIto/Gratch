@@ -1,3 +1,3 @@
 private
 graphSelected
-	self currentTarget: application graphScript
+	self target: application graphScript

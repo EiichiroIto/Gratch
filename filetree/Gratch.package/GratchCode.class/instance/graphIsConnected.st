@@ -1,3 +1,3 @@
 sensing ops
 graphIsConnected
-	^ bcGenerator computeStatusOf: GrCommandId isConnectedCommandNo
+	^ generator computeStatusOf: GrCommandId isConnectedCommandNo

@@ -1,6 +1,6 @@
 color ops
 setColor: color node: id
-	bcGenerator
+	generator
 		setVar: GrNodesVarDef colorVarNo
 		breedNo: GrBreedId nodesBreedNo
 		at: [ id argString: parser ]

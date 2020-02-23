@@ -1,3 +1,3 @@
 basic ops
 createEdgeTo: id
-	bcGenerator createEdgeTo: [ id argString: parser ].
+	generator createEdgeTo: [ id argString: parser ].

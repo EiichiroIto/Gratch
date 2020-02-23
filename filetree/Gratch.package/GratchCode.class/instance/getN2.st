@@ -1,3 +1,3 @@
 sensing ops
 getN2
-	^ bcGenerator getVar: GrEdgesVarDef n2VarNo
+	^ generator getVar: GrEdgesVarDef n2VarNo

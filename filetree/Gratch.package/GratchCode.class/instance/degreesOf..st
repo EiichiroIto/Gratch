@@ -1,3 +1,3 @@
 sensing ops
 degreesOf: node
-	^ bcGenerator degreesOf: (node argString: parser)
+	^ generator degreesOf: (node argString: parser)

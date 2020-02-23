@@ -1,3 +1,3 @@
 private
 nodesSelected
-	self currentTarget: application nodesScript
+	self target: application nodesScript
