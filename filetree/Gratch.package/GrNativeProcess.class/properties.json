@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "ScratchBaseProcess",
+	"super" : "ScratchNativeProcess",
 	"category" : "Gratch-Process",
 	"classinstvars" : [ ],
 	"pools" : [ ],
