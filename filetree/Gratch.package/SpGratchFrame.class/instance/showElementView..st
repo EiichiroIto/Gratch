@@ -4,7 +4,7 @@ showElementView: anInteger
 	bno := self currentBreedNo.
 	dialog := self instantiate: SpGratchElementView.
 	dialog
-		title: self target objName , ' Variables';
+		title: self target objName , ' ' , 'Variables' localized;
 		getValuesBlock: [ self grWorld varsBreed: bno at: anInteger ];
 		whenDeletedDo: [ self grWorld kill: anInteger breed: bno ];
 		whenActivatedDo: [ :obj | 

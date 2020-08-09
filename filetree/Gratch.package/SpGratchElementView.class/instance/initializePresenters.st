@@ -8,18 +8,18 @@ initializePresenters
 		activateOnDoubleClick;
 		addColumn:
 			(SpStringTableColumn
-				title: 'Name'
+				title: 'Name' localized
 				evaluated: [ :o | self getNameOf: o ]);
 		addColumn:
 			(SpStringTableColumn
-				title: 'Value'
+				title: 'Value' localized
 				evaluated: [ :o | self getValueOf: o ]).
-	labelVars label: 'Variables'.
+	labelVars label: 'Variables' localized.
 	buttonRefresh
-		label: 'Refresh';
+		label: 'Refresh' localized;
 		icon: (self iconNamed: #refresh).
 	buttonDelete
-		label: 'Delete';
+		label: 'Delete' localized;
 		icon: (self iconNamed: #delete).
 	self focusOrder
 		add: tableVars;

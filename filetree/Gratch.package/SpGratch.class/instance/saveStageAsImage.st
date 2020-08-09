@@ -7,7 +7,7 @@ saveStageAsImage
 	fName := self
 		chooseNewFileDefault: self projectName
 		extension: pngExt
-		title: 'Save Patches Snapshot'
+		title: 'Save Patches Snapshot' localized
 		type: #scriptsSnapshot.
 	fName ifNil: [ ^ self ].
 	fName := fName withExtension: pngExt.

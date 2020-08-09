@@ -5,40 +5,40 @@ fileMenu
 			grp
 				addItem: [ :item | 
 					item
-						name: 'New';
+						name: 'New' localized;
 						action: [ application newProject ] ];
 				addItem: [ :item | 
 					item
-						name: 'Open';
+						name: 'Open' localized;
 						action: [ application openProject ] ];
 				addItem: [ :item | 
 					item
-						name: 'Project Notes';
+						name: 'Project Notes' localized;
 						action: [ application editNotes ] ];
 				addItem: [ :item | 
 					item
-						name: 'Save';
+						name: 'Save' localized;
 						action: [ application saveProjectNoDialog ] ];
 				addItem: [ :item | 
 					item
-						name: 'Save As';
+						name: 'Save As' localized;
 						action: [ application saveProject ] ] ];
 		addGroup: [ :grp | 
 			grp
 				addItem: [ :item | 
 					item
-						name: 'Import';
+						name: 'Import ...' localized;
 						subMenu: self importMenu ];
 				addItem: [ :item | 
 					item
-						name: 'Export';
+						name: 'Export ...' localized;
 						subMenu: self exportMenu ] ];
 		addItem: [ :item | 
 			item
-				name: 'Close';
+				name: 'Close' localized;
 				action: [ application close ] ];
 		addItem: [ :item | 
 			item
-				name: 'Quit';
+				name: 'Quit' localized;
 				action: [ application quit ] ];
 		yourself

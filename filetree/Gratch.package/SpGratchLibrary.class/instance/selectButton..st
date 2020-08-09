@@ -1,5 +1,5 @@
 accessing
 selectButton: aString
-	buttonGraph state: aString = buttonGraph label asString.
-	buttonNodes state: aString = buttonNodes label asString.
-	buttonEdges state: aString = buttonEdges label asString
+	buttonGraph state: aString localized = buttonGraph label asString.
+	buttonNodes state: aString localized = buttonNodes label asString.
+	buttonEdges state: aString localized = buttonEdges label asString

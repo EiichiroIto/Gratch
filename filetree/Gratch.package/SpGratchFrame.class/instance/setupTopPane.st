@@ -3,21 +3,21 @@ setupTopPane
 	logo image: (ScratchTheme formAt: #scratchLogo).
 	buttonOpen
 		icon: (ScratchTheme formAt: #openButton);
-		help: 'Open project'.
+		help: 'Open Project' localized.
 	buttonSave
 		icon: (ScratchTheme formAt: #saveButton);
-		help: 'Save this project'.
+		help: 'Save Project' localized.
 	menu
 		addItem: [ :item | 
 			item
-				name: 'File';
+				name: 'File' localized;
 				subMenu: self fileMenu ];
 		addItem: [ :item | 
 			item
-				name: 'Data';
+				name: 'Data' localized;
 				subMenu: self dataMenu ];
 		addItem: [ :item | 
 			item
-				name: 'Help';
+				name: 'Help' localized;
 				subMenu: self helpMenu ].
 	menu applyTo: self

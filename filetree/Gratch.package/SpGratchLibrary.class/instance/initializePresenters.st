@@ -3,12 +3,12 @@ initializePresenters
 	buttonGraph := self newButton.
 	buttonNodes := self newButton.
 	buttonEdges := self newButton.
-	buttonGraph label: 'Graph'.
+	buttonGraph label: 'Graph' localized.
 	buttonNodes
-		label: 'Nodes';
+		label: 'Nodes' localized;
 		icon: (ScratchTheme formAt: #clearNodesButtonPressed).
 	buttonEdges
-		label: 'Edges';
+		label: 'Edges' localized;
 		icon: (ScratchTheme formAt: #clearEdgesButtonPressed).
 	self selectButton: 'Graph'.
 	self focusOrder
