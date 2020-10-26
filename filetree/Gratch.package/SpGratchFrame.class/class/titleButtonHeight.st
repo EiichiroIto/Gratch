@@ -1,3 +1,3 @@
 private
 titleButtonHeight
-	^ 50
+	^ 80

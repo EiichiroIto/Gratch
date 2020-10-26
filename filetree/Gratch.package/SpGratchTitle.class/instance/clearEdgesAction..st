@@ -1,3 +1,3 @@
 accessing
 clearEdgesAction: aBlock
-	(self buttonNamed: 'ClearE') action: aBlock
+	buttonClearEdges action: aBlock

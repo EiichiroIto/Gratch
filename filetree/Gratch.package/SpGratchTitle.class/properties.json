@@ -7,7 +7,14 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"labelName",
-		"toolBar"
+		"buttonClearEdges",
+		"buttonClearNodes",
+		"buttonEvent",
+		"buttonLoop",
+		"buttonSetup",
+		"buttonLoopSlow",
+		"buttonStop",
+		"buttonStep"
 	],
 	"name" : "SpGratchTitle",
 	"type" : "normal"
