@@ -18,6 +18,7 @@ defaultSpec
 					withConstraints: [ :c | c width: self viewerPaneWidth ];
 				add:
 					(SpPanedLayout newHorizontal
+						position: 40 percent;
 						add: #editorPane;
 						add:
 							(SpBoxLayout newVertical
