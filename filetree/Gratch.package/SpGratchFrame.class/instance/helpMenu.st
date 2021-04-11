@@ -7,6 +7,14 @@ helpMenu
 				action: [ owner window showAbout ] ];
 		addItem: [ :item | 
 			item
+				name: 'Restart' localized;
+				action: [ stageFrame startStepping ] ];
+		addItem: [ :item | 
+			item
+				name: 'Inspect' localized;
+				action: [ application inspect ] ];
+		addItem: [ :item | 
+			item
 				name: 'Settings' localized;
 				subMenu: self settingsMenu ];
 		yourself

@@ -10,7 +10,9 @@
 		"events",
 		"lastMSec",
 		"lastTicks",
-		"recorder"
+		"recorder",
+		"process",
+		"updateInfoCount"
 	],
 	"name" : "SpGratch",
 	"type" : "normal"
