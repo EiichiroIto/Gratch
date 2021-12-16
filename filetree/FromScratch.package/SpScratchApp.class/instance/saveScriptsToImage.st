@@ -2,15 +2,13 @@ menu actions
 saveScriptsToImage
 	"Take a snapshot of all scripts for a sprite and save as a GIF file"
 
-	| fName saveForm pngExt |
-	pngExt := 'png'.
+	| fName saveForm |
 	saveForm := presenter scriptForm.
 	saveForm ifNil: [ ^ self ].
 	fName := self
-		chooseNewFileDefault: ''
-		extension: pngExt
+		chooseNewFileDefault: self projectName
+		extension: 'png'
 		title: 'Save script snapshot' localized
 		type: #scriptsSnapshot.
 	fName ifNil: [ ^ self ].
-	fName := fName withExtension: pngExt.
 	saveForm writePNGFileNamed: fName pathString

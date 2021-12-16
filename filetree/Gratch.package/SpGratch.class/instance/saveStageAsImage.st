@@ -1,19 +1,12 @@
 menu actions
 saveStageAsImage
-	| fName saveForm pngExt |
-	pngExt := self imageExtension.
+	| fName saveForm |
 	saveForm := presenter stageShotExtent: presenter display extent truncated.
 	saveForm ifNil: [ ^ self ].
 	fName := self
 		chooseNewFileDefault: self projectName
-		extension: pngExt
+		extension: self imageExtension
 		title: 'Save Patches Snapshot' localized
 		type: #scriptsSnapshot.
 	fName ifNil: [ ^ self ].
-	fName := fName withExtension: pngExt.
-	fName isFile
-		ifTrue: [ (UIManager default
-				confirm: 'Overwrite existing ' , fName basename , '?')
-				ifFalse: [ ^ self ].
-			fName delete ].
 	saveForm writePNGFileNamed: fName pathString

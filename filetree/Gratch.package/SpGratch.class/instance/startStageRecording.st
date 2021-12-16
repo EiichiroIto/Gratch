@@ -1,19 +1,12 @@
 menu actions
 startStageRecording
-	| ext fName |
-	ext := 'gif'.
+	| fName |
 	fName := self
-		chooseNewFileDefault: ''
-		extension: ext
+		chooseNewFileDefault: self projectName
+		extension: 'gif'
 		title: 'Start Stage Recording'
 		type: #snapshot.
 	fName ifNil: [ ^ self ].
-	fName := fName withExtension: ext.
-	fName exists
-		ifTrue: [ (self
-				confirm: 'Are you sure you want to overwrite the file''' , fName basename , '''?')
-				ifFalse: [ ^ self ].
-			fName delete ].
 	recorder := ScratchRecorder new
 		openFileNamed: fName;
 		model: presenter;

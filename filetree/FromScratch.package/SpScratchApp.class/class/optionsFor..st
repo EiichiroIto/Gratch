@@ -10,4 +10,6 @@ optionsFor: aSymbol
 		ifTrue: [ ^ {true . false} ].
 	aSymbol = #language
 		ifTrue: [ ^ ScratchTranslator availableLocales ].
+	aSymbol = #useStdDialog
+		ifTrue: [ ^ {true . false} ].
 	^ #()

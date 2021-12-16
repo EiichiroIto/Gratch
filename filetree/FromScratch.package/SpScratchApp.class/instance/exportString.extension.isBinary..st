@@ -10,12 +10,6 @@ exportString: aContentsString extension: aString isBinary: aBoolean
 		title: 'Export ...' localized
 		type: #export.
 	fName ifNil: [ ^ self ].
-	fName := fName withExtension: aString.
-	fName isFile
-		ifTrue: [ (UIManager default
-				confirm: 'Overwrite existing file: ' localized , fName basename , '?')
-				ifFalse: [ ^ self ].
-			fName delete ].
 	f := nil.
 	self class
 		try: [ f := aBoolean
