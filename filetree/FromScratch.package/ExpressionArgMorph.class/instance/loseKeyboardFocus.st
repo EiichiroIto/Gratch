@@ -1,0 +1,3 @@
+accessing
+loseKeyboardFocus
+	labelMorph keyboardFocusChange: false
