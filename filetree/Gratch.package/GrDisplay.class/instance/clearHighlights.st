@@ -1,4 +1,4 @@
 accessing
 clearHighlights
-	edgePoints := nil.
-	self changed
+	highlightNode := nil.
+	highlightEdge := nil

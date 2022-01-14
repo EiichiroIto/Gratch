@@ -10,7 +10,6 @@
 		"graphExtent",
 		"graphCenter",
 		"edgePoints",
-		"nodePoint",
 		"grWorld",
 		"grManipulator",
 		"zoomIndex",
@@ -18,7 +17,9 @@
 		"nodeLabels",
 		"edgeLabels",
 		"stepTime",
-		"stepBlock"
+		"stepBlock",
+		"highlightNode",
+		"highlightEdge"
 	],
 	"name" : "GrDisplay",
 	"type" : "normal"

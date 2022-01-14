@@ -3,5 +3,5 @@ clear
 	mode := nil.
 	startPoint := nil.
 	graphCenter := nil.
-	node := nil.
-	grDisplay clearHighlights
+	node := 0.
+	grDisplay clearDraggingEdge

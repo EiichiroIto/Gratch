@@ -2,11 +2,12 @@ test
 testClearHighlights
 	| d |
 	d := self newDisplay.
-	self assert: d privEdgePoints isNil.
-	d
-		privEdgePoints:
-			{(1 @ 2).
-			(3 @ 4)}.
-	self assert: d privEdgePoints notNil.
+	self assert: d highlightNode isNil.
+	self assert: d highlightEdge isNil.
+	d highlightNode: 123.
+	d highlightEdge: 456.
+	self assert: d highlightNode equals: 123.
+	self assert: d highlightEdge equals: 456.
 	d clearHighlights.
-	self assert: d privEdgePoints isNil
+	self assert: d highlightNode isNil.
+	self assert: d highlightEdge isNil

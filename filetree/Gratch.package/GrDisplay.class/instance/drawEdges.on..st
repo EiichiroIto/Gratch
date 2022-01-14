@@ -5,7 +5,7 @@ drawEdges: aCollection on: aCanvas
 			aCanvas
 				line: each first
 				to: each second
-				color: (ColorList colorAt: each third).
+				color: each third.
 			self
 				drawLabels: each fourth
 				at: (each first + each second) // 2 + self edgeLabelOffset

@@ -5,9 +5,10 @@ grWorld: aWorld
 	manipulator := GrGraphManipulator new
 		grWorld: aWorld;
 		grDisplay: display;
-		model: self;
-		whenDoubleClickDo: [ :eno | self showElementView: eno ];
-		getBreedNoBlock: [ self currentBreedNo ];
+		whenClickedDo: [ :p | self clickedAt: p ];
+		whenDraggedDo: [ :from :to | self draggedFrom: from to: to ];
+		whenDraggingDo:
+				[ :from :to :node | self draggingFrom: from to: to at: node ];
 		yourself.
 	display
 		grWorld: aWorld;

@@ -7,5 +7,5 @@ drawOn: aCanvas
 	edges := self edgeListOf: nodes.
 	self drawEdges: edges on: aCanvas.
 	self drawNodes: nodes on: aCanvas.
-	self drawHighlightsOn: aCanvas.
+	self drawDraggingEdgeOn: aCanvas.
 	self drawInfoOn: aCanvas

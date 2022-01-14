@@ -11,4 +11,4 @@ testClear
 	self assert: m privMode isNil.
 	self assert: m privStartPoint isNil.
 	self assert: m privGraphCenter isNil.
-	self assert: m privNode isNil
+	self assert: m privNode equals: 0

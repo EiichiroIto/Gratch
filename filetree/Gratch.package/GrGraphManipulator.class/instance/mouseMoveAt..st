@@ -1,11 +1,12 @@
 event handling
 mouseMoveAt: aPoint
-	| bno |
+	| p1 p2 p |
 	mode = #startDrag
 		ifFalse: [ ^ self ].
-	bno := self breedNo.
-	(bno = GrBreedId nodesBreedNo and: [ node notNil ])
-		ifTrue: [ ^ self dragNodeTo: aPoint ].
-	(bno = GrBreedId edgesBreedNo and: [ node notNil ])
-		ifTrue: [ ^ self dragEdgeTo: aPoint ].
-	self dragGraphTo: aPoint
+	p1 := grDisplay worldPointToGraph: startPoint.
+	p2 := grDisplay worldPointToGraph: aPoint.
+	whenDraggingDo
+		ifNotNil: [ (whenDraggingDo cull: p1 cull: p2 cull: node)
+				ifTrue: [ ^ self ] ].
+	p := (p1 - p2) / grDisplay zoom.
+	grDisplay graphCenter: graphCenter + (p x @ p y negated)

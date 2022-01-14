@@ -1,7 +1,8 @@
 test
 testWhenDoubleClickDo
-	| m |
+	| m b |
 	m := self newManipulator.
+	b := [ 1 + 2 ].
 	self assert: m whenDoubleClickDo isNil.
-	m whenDoubleClickDo: 123.
-	self assert: m whenDoubleClickDo equals: 123
+	m whenDoubleClickDo: b.
+	self assert: m whenDoubleClickDo identicalTo: b

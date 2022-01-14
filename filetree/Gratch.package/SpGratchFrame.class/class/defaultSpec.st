@@ -14,12 +14,18 @@ defaultSpec
 			withConstraints: [ :c | c height: self toolbarHeight ];
 		add:
 			(SpBoxLayout newHorizontal
+				spacing: 4;
 				add: #viewerPane
 					withConstraints: [ :c | c width: self viewerPaneWidth ];
 				add:
 					(SpPanedLayout newHorizontal
 						position: 40 percent;
-						add: #editorPane;
+						add:
+							(SpPanedLayout newVertical
+								position: 20 percent;
+								add: #inspectorPane;
+								add: #editorPane;
+								yourself);
 						add:
 							(SpBoxLayout newVertical
 								add: #titlePane

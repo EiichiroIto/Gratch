@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Gratch-Spec2",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tableVars",
+		"buttonRefresh",
+		"buttonEdit",
+		"buttonDelete"
+	],
+	"name" : "SpGratchInspector",
+	"type" : "normal"
+}

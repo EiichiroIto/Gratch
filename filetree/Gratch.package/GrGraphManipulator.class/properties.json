@@ -12,9 +12,10 @@
 		"mode",
 		"node",
 		"grWorld",
-		"model",
 		"whenDoubleClickDo",
-		"getBreedNoBlock"
+		"whenClickedDo",
+		"whenDraggedDo",
+		"whenDraggingDo"
 	],
 	"name" : "GrGraphManipulator",
 	"type" : "normal"

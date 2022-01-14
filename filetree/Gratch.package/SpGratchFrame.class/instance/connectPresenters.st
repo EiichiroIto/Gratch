@@ -10,4 +10,8 @@ connectPresenters
 		zoomInAction: [ self zoomIn ];
 		zoomOutAction: [ self zoomOut ];
 		zoomFitAction: [ self zoomFit ];
-		zoomHomeAction: [ self zoomHome ]
+		zoomHomeAction: [ self zoomHome ].
+	inspectorPane
+		whenRefreshDo: [ self updateInspector ];
+		whenEditDo: [ :obj | self changeValue: obj ];
+		whenDeleteDo: [ self deleteObject ]

@@ -5,6 +5,7 @@ initializePresenters
 	buttonOpen := self newButton.
 	menu := self newMenuBar.
 	viewerPane := self instantiate: SpScratchListViewer.
+	inspectorPane := self instantiate: SpGratchInspector.
 	editorPane := self instantiate: SpScratchEditor.
 	titlePane := self instantiate: SpGratchTitle.
 	stageFrame := self instantiate: SpGratchStage.

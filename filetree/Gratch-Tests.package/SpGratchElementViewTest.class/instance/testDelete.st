@@ -1,3 +1,0 @@
-test
-testDelete
-	self testWhenDeletedDo

@@ -1,3 +1,0 @@
-test
-testUpdateTable
-	self testGetValuesBlock

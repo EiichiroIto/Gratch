@@ -1,3 +1,0 @@
-private
-privNodePoint
-	^ nodePoint

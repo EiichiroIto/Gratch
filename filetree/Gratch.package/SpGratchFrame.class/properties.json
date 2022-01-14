@@ -9,7 +9,9 @@
 		"logo",
 		"menu",
 		"buttonSave",
-		"buttonOpen"
+		"buttonOpen",
+		"inspectorPane",
+		"inspectorTarget"
 	],
 	"name" : "SpGratchFrame",
 	"type" : "normal"

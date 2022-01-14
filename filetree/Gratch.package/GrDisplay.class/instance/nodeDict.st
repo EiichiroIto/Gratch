@@ -10,7 +10,13 @@ nodeDict
 				ifTrue: [ dict
 						at: each
 						put:
-							{p.
-							(grWorld nodeColorAt: each).
-							(self nodeLabelsFor: each)} ] ].
+							(each = highlightNode
+								ifTrue: [ {p.
+									(self highlightColor).
+									(self nodeLabelsFor: each).
+									(self nodeRectangleCenterAt: p)} ]
+								ifFalse: [ {p.
+									(ColorList colorAt: (grWorld nodeColorAt: each)).
+									(self nodeLabelsFor: each).
+									(self nodeRectangleCenterAt: p)} ]) ] ].
 	^ dict

@@ -1,3 +1,0 @@
-private
-nodeBorderColor
-	^ Color white

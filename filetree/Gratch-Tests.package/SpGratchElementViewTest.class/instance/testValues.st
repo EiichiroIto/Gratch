@@ -1,3 +1,0 @@
-test
-testValues
-	self testGetValuesBlock
