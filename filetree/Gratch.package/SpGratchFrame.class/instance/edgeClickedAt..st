@@ -5,5 +5,6 @@ edgeClickedAt: aPoint
 	e := w nearestEdgeAt: aPoint within: 10 * self display zoom.
 	e = 0
 		ifTrue: [ ^ self ].
-	self inspectAt: e.
+	e := stageFrame toggleHighlightBreed: GrBreedId edgesBreedNo at: e.
+	self updateInspector: e.
 	self display changed
