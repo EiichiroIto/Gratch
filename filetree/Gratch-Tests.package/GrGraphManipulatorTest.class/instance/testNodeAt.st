@@ -9,7 +9,7 @@ testNodeAt
 	w pointAt: 2 put: 15 @ 15.
 	n := m nodeAt: d bounds center.
 	self assert: n equals: 1.
-	n := m nodeAt: (d graphPointToWorld: 15 @ 15).
+	n := m nodeAt: (d screenPointFrom: 15 @ 15).
 	self assert: n equals: 2.
-	n := m nodeAt: (d graphPointToWorld: 30 @ 30).
+	n := m nodeAt: (d screenPointFrom: 30 @ 30).
 	self assert: n equals: 0

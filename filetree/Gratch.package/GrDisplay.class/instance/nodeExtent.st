@@ -1,3 +1,0 @@
-private
-nodeExtent
-	^ self defaultNodeExtent

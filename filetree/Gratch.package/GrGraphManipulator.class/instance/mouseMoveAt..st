@@ -1,12 +1,11 @@
 event handling
 mouseMoveAt: aPoint
-	| p1 p2 p |
+	| p1 p2 |
 	mode = #startDrag
 		ifFalse: [ ^ self ].
-	p1 := grDisplay worldPointToGraph: startPoint.
-	p2 := grDisplay worldPointToGraph: aPoint.
+	p1 := grDisplay graphPointFrom: startPoint.
+	p2 := grDisplay graphPointFrom: aPoint.
 	whenDraggingDo
 		ifNotNil: [ (whenDraggingDo cull: p1 cull: p2 cull: node)
 				ifTrue: [ ^ self ] ].
-	p := (p1 - p2) / grDisplay zoom.
-	grDisplay graphCenter: graphCenter + (p x @ p y negated)
+	grDisplay graphCenter: graphCenter + p1 - p2

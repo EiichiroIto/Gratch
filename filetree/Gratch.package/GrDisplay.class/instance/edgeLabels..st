@@ -1,4 +1,4 @@
 accessing
 edgeLabels: anArray
-	edgeLabels := anArray copy asArray.
+	painter edgeLabels: anArray copy asArray.
 	self changed

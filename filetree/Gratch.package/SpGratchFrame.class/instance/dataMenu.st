@@ -5,6 +5,10 @@ dataMenu
 			grp
 				addItem: [ :item | 
 					item
+						name: 'Save Graph as PNG' localized;
+						action: [ application saveGraph ] ];
+				addItem: [ :item | 
+					item
 						name: 'Save Stage as PNG' localized;
 						action: [ application saveStageAsImage ] ];
 				addItem: [ :item | 

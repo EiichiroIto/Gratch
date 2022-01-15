@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Gratch-Converter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"grWorld",
+		"bgColor",
+		"canvas",
+		"graphRect",
+		"screenRect",
+		"nodeCache",
+		"edgeCache",
+		"nodeLabels",
+		"edgeLabels"
+	],
+	"name" : "GrGraphPainter",
+	"type" : "normal"
+}

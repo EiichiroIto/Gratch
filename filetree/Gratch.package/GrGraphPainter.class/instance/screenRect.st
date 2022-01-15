@@ -1,0 +1,3 @@
+accessing
+screenRect
+	^ screenRect

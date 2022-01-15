@@ -1,4 +1,5 @@
 accessing
 graphCenter: aPoint
 	graphCenter := aPoint roundUpTo: self graphPointStep.
-	self changed.
+	painter graphRect: self graphRectangle.
+	self changed

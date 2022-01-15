@@ -13,7 +13,7 @@ testEdgeIndexConnectedIn
 	w n2At: edges fourth put: 3.
 	w n1At: edges fifth put: 4.
 	w n2At: edges fifth put: 1.
-	list := w edgeIndexConnectedIn: #(1 2 3).
+	list := w edgeIndexConnectedWithin: #(1 2 3).
 	self assertCollection: list equals: #(1 2 4).
-	list := w edgeIndexConnectedIn: #(1 4).
+	list := w edgeIndexConnectedWithin: #(1 4).
 	self assertCollection: list equals: #(3 5)

@@ -1,3 +1,3 @@
 accessing
 edgeLabels
-	^ edgeLabels
+	^ painter edgeLabels

@@ -1,11 +1,12 @@
 drawing
 drawOn: aCanvas
-	| nodes edges |
 	super drawOn: aCanvas.
 	grWorld ifNil: [ ^ self ].
-	nodes := self nodeDict.
-	edges := self edgeListOf: nodes.
-	self drawEdges: edges on: aCanvas.
-	self drawNodes: nodes on: aCanvas.
+	painter canvas: aCanvas.
+	painter screenRect: self bounds.
+	painter setupCache: grWorld allNodes.
+	painter drawGraph.
+	painter drawHighlightNode: highlightNode color: self highlightColor.
+	painter drawHighlightEdge: highlightEdge color: self highlightColor.
 	self drawDraggingEdgeOn: aCanvas.
 	self drawInfoOn: aCanvas

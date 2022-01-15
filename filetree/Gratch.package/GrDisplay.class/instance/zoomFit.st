@@ -10,5 +10,4 @@ zoomFit
 	zoom := self adjustZoom: zoom.
 	zoomIndex := self zoomLevels indexOf: zoom.
 	c := rect center x @ rect center y negated.
-	graphCenter := c.
-	self changed
+	self graphCenter: c

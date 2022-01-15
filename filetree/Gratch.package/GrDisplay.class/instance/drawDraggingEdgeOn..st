@@ -6,7 +6,7 @@ drawDraggingEdgeOn: aCanvas
 		allSatisfy: [ :each | self graphRectangle containsPoint: each ])
 		ifFalse: [ ^ self ].
 	points := edgePoints
-		collect: [ :each | self graphPointToWorld: each ].
+		collect: [ :each | painter screenPointFrom: each ].
 	aCanvas
 		line: points first
 		to: points second

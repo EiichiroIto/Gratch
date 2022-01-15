@@ -1,0 +1,3 @@
+constants
+labelColor
+	^ Color white

@@ -1,3 +1,3 @@
 accessing
 nodeLabels
-	^ nodeLabels
+	^ painter nodeLabels

@@ -14,12 +14,11 @@
 		"grManipulator",
 		"zoomIndex",
 		"zoom",
-		"nodeLabels",
-		"edgeLabels",
 		"stepTime",
 		"stepBlock",
 		"highlightNode",
-		"highlightEdge"
+		"highlightEdge",
+		"painter"
 	],
 	"name" : "GrDisplay",
 	"type" : "normal"
