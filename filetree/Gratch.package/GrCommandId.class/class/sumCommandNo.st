@@ -1,0 +1,3 @@
+accessing
+sumCommandNo
+	^ 9

@@ -1,5 +1,5 @@
 test
-testMinElement
+testComputeVar
 	| w t v |
 	w := self newWorld.
 	w createNodes: 3.
@@ -9,7 +9,15 @@ testMinElement
 	w var: v breed: GrBreedId nodesBreedNo at: 3 put: 20.
 	t := self newThread: w.
 	t forBreedNo: GrBreedId nodesBreedNo index: 1.
+	t push: GrCommandId maxElementCommandNo.
 	t push: v.
 	t push: GrBreedId nodesBreedNo.
-	t minElement.
+	t computeVar.
+	self assert: t pop equals: 2.
+	t := self newThread: w.
+	t forBreedNo: GrBreedId nodesBreedNo index: 1.
+	t push: GrCommandId minElementCommandNo.
+	t push: v.
+	t push: GrBreedId nodesBreedNo.
+	t computeVar.
 	self assert: t pop equals: 3

@@ -39,17 +39,19 @@ blocks
 			('node %n ''s %N'			r	getNode:var: 0 '')
 			('# of nodes'					r	numberOfNodes)
 			-
-			('node with smallest %N'	r	nodeWithMin: '')
-			('node with largest %N'		r	nodeWithMax: '')
-			-
+			('%C of nodes'' %N'		r	compute:nodes: 'sum')
+			"('node with smallest %N'	r	nodeWithMin: '')"
+			"('node with largest %N'		r	nodeWithMax: '')"
+			"-"
 			('nearest from %n'			r	nearestNodeFrom: 0)
 			('within %n from %n'		r	within:from: 10 0)
 		'edges'
 			('edge %n ''s %E'			r	getEdge:var: 0 '')
 			('# of edges'					r	numberOfEdges)
 			-
-			('edge with smallest %E'	r	edgeWithMin: '')
-			('edge with largest %E'		r	edgeWithMax: '')
+			('%D of edges'' %E'		r	compute:edges: 'sum')
+			"('edge with smallest %E'	r	edgeWithMin: '')"
+			"('edge with largest %E'		r	edgeWithMax: '')"
 		'color'
 			('set color %c of node %n'	-	setColor:node:			15 0)
 			('set color %c of edge %n'	-	setColor:edge:			15 0)

@@ -1,0 +1,3 @@
+accessing
+averageCommandNo
+	^ 8

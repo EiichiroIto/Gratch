@@ -8,4 +8,6 @@ addArgBuilder
 			initialExpression: '15';
 		addChoiceArg: $E selector: #edgesVarNames;
 		addChoiceArg: $G selector: #graphVarNames;
-		addChoiceArg: $N selector: #nodesVarNames
+		addChoiceArg: $N selector: #nodesVarNames;
+		addChoiceArg: $C selector: #elementsStatNames;
+		addChoiceArg: $D selector: #elementsStatNames

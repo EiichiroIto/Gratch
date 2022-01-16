@@ -1,0 +1,3 @@
+accessing
+maxElementCommandNo
+	^ 10

@@ -1,0 +1,3 @@
+accessing
+maxCommandNo
+	^ 6
