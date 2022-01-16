@@ -9,4 +9,12 @@ exportMenu
 			item
 				name: 'Export S-EXP' localized;
 				action: [ application exportSexpCode ] ];
+		addItem: [ :item | 
+			item
+				name: 'Export Script image' localized;
+				action: [ application saveScriptsToImage ] ];
+		addItem: [ :item | 
+			item
+				name: 'Export Graph image' localized;
+				action: [ application saveGraph ] ];
 		yourself
