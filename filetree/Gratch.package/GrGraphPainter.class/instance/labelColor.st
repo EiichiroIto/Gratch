@@ -1,3 +1,5 @@
 constants
 labelColor
-	^ Color white
+	^ bgColor = Color white
+		ifTrue: [ Color black ]
+		ifFalse: [ Color white ]
