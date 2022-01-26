@@ -1,14 +1,8 @@
 menu actions
 saveProject
-	| fName result |
-	self closeMediaEditorsAndDialogs
-		ifFalse: [ ^ self ].
+	| file |
+	self closeMediaEditorsAndDialogs.
 	self stopAllProcesses.
-	fName := self saveScratchFileFor: project.
-	fName ifNil: [ ^ self ].
-	[ (result := self
-		confirmFileOverwriteIfExisting: fName
-		orCancel: [ ^ self ]) isNil ]
-		whileTrue: [ fName := self saveScratchFileFor: project.
-			fName ifNil: [ ^ self ] ].
-	self saveProjectAs: result
+	file := self saveScratchFileFor: project.
+	file ifNil: [ ^ false ].
+	^ self saveProjectAs: file

@@ -1,14 +1,13 @@
 menu actions
 startStageRecording
-	| fName |
-	fName := self
-		chooseNewFileDefault: self projectName
-		extension: 'gif'
-		title: 'Start Stage Recording'
-		type: #snapshot.
-	fName ifNil: [ ^ self ].
+	| file |
+	file := UIManager default
+		chooseForSaveFileReference: 'Start Stage Recording' localized
+		extensions: {'gif'}
+		path: self projectPath.
+	file ifNil: [ ^ self ].
 	recorder := ScratchRecorder new
-		openFileNamed: fName;
+		openFileNamed: file;
 		model: presenter;
 		extent: self class recodingExtent.
 	self updateStatus

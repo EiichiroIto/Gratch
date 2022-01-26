@@ -1,3 +1,3 @@
-as yet unclassified
+arg generator
 localVarArgString: aString 
 	^ aString

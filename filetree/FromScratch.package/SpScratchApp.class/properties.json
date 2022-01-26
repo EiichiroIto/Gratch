@@ -10,7 +10,8 @@
 	],
 	"instvars" : [
 		"presenter",
-		"project"
+		"project",
+		"projectDirectory"
 	],
 	"name" : "SpScratchApp",
 	"type" : "normal"

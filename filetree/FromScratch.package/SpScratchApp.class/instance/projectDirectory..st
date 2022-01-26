@@ -1,5 +1,3 @@
-private
+accessing
 projectDirectory: aFileReference
-	ScratchDirectory current
-		setLastFolderTo: aFileReference
-		forType: #project
+	projectDirectory := aFileReference

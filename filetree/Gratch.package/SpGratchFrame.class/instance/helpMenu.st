@@ -8,7 +8,7 @@ helpMenu
 		addItem: [ :item | 
 			item
 				name: 'Restart' localized;
-				action: [ stageFrame startStepping ] ];
+				action: [ stageFrame display startStepping ] ];
 		addItem: [ :item | 
 			item
 				name: 'Inspect' localized;

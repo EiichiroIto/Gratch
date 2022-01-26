@@ -1,27 +1,25 @@
 private
 importFileWithExtension: aString isBinary: aBoolean
-	| response fr f code |
-	self closeMediaEditorsAndDialogs
-		ifFalse: [ ^ nil ].
+	| file f code |
+	self closeMediaEditorsAndDialogs.
 	self stopAllProcesses.
-	response := self
-		chooseExistingFileType: #export
-		title: 'Import ...' localized
-		extension: aString.
-	response ifNil: [ ^ nil ].
-	fr := response asFileReference.
-	fr isFile
+	file := UIManager default
+		chooseExistingFileReference: 'Import ...' localized
+		extensions: {aString}
+		path: self projectDirectory.
+	file ifNil: [ ^ nil ].
+	file isFile
 		ifFalse: [ ^ nil ].
 	f := aBoolean
-		ifTrue: [ fr binaryReadStream ]
-		ifFalse: [ fr readStream ].
+		ifTrue: [ file binaryReadStream ]
+		ifFalse: [ file readStream ].
 	^ self class
 		try: [ code := f contents.
 			f close.
 			{code.
-			fr} ]
+			file} ]
 		onFailure: [ f ifNotNil: [ f close ].
 			UIManager default
-				alert: 'Could not read file: ' localized , fr basename
+				alert: 'Could not read file: ' localized , file basename
 				title: 'Import failed' localized.
 			nil ]

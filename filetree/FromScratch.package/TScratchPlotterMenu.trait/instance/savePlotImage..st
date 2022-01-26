@@ -1,12 +1,11 @@
 menu actions
 savePlotImage: aPlotter
-	| fName saveForm |
+	| file saveForm |
 	saveForm := self formFrom: aPlotter extent: 400 @ 400.
 	saveForm ifNil: [ ^ self ].
-	fName := self application
-		chooseNewFileDefault: ''
-		extension: 'png'
-		title: 'Save Plots Snapshot' localized
-		type: #scriptsSnapshot.
-	fName ifNil: [ ^ self ].
-	saveForm writePNGFileNamed: fName pathString
+	file := UIManager default
+		chooseForSaveFileReference: 'Save Plots Snapshot' localized
+		extensions: {'png'}
+		path: self application projectPath.
+	file ifNil: [ ^ self ].
+	saveForm writePNGFileNamed: file pathString

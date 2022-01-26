@@ -1,19 +1,15 @@
 menu actions
 openProject
-	| response newProj |
-	self closeMediaEditorsAndDialogs
+	| file newProj |
+	self confirmForNewProject
 		ifFalse: [ ^ self ].
-	self stopAllProcesses.
-	(project notNil and: [ project modified ])
-		ifTrue: [ response := UIManager default
-				confirm: 'Save the current project?' localized
-				orCancel: [ ^ self ].
-			response
-				ifTrue: [ self saveProjectNoDialog ] ].
-	response := self openScratchFileFor: self createProject.
-	response ifNil: [ ^ self ].
-	newProj := self createProject readProjectFrom: response.
+	file := UIManager default
+		chooseExistingFileReference: 'Open Project' localized
+		extensions: {self class extension}
+		path: self projectDirectory.
+	file ifNil: [ ^ self ].
+	newProj := self createProject readProjectFrom: file.
 	newProj ifNil: [ ^ self ].
-	self projectDirectory: response parent.
-	self projectName: response base.
+	self projectDirectory: file parent.
+	self projectName: file base.
 	self installNewProject: newProj

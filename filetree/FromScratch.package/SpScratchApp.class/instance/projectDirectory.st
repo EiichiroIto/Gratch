@@ -1,3 +1,4 @@
-private
+accessing
 projectDirectory
-	^ ScratchDirectory current getLastFolderForType: #project
+	^ projectDirectory
+		ifNil: [ projectDirectory := self class projectDir asFileReference ]

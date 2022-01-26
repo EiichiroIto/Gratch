@@ -1,15 +1,8 @@
 menu actions
 saveProjectNoDialog
-	| fName dir file |
-	self closeMediaEditorsAndDialogs
-		ifFalse: [ ^ self ].
+	| file |
+	self closeMediaEditorsAndDialogs.
 	self stopAllProcesses.
-	fName := self projectName.
-	dir := ScratchDirectory current getLastFolderForType: #project.
-	file := dir / (fName , '.' , self extension).
-	file isFile
-		ifFalse: [ ^ self saveProject ].
-	ScratchDirectory current lastFolderIsSampleProjectsFolder
-		ifTrue: [ self projectDirectory: ScratchDirectory current project.
-			^ self saveProject ].
-	self saveProjectAs: file
+	projectDirectory ifNil: [ ^ self saveProject ].
+	file := self projectPath withExtension: self class extension.
+	^ self saveProjectAs: file

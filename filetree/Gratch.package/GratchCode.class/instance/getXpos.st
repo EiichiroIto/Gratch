@@ -1,3 +1,3 @@
 sensing ops
 getXpos
-	^ generator getVar: script varId xVarNo
+	^ generator getVar: script varId class xVarNo

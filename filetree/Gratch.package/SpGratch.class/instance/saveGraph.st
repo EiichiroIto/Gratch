@@ -1,12 +1,11 @@
 menu actions
 saveGraph
-	| fName saveForm |
+	| file saveForm |
 	saveForm := self graphFormExtent: 480 @ 480.
 	saveForm ifNil: [ ^ self ].
-	fName := self
-		chooseNewFileDefault: self projectName
-		extension: self imageExtension
-		title: 'Save Graph' localized
-		type: #scriptsSnapshot.
-	fName ifNil: [ ^ self ].
-	saveForm writePNGFileNamed: fName pathString
+	file := UIManager default
+		chooseForSaveFileReference: 'Save Graph' localized
+		extensions: {self imageExtension}
+		path: self projectPath.
+	file ifNil: [ ^ self ].
+	saveForm writePNGFileNamed: file pathString
