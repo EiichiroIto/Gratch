@@ -1,5 +1,5 @@
 menu actions
-saveGraph
+saveGraphAsImage
 	| file saveForm |
 	saveForm := self graphFormExtent: 480 @ 480.
 	saveForm ifNil: [ ^ self ].

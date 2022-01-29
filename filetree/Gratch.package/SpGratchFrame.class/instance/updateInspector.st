@@ -1,4 +1,4 @@
-private
+inspecting
 updateInspector
 	inspectorTarget ifNil: [ ^ self ].
 	inspectorPane

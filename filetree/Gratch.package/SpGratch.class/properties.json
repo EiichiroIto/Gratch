@@ -11,8 +11,7 @@
 		"lastMSec",
 		"lastTicks",
 		"recorder",
-		"process",
-		"updateInfoCount"
+		"process"
 	],
 	"name" : "SpGratch",
 	"type" : "normal"

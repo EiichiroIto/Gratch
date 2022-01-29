@@ -1,4 +1,4 @@
-private
+inspecting
 changeColor: vno breed: bno at: id
 	| dialog cno |
 	dialog := self instantiate: SpColorList.

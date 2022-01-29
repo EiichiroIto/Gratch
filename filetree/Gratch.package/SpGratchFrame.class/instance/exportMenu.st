@@ -16,5 +16,5 @@ exportMenu
 		addItem: [ :item | 
 			item
 				name: 'Export Graph image' localized;
-				action: [ application saveGraph ] ];
+				action: [ application saveGraphAsImage ] ];
 		yourself

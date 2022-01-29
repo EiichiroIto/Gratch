@@ -1,4 +1,4 @@
-private
+inspecting
 updateInspector: anInteger
 	anInteger
 		ifNil: [ self clearInspector ]

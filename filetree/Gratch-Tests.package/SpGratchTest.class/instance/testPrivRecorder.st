@@ -1,0 +1,3 @@
+test
+testPrivRecorder
+	self testIsRecording

@@ -1,4 +1,4 @@
-private
+inspecting
 changeNumberVar: vno breed: bno at: id
 	| val ret |
 	val := self grWorld var: vno breed: bno at: id.

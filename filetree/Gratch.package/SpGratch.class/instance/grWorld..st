@@ -1,5 +1,4 @@
 accessing
 grWorld: aWorld
 	grWorld := aWorld.
-	presenter grWorld: aWorld.
-	self updateStatus
+	presenter grWorld: aWorld
