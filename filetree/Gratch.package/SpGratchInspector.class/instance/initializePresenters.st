@@ -1,7 +1,6 @@
 initialization
 initializePresenters
 	tableVars := self newTable.
-	buttonRefresh := self newButton.
 	buttonEdit := self newButton.
 	buttonDelete := self newButton.
 	tableVars
@@ -14,9 +13,6 @@ initializePresenters
 			(SpStringTableColumn
 				title: 'Value' localized
 				evaluated: [ :o | o second asString ]).
-	buttonRefresh
-		label: 'Refresh' localized;
-		icon: (self iconNamed: #refresh).
 	buttonEdit
 		label: 'Edit' localized;
 		icon: (self iconNamed: #edit).
@@ -25,6 +21,5 @@ initializePresenters
 		icon: (self iconNamed: #delete).
 	self focusOrder
 		add: tableVars;
-		add: buttonRefresh;
 		add: buttonEdit;
 		add: buttonDelete

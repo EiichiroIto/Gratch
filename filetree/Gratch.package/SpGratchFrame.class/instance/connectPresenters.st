@@ -12,6 +12,5 @@ connectPresenters
 		zoomFitAction: [ self zoomFit ];
 		zoomHomeAction: [ self zoomHome ].
 	inspectorPane
-		whenRefreshDo: [ self updateInspector ];
 		whenEditDo: [ :obj | self changeValue: obj ];
 		whenDeleteDo: [ self deleteObject ]
