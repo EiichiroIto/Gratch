@@ -4,6 +4,7 @@ updateStatus
 	msec := Time millisecondClockValue.
 	msec < (lastMSec + 1000)
 		ifTrue: [ ^ self ].
+	presenter updateInspector.
 	str := self stringOfWorldName: grWorld worldName.
 	presenter status: str.
 	ticks := grWorld ticks.
