@@ -15,7 +15,7 @@ The settings.ston file should be placed in the same folder as the Scratch apps i
 Multiple options must be separated by commas like this:
 
 ```
-{#useStdDialog:true,#useErrorCatcher:false}
+{#projectDir:'{documents}/stelo',#useErrorCatcher:false}
 ```
 
 Once you have created the settings.ston file, you can change the options from the Help-Settings menu.
@@ -26,7 +26,7 @@ Once you have created the settings.ston file, you can change the options from th
 - language
 - stickyWindow
 - useErrorCatcher
-- useStdDialog
+- projectDir
 
 ## dontClose
 The dontClose option disables the window close button.
@@ -55,7 +55,7 @@ The useErrorCatcher option suppresses the display of debug dialogs.
 
 Possible options are true or false.
 
-## useStdDialog
-The useStdDialog option uses a standard dialog window to loa/save files instead of a native dialog window.
+## projectDir
+The projectDir option specifies the directory name to open/save projects.
 
-Possible options are true or false.
+Possible option is a string of the directory. It can be included '{documents}' for system's documents directory.
