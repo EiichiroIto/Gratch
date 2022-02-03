@@ -5,7 +5,7 @@ saveStageAsImage
 		stageShotExtent: presenter display extent truncated.
 	saveForm ifNil: [ ^ self ].
 	file := UIManager default
-		chooseForSaveFileReference: 'Save Stage' localized
+		chooseForSaveFileReference: 'Export ...' localized
 		extensions: {self imageExtension}
 		path: self projectPath.
 	file ifNil: [ ^ self ].

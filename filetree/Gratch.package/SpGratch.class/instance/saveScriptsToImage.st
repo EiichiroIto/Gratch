@@ -6,8 +6,8 @@ saveScriptsToImage
 	saveForm := presenter scriptForm.
 	saveForm ifNil: [ ^ self ].
 	file := UIManager default
-		chooseForSaveFileReference: 'Save script snapshot' localized
-		extensions: {'png'}
+		chooseForSaveFileReference: 'Export ...' localized
+		extensions: {self imageExtension}
 		path: self projectPath.
 	file ifNil: [ ^ self ].
 	saveForm writePNGFileNamed: file pathString

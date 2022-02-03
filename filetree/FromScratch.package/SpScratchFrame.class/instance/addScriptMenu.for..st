@@ -18,8 +18,4 @@ addScriptMenu: aMenu for: aScript
 				addItem: [ :item | 
 					item
 						name: 'clean up' localized;
-						action: [ aScript cleanUp ] ];
-				addItem: [ :item | 
-					item
-						name: 'save picture of scripts' localized;
-						action: [ application saveScriptsToImage ] ] ]
+						action: [ aScript cleanUp ] ] ]

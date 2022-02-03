@@ -4,7 +4,7 @@ saveGraphAsImage
 	saveForm := self graphFormExtent: 480 @ 480.
 	saveForm ifNil: [ ^ self ].
 	file := UIManager default
-		chooseForSaveFileReference: 'Save Graph' localized
+		chooseForSaveFileReference: 'Export ...' localized
 		extensions: {self imageExtension}
 		path: self projectPath.
 	file ifNil: [ ^ self ].
