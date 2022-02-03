@@ -15,7 +15,7 @@ The settings.ston file should be placed in the same folder as the Scratch apps i
 Multiple options must be separated by commas like this:
 
 ```
-{#projectDir:'{documents}/stelo',#useErrorCatcher:false}
+{#projectDir:'{documents}/gratch',#useErrorCatcher:false}
 ```
 
 Once you have created the settings.ston file, you can change the options from the Help-Settings menu.
