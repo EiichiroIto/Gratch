@@ -1,3 +1,3 @@
 private
 newObjStream
-	self subclassResponsibility
+	^ self class objStreamClass new

@@ -1,3 +1,3 @@
 private
 createProject
-	self subclassResponsibility
+	^ self class projectClass new

@@ -1,0 +1,3 @@
+accessing
+objStreamClass
+	self subclassResponsibility

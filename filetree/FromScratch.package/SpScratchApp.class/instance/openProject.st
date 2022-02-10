@@ -6,7 +6,8 @@ openProject
 	file := UIManager default
 		chooseExistingFileReference: 'Open Project' localized
 		extensions: {self class extension}
-		path: self projectDirectory.
+		path: self projectDirectory
+		preview: self class projectClass.
 	file ifNil: [ ^ self ].
 	newProj := self createProject readProjectFrom: file.
 	newProj ifNil: [ ^ self ].
