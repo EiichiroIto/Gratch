@@ -10,4 +10,4 @@ os:
   - linux
 
 smalltalk:
-  - Pharo64-10.0
+  - Pharo64-10
