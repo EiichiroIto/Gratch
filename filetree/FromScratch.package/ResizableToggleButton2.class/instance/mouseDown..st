@@ -6,9 +6,9 @@ mouseDown: evt
 
 	evt hand newKeyboardFocus: nil.
 
-	evt yellowButtonPressed ifTrue: [
+	"evt yellowButtonPressed ifTrue: [
 		Sensor waitNoButton.
-		^ self rightButtonMenu].
+		^ self rightButtonMenu]."
 
 	toggleButtonMode
 		ifTrue: [

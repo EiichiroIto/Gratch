@@ -1,4 +1,4 @@
-private
+menu building
 importMenu
 	^ self newMenu
 		addItem: [ :item | 

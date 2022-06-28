@@ -1,6 +1,12 @@
 processes
 stepProcesses
-	process ifNotNil: [ process step ].
-	project ifNotNil: [ self updateStatus ].
+	| oldRunning |
+	oldRunning := self isProcessRunning.
+	oldRunning
+		ifTrue: [ process step ].
+	project ifNotNil: [ self updateStatusForced: false ].
+	(oldRunning or: [ self isProcessRunning ])
+		ifFalse: [ ^ self ].
 	presenter updateDisplay.
-	recorder ifNotNil: [ recorder writeForced: false ]
+	recorder ifNil: [ ^ self ].
+	recorder writeForced: false

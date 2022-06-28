@@ -4,5 +4,6 @@ clickedAt: aPoint
 		ifTrue: [ ^ self nodeClickedAt: aPoint ].
 	self currentBreedNo = GrBreedId edgesBreedNo
 		ifTrue: [ ^ self edgeClickedAt: aPoint ].
-	self updateInspector: 1.
-	self display changed
+	self showInspector: 1.
+	application updateStatusForced: true.
+	self updateDisplay

@@ -3,6 +3,6 @@ div
 	| x y |
 	y := self pop.
 	x := self pop.
-	(y closeTo: 0)
+	y = 0
 		ifTrue: [ ^ self errorOccuered ].
-	self push: (x / y) asFloat.
+	self push: x asFloat / y asFloat

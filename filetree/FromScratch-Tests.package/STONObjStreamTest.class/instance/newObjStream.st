@@ -1,0 +1,3 @@
+private
+newObjStream
+	^ STONObjStream new

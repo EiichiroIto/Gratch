@@ -5,6 +5,11 @@ drawInfoOn: aCanvas
 		, '%)' , (info ifNil: [ '' ]).
 	aCanvas
 		drawString: str
+		at: self topLeft + (6 @ 6)
+		font: nil
+		color: self theme backgroundColor.
+	aCanvas
+		drawString: str
 		at: self topLeft + (5 @ 5)
 		font: nil
-		color: Color white
+		color: self borderColor

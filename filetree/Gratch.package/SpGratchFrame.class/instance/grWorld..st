@@ -1,7 +1,7 @@
 accessing
 grWorld: aWorld
 	| display manipulator |
-	self updateInspector: nil.
+	self showInspector: nil.
 	display := self display.
 	manipulator := GrGraphManipulator new
 		grWorld: aWorld;

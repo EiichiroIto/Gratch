@@ -1,4 +1,4 @@
-private
+menu building
 examplesMenu
 	| m |
 	m := self newMenu.

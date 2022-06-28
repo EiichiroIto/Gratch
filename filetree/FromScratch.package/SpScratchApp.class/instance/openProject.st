@@ -7,7 +7,7 @@ openProject
 		chooseExistingFileReference: 'Open Project' localized
 		extensions: {self class extension}
 		path: self projectDirectory
-		preview: self class projectClass.
+		preview: self class previewClass.
 	file ifNil: [ ^ self ].
 	newProj := self createProject readProjectFrom: file.
 	newProj ifNil: [ ^ self ].

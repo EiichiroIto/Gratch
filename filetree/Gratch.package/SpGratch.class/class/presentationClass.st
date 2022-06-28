@@ -1,0 +1,4 @@
+constants
+presentationClass
+
+	^ SpGratchFrame

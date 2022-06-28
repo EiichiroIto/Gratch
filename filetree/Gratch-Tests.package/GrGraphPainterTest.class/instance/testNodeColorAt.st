@@ -22,6 +22,7 @@ testNodeColorAt
 		at: 3
 		put: ColorList black.
 	p := self newPainter: w.
+	p bgColor: Color black.
 	self assert: (p nodeColorAt: 1) equals: Color red.
 	self assert: (p nodeColorAt: 2) equals: Color white.
 	self assert: (p nodeColorAt: 3) equals: Color white.

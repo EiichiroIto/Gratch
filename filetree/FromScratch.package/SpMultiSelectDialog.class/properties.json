@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "SpDialogPresenter",
+	"category" : "FromScratch-Spec2",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"label",
+		"title",
+		"initialExtent",
+		"acceptLabel",
+		"cancelLabel",
+		"table",
+		"selectedItems"
+	],
+	"name" : "SpMultiSelectDialog",
+	"type" : "normal"
+}

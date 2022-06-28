@@ -6,4 +6,4 @@ withinRadius: r from: n
 	list := list copyWithout: n.
 	list isEmpty
 		ifTrue: [ ^ 0 ].
-	^ list atRandom
+	^ list atRandom: random

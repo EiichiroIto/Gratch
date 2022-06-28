@@ -6,5 +6,5 @@ edgeClickedAt: aPoint
 	e = 0
 		ifTrue: [ ^ self ].
 	e := stageFrame toggleHighlightBreed: GrBreedId edgesBreedNo at: e.
-	self updateInspector: e.
-	self display changed
+	self showInspector: e.
+	self updateDisplay

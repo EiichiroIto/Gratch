@@ -1,0 +1,4 @@
+private
+normalizeVariableName: aString
+
+	^ aString

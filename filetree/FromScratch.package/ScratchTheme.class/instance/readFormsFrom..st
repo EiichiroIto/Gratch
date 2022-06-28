@@ -4,5 +4,8 @@ readFormsFrom: aFileReference
 	aFileReference files
 		do: [ :entry | 
 			fn := entry fullName.
-			Cursor read showWhile: [ img := [ Form fromFileNamed: fn ] ifError: [ self error	"nil" ] ].
-			img ifNotNil: [ self formAt: entry base asSymbol put: img ] ].
+			Cursor read
+				showWhile: [ img := [ Form fromFileNamed: fn ]
+						on: Error
+						do: [ self error	"nil" ] ].
+			img ifNotNil: [ self formAt: entry base asSymbol put: img ] ]

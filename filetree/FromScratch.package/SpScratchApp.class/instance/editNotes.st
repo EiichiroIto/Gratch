@@ -1,9 +1,10 @@
 menu actions
 editNotes
+
 	| ret |
-	ret := UIManager default
-		multiLineRequest: 'Project Notes' localized
-		initialAnswer: project comment
-		answerHeight: 450.
+	self closeMediaEditorsAndDialogs.
+	ret := self
+		       multiLineRequest: 'Project Notes' localized
+		       initialAnswer: project comment.
 	ret ifNil: [ ^ self ].
 	project comment: ret

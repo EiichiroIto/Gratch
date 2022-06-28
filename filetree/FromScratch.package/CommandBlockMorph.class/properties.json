@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "jm 5/10/2004 19:25",
+	"commentStamp" : "",
 	"super" : "BlockMorph",
 	"category" : "FromScratch-Blocks",
 	"classinstvars" : [ ],

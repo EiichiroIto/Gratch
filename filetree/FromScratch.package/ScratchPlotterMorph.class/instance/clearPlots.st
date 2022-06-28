@@ -1,5 +1,6 @@
 api
 clearPlots
-	self
-		reset;
-		updateDisplay
+	data := OrderedCollection new.
+	last := nil.
+	cache := nil.
+	self updateDisplay

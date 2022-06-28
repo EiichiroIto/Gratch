@@ -4,4 +4,4 @@ duplicateBlock: aBlockMorph
 	code := self serializeBlocks: aBlockMorph.
 	obj := self deserializeFrom: code.
 	obj ifNil: [ ^ self ].
-	ActiveHand grabMorph: obj
+	aBlockMorph activeHand grabMorph: obj

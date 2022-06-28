@@ -4,4 +4,5 @@ initialize
 	self color: ScratchTheme plotterPaneColor.
 	self reset.
 	self ensurePenExists: 1.
-	lastUpdateTime := Time now
+	lastUpdateTime := Time now.
+	updatePeriod := 1000

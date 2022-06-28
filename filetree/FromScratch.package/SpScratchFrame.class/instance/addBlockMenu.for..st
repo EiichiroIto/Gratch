@@ -1,4 +1,4 @@
-private
+menu building
 addBlockMenu: aMenu for: aBlockMorph
 	aMenu
 		addGroup: [ :grp | 

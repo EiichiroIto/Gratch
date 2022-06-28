@@ -7,5 +7,5 @@ deserializeFrom: aString
 		importCode: list
 		into: self target.
 	obj ifNil: [ ^ nil ].
-	obj position: ActiveHand position.
+	obj position: World cursorPoint.
 	^ obj

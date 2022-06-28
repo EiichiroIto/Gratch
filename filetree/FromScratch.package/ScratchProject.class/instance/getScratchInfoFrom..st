@@ -6,8 +6,8 @@ getScratchInfoFrom: aFileReference
 	SpScratchApp
 		try: [ f := aFileReference binaryReadStream.
 			version := obj class fileVersion: self class from: f.
-			version = self class appVersion
-				ifFalse: [ self inform: 'Invalid app version!' localized.
+			version = self class fileVersion
+				ifFalse: [ self inform: 'Invalid file version!' localized.
 					^ nil ].
 			buf := f next: f uint32.
 			result := obj readObjFrom: (ReadStream on: buf).

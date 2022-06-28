@@ -4,4 +4,4 @@ random: bno except: id
 	list := (self breedOf: bno) livingElements copyWithout: id.
 	list isEmpty
 		ifTrue: [ ^ 0 ].
-	^ list atRandom
+	^ list atRandom: random

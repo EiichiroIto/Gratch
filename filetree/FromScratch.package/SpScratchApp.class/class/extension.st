@@ -1,3 +1,3 @@
-accessing
+constants
 extension
 	self subclassResponsibility

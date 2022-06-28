@@ -1,3 +1,3 @@
-accessing
+constants
 appName
 	self subclassResponsibility

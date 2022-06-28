@@ -4,6 +4,6 @@ mouseDown: evt
 
 	evt hand newKeyboardFocus: nil.
 	evt yellowButtonPressed
-		ifTrue: [ Sensor waitNoButton.
+		ifTrue: [ "Sensor waitNoButton."
 			^ self rightButtonMenu: evt ].
 	evt hand waitForClicksOrDrag: self event: evt

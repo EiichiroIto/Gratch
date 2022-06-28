@@ -1,4 +1,4 @@
-accessing
+settings
 optionsFor: aSymbol
 	aSymbol = #stickyWindow
 		ifTrue: [ ^ {true . false} ].

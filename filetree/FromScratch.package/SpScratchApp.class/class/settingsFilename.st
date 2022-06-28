@@ -1,3 +1,3 @@
-private
+settings
 settingsFilename
 	^ 'settings.ston'

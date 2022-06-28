@@ -1,0 +1,3 @@
+constants
+fileVersion
+	self subclassResponsibility

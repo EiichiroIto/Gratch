@@ -1,0 +1,3 @@
+constants
+aboutAppString
+	self subclassResponsibility

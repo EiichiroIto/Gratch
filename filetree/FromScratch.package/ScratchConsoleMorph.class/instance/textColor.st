@@ -1,0 +1,3 @@
+private
+textColor
+	^ Color green

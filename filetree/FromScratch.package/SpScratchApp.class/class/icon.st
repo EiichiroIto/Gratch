@@ -1,4 +1,4 @@
-private
+constants
 icon
 	^ (Form
 	extent: (16@16)

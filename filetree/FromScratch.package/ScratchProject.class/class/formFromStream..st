@@ -2,7 +2,7 @@ accessing
 formFromStream: aStream
 	| version info |
 	version := self objStreamClass fileVersion: self from: aStream.
-	version = self appVersion
+	version = self fileVersion
 		ifFalse: [ ^ nil ].
 	aStream skip: 4.
 	info := self objStreamClass new

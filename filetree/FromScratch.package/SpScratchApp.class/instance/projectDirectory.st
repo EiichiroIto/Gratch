@@ -1,4 +1,4 @@
 accessing
 projectDirectory
 	^ projectDirectory
-		ifNil: [ projectDirectory := self class projectDir asFileReference ]
+		ifNil: [ self class projectDir asFileReference ]

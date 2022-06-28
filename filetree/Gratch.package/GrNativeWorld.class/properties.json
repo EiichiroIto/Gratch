@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"breeds",
-		"raisedEvents"
+		"raisedEvents",
+		"random"
 	],
 	"name" : "GrNativeWorld",
 	"type" : "normal"

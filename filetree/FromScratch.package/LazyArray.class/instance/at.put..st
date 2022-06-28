@@ -5,4 +5,4 @@ at: anInteger put: aValue
 				ifTrue: [ ^ self ].
 			self assureExistsIndex: anInteger.
 			self assert: anInteger <= self size ].
-	array at: anInteger put: aValue
+	array at: anInteger asInteger put: aValue

@@ -1,0 +1,4 @@
+private
+normalizeModuleName: aString
+
+	^ aString

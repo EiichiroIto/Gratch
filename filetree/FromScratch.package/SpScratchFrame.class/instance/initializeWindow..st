@@ -2,8 +2,5 @@ initialization
 initializeWindow: aWindow
 	aWindow
 		initialExtent: self defaultExtent;
-		aboutText: application aboutAppString;
-		whenClosedDo: [ application windowClosing ].
-	application class stickyWindow
-		ifTrue: [ aWindow window beSticky ].
-	self updateDontCloseSetting
+		aboutText: application class aboutAppString;
+		whenClosedDo: [ application windowClosing ]

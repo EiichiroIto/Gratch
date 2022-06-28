@@ -1,0 +1,3 @@
+constants
+presentationClass
+	self subclassResponsibility

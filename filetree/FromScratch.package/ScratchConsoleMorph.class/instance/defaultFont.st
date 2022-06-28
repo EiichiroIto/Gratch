@@ -1,0 +1,3 @@
+private
+defaultFont
+	^ StandardFonts codeFont

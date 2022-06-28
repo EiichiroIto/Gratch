@@ -25,6 +25,7 @@ testEdgeColorAt
 		at: 3
 		put: ColorList black.
 	p := self newPainter: w.
+	p bgColor: Color black.
 	self assert: (p edgeColorAt: 1) equals: Color red.
 	self assert: (p edgeColorAt: 2) equals: Color white.
 	self assert: (p edgeColorAt: 3) equals: Color white.

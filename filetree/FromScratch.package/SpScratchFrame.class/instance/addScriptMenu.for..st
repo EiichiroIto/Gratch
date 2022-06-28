@@ -1,4 +1,4 @@
-private
+menu building
 addScriptMenu: aMenu for: aScript
 	SpScratchApp clipboard isString
 		ifTrue: [ aMenu
@@ -12,7 +12,7 @@ addScriptMenu: aMenu for: aScript
 				addItem: [ :item | 
 					item
 						name: 'add sub block' localized;
-						action: [ application addSubBlock: ActiveHand cursorPoint script: aScript ] ] ];
+						action: [ application addSubBlock: World cursorPoint script: aScript ] ] ];
 		addGroup: [ :grp | 
 			grp
 				addItem: [ :item | 

@@ -1,11 +1,12 @@
 menu actions
 setMaxPlotSize: aPlotter
+
 	| ret |
-	ret := UIManager default
-		request: 'number of max plots?' localized
-		initialAnswer: (aPlotter maxSize ifNil: [ '' ]) asString.
+	ret := SpScratchApp
+		       request: 'number of max plots?' localized
+		       initialAnswer: (aPlotter maxSize ifNil: [ '' ]) asString.
 	ret ifNil: [ ^ self ].
 	ret := ret isEmpty
-		ifTrue: [ nil ]
-		ifFalse: [ ret asNumberNoError ].
+		       ifTrue: [ nil ]
+		       ifFalse: [ ret asNumberNoError ].
 	aPlotter maxSize: ret

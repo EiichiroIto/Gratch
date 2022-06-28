@@ -1,4 +1,4 @@
-accessing
+settings
 loadSettings
 	| fr dict |
 	fr := FileSystem workingDirectory / self settingsFilename.

@@ -22,6 +22,8 @@ blocks
 			-
 			('clear nodes'						-	clearNodes)
 			('clear edges'						-	clearEdges)
+			-
+			('set random seed %n'					-	setRandomSeed: 0)
 		'control'
 			('when setup'						T	-)
 	).

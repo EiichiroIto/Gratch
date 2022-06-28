@@ -1,3 +1,3 @@
-accessing
+constants
 objStreamClass
 	self subclassResponsibility

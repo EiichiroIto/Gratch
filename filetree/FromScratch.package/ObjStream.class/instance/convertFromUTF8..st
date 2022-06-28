@@ -1,3 +1,3 @@
 private
-convertFromUTF8: aString
-	^ UTF8TextConverter new convertFromSystemString: aString asString asByteString
+convertFromUTF8: aByteArray
+	^ ZnUTF8Encoder default decodeBytes: aByteArray

@@ -2,4 +2,5 @@ entry points
 storeObj: anObject on: aStream
 	| str |
 	str := STON toString: anObject.
-	aStream nextPutAll: str asByteArray
+	str := ZnUTF8Encoder default encodeString: str.
+	aStream nextPutAll: str

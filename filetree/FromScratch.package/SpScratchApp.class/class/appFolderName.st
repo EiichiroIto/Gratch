@@ -1,3 +1,3 @@
-accessing
+constants
 appFolderName
 	self subclassResponsibility

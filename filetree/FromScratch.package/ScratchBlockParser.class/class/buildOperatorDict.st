@@ -11,6 +11,7 @@ buildOperatorDict
 	OperatorDict at: #> put: #more:than:.
 	OperatorDict at: #& put: #and:with:.
 	OperatorDict at: #| put: #or:with:.
+	OperatorDict at: #// put: #div:by:.
 	OperatorDict at: #\\ put: #mod:by:.
 	InvOperatorDict := Dictionary new.
 	OperatorDict

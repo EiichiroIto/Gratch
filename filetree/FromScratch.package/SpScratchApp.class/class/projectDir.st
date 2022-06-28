@@ -1,4 +1,4 @@
-accessing
+settings
 projectDir
 	| file dict |
 	file := self settings
@@ -9,5 +9,6 @@ projectDir
 	file := (file trimBoth format: dict) asFileReference.
 	file isDirectory
 		ifFalse: [ [ file createDirectory ]
-				ifError: [ file := FileSystem workingDirectory ] ].
+				on: Error
+				do: [ file := FileSystem workingDirectory ] ].
 	^ file pathString

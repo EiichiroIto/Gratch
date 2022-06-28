@@ -1,4 +1,5 @@
 private
 closeMediaEditorsAndDialogs
-	SpDialogWindow allInstances do: #cancel.
-	DialogWindow allInstances do: #cancel
+
+	(self currentWorld submorphs select: [ :each | 
+		 each isKindOf: DialogWindowMorph ]) do: #delete

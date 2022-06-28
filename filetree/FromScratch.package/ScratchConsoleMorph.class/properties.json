@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Morph",
+	"category" : "FromScratch-Morphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"font",
+		"charExtent",
+		"screen",
+		"screenSize",
+		"cursor"
+	],
+	"name" : "ScratchConsoleMorph",
+	"type" : "normal"
+}

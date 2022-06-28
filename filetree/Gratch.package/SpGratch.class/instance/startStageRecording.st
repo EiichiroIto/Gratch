@@ -10,4 +10,4 @@ startStageRecording
 		openFileNamed: file;
 		model: presenter;
 		extent: self class recodingExtent.
-	self updateStatus
+	self updateStatusForced: true

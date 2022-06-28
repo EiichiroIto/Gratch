@@ -1,0 +1,3 @@
+constants
+previewClass
+	^ self projectClass

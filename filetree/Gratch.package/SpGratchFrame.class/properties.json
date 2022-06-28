@@ -11,7 +11,8 @@
 		"buttonSave",
 		"buttonOpen",
 		"inspectorPane",
-		"inspectorTarget"
+		"inspectorTarget",
+		"libraryPane"
 	],
 	"name" : "SpGratchFrame",
 	"type" : "normal"

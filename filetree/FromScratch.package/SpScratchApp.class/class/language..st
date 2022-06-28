@@ -1,4 +1,4 @@
-accessing
+settings
 language: aString
 	| old |
 	old := self language.

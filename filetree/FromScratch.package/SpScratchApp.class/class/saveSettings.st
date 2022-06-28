@@ -1,4 +1,4 @@
-accessing
+settings
 saveSettings
 	| fr stream |
 	fr := FileSystem workingDirectory / self settingsFilename.
