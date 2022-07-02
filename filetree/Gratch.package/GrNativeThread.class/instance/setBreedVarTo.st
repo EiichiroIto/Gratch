@@ -4,7 +4,7 @@ setBreedVarTo
 	bno := self pop.
 	var := self pop.
 	val := self pop.
-	index := self pop.
+	index := self pop asInteger.
 	grWorld
 		var: var
 		breed: bno

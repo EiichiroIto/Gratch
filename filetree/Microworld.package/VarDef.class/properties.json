@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Microworld-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"varNames",
+		"reservedVarNames",
+		"varClasses"
+	],
+	"name" : "VarDef",
+	"type" : "normal"
+}

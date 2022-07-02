@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ScratchBytecodeSymbol",
+	"category" : "Microworld-Bytecode",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"labelId",
+		"address"
+	],
+	"name" : "ScratchBytecodeSymbolWithJump",
+	"type" : "normal"
+}

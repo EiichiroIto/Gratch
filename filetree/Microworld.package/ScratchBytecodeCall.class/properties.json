@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ScratchBytecode",
+	"category" : "Microworld-Bytecode",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"subName",
+		"address"
+	],
+	"name" : "ScratchBytecodeCall",
+	"type" : "normal"
+}

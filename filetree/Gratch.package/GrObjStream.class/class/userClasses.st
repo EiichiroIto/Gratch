@@ -16,4 +16,9 @@ userClasses
 		"(122 	GrElementsVarId)"
 		(123 	GrGraph)
 		(124 	GrGraphVarDef)
+		(130 	EventId)
+		(131		Variables)
+		(132		VarDef)
+		(133 	LazyArray)
+		(134 	StringArray)
 	)
