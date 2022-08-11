@@ -27,6 +27,9 @@ Once you have created the settings.ston file, you can change the options from th
 - stickyWindow
 - useErrorCatcher
 - projectDir
+- hideDebugMenu
+- resizable
+- fullscreen
 
 ## dontClose
 The dontClose option disables the window close button.
@@ -58,4 +61,22 @@ Possible options are true or false.
 ## projectDir
 The projectDir option specifies the directory name to open/save projects.
 
-Possible option is a string of the directory. It can be included '{documents}' for system's documents directory.
+Possible option is a string of the directory.
+It can be included '{documents}' for system's documents directory.
+
+## hideDebugMenu
+The hideDebugMenu option disables Help-Inspect and Help-Settings menu items.
+
+Possible options are true or false.
+
+## resizable
+The resizable option specifies whether the application's window can be resized.
+If the resizable option is true, window decorations will not be displayed.
+
+Possible options are true or false.
+
+## fullscreen
+The fullscreen option maximizes the application's screen in the host's windowing environment.
+Note that it may not work depending on the host window environment.
+
+Possible options are true or false.
