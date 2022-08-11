@@ -1,4 +1,4 @@
 class initialization
 initialize
 	Clipboard := nil.
-	Settings := nil
+	UseErrorCatcher := false

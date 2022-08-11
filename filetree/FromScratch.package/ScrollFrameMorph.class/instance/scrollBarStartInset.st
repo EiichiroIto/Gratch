@@ -1,0 +1,3 @@
+private
+scrollBarStartInset
+	^ 10

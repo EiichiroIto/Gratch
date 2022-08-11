@@ -1,0 +1,3 @@
+private
+vbarInset
+	^ 25

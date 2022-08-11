@@ -1,5 +1,5 @@
 change reporting
 displayExtentChanged
-	self class keepMaximize
+	settings keepMaximize
 		ifFalse: [ ^ self ].
 	presenter window window fullscreen

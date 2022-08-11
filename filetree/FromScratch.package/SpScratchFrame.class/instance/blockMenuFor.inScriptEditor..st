@@ -1,4 +1,4 @@
-accessing
+menu building
 blockMenuFor: aBlockMorph inScriptEditor: aBoolean
 	| menu |
 	aBoolean

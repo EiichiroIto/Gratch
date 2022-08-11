@@ -7,7 +7,7 @@ visibleExtent
 	clipToScrollBarEdge ifFalse: [^ self extent - (2 * borderWidth)].
 
 	visibleW := self width - (2 * borderWidth).
-	vScrollbar owner = self ifTrue: [visibleW := visibleW - vbarInset].
+	vScrollbar owner = self ifTrue: [visibleW := visibleW - self vbarInset].
 	visibleH := self height - (2 * borderWidth).
-	hScrollbar owner = self ifTrue: [visibleH := visibleH - hbarInset].
+	hScrollbar owner = self ifTrue: [visibleH := visibleH - self hbarInset].
 	^ visibleW@visibleH

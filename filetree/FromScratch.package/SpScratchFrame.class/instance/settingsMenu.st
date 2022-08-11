@@ -4,20 +4,17 @@ settingsMenu
 	| m |
 	m := self newMenu.
 	m addGroup: [ :grp | 
-		self application class settingKeys do: [ :key | 
+		self application settingKeys do: [ :key | 
 			grp addItem: [ :item | 
 				item
-					name:
-						key , ' = '
-						, (self application class settingValueFor: key) asString;
+					name: key , ' = ' , (application settingAt: key) asString;
 					action: [ 
-						self selectSetting: key.
-						item name:
-								key , ' = '
-								, (self application class settingValueFor: key) asString ] ] ] ].
+						application selectSetting: key.
+						self updateWindowSettings.
+						item name: key , ' = ' , (application settingAt: key) asString ] ] ] ].
 	m addGroup: [ :grp | 
 		grp addItem: [ :item | 
 			item
 				name: 'Save settings' localized;
-				action: [ self application class saveSettings ] ] ].
+				action: [ application saveSettings ] ] ].
 	^ m

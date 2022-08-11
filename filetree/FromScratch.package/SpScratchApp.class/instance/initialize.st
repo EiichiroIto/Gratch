@@ -1,5 +1,7 @@
 initialization
 initialize
-	self class loadSettings.
-	ScratchTranslator setLocale: self class language.
+
+	settings := self class settingsClass new.
+	self loadSettings.
+	ScratchTranslator setLocale: settings language.
 	super initialize

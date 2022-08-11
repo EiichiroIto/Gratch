@@ -3,7 +3,7 @@ createEditorPage
 	editor := self newMorph.
 	editor
 		morph:
-			(ScrollFrameMorph2 new
+			(ScrollFrameMorph new
 				growthFraction: 0.1;
 				color: ScratchTheme scriptsPaneColor).
 	^ SpNotebookPage

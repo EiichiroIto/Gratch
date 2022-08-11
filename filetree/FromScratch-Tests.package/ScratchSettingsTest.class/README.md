@@ -1,0 +1,1 @@
+A ScratchSettingsTest is a test class for testing the behavior of ScratchSettings

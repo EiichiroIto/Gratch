@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "jm 6/3/2004 16:36",
+	"commentStamp" : "",
 	"super" : "BorderedMorph",
 	"category" : "FromScratch-Morphic",
 	"classinstvars" : [ ],
@@ -9,9 +9,6 @@
 		"contents",
 		"hScrollbar",
 		"vScrollbar",
-		"cornerMorph",
-		"hbarInset",
-		"vbarInset",
 		"contentsChanged",
 		"growthFraction"
 	],

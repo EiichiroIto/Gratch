@@ -7,4 +7,6 @@ multiSelect: aString chooseFrom: aCollection selectedItems: aCollection2
 		  items: aCollection;
 		  selectedItems: aCollection2;
 		  display: [ :each | each ];
+			acceptLabel: 'OK' localized;
+			cancelLabel: 'Cancel' localized;
 		  openModal

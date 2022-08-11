@@ -47,7 +47,7 @@ fileMenu
 				item
 					name: 'Close' localized;
 					action: [ application closeAllWindows ];
-					enabled: [ application class dontClose not ] ];
+					enabled: [ self settings dontClose not ] ];
 			addItem: [ :item | 
 				item
 					name: 'Quit' localized;

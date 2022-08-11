@@ -1,6 +1,6 @@
 accessing
 try: aBlock onFailure: anErrorBlock
-	^ self useErrorCatcher
+	^ UseErrorCatcher
 		ifTrue: [ aBlock
 				on: Error
 				do: anErrorBlock ]

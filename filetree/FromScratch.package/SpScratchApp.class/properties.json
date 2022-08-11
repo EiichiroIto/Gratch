@@ -6,12 +6,13 @@
 	"pools" : [ ],
 	"classvars" : [
 		"Clipboard",
-		"Settings"
+		"UseErrorCatcher"
 	],
 	"instvars" : [
 		"presenter",
 		"project",
-		"projectDirectory"
+		"projectDirectory",
+		"settings"
 	],
 	"name" : "SpScratchApp",
 	"type" : "normal"

@@ -1,4 +1,4 @@
-accessing
+menu building
 scriptMenuFor: aScript
 	| menu |
 	menu := self newMenu.

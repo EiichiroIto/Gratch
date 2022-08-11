@@ -13,11 +13,11 @@ helpMenu
 		  addItem: [ :item | 
 			  item
 				  name: 'Inspect';
-				  enabled: [ application class hideDebugMenu not ];
+				  enabled: [ self settings hideDebugMenu not ];
 				  action: [ application inspect ] ];
 		  addItem: [ :item | 
 			  item
 				  name: 'Settings';
-				  enabled: [ application class hideDebugMenu not ];
+				  enabled: [ self settings hideDebugMenu not ];
 				  subMenu: self settingsMenu ];
 		  yourself

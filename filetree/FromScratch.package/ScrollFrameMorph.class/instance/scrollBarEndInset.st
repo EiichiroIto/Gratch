@@ -1,0 +1,3 @@
+private
+scrollBarEndInset
+	^ 14

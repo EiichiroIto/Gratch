@@ -2,31 +2,24 @@ initialization
 initialize
 
 	super initialize.
-	self color: Color red.
-	hbarInset := 12.
-	vbarInset := 12.
+	self borderWidth: 0.
+	self color: Color blue.
 	contentsChanged := false.
-	growthFraction := 0.6.  "amount to grow when contents do not fit as a fraction of the current size"
+	growthFraction := 0.6.
 
 	contents := PasteUpMorph new
-		color: Color red;
-		borderWidth: 0;
-		enableDragNDrop: true.
-
-	hScrollbar := ScrollBar new
-		model: self;
-		setValueSelector: #hScrollRelative:";
-		hasMenuButton: false".
-	vScrollbar := ScrollBar new
-		model: self;
-		setValueSelector: #vScrollRelative:";
-		hasMenuButton: false".
-	cornerMorph := BorderedMorph new
-		borderRaised; borderWidth: 2; color: hScrollbar color.
+		            color: (Color gray: 0.9);
+		            borderWidth: 0;
+		            enableDragNDrop: true.
+	hScrollbar := ScratchScrollBar newHorizontal
+		              target: self;
+		              selector: #hScrollRelative:.
+	vScrollbar := ScratchScrollBar newVertical
+		              target: self;
+		              selector: #vScrollRelative:.
 
 	contents position: self position + borderWidth.
 	self addMorph: contents.
 	self addMorph: hScrollbar.
 	self addMorph: vScrollbar.
-	self addMorph: cornerMorph.
-	self extent: 160@120.
+	self extent: 160 @ 120
