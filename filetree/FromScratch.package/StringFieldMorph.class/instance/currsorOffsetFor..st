@@ -5,7 +5,7 @@ currsorOffsetFor: characterOffset
 	| s xRanges xPairChar0 xPairCharLast startsOnLeft r xPairCharOffset |
 	stringMorph contents size = 0 ifTrue: [^ 0].
 
-	s := stringMorph stringToDisplay.
+	s := stringMorph contents.
 	xRanges := stringMorph xRangesFor: s.
 	xPairChar0 := xRanges at: 1.
 	xPairCharLast := xRanges last.

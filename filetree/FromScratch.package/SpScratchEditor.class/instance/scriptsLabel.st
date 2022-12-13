@@ -1,3 +1,3 @@
 private
 scriptsLabel
-	^ 'Scripts'
+	^ 'Scripts' localized

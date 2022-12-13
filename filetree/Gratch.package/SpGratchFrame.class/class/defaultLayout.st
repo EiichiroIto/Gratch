@@ -24,8 +24,7 @@ defaultLayout
 								     add: #editorPane;
 								     yourself);
 						    add: (SpBoxLayout newVertical
-								     add: #titlePane
-								     withConstraints: [ :c | c height: self titleButtonHeight ];
+								     add: #titlePane withConstraints: [ :c | c expand: false ];
 								     add: #stageFrame;
 								     add: #libraryPane
 								     withConstraints: [ :c | c height: self libraryPaneHeight ];

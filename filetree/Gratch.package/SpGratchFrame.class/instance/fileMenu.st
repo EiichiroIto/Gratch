@@ -51,5 +51,5 @@ fileMenu
 			addItem: [ :item | 
 				item
 					name: 'Quit' localized;
-					action: [ application quit ] ] ].
+					action: [ application class quit ] ] ].
 	^ m

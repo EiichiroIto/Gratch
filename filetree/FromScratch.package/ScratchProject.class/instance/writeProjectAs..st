@@ -22,7 +22,7 @@ writeProjectAs: aFileReference
 					self storeProjectInfoOn: out.
 					self newObjStream storeObj: self on: out.
 					out close ] ]
-		onFailure: [ :err :rcvr | 
+		onFailure: [ :err | 
 			out ifNotNil: [ 
 				[ 
 				out close.
@@ -32,7 +32,7 @@ writeProjectAs: aFileReference
 			saveError := err ].
 	self scripts do: [ :m | m convertTuplesToStacks ].
 	saveError ifNotNil: [ 
-		SpScratchApp alert: saveError title: 'Save failed' localized.
+		SpScratchApp alert: saveError.
 		^ false ].
 	aFileReference deleteIfAbsent: [  ].
 	[ tmpFile renameTo: aFileReference basename ]

@@ -1,3 +1,4 @@
 *FromScratch
 stringHeight: aString
-	^ (font ifNil: [ TextStyle defaultFont ]) height ceiling
+
+	^ self fontToUse height ceiling

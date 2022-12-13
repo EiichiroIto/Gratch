@@ -9,6 +9,7 @@ openProject
 		path: self projectDirectory
 		preview: self class previewClass.
 	file ifNil: [ ^ self ].
+	file isFile ifFalse: [ ^ self ].
 	newProj := self createProject readProjectFrom: file.
 	newProj ifNil: [ ^ self ].
 	self projectDirectory: file parent.

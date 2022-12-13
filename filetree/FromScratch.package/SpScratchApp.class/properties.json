@@ -12,7 +12,8 @@
 		"presenter",
 		"project",
 		"projectDirectory",
-		"settings"
+		"settings",
+		"extraDirectory"
 	],
 	"name" : "SpScratchApp",
 	"type" : "normal"

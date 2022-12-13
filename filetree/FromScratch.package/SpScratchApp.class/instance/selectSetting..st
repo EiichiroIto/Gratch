@@ -1,7 +1,7 @@
 settings
 selectSetting: aSymbol
 
-	| list ret |
+	| list ret old |
 	self closeMediaEditorsAndDialogs.
 	list := settings optionsFor: aSymbol.
 	ret := list = #string
@@ -15,4 +15,14 @@ selectSetting: aSymbol
 				       select: 'Select an option for ' localized , aSymbol
 				       chooseFrom: list ].
 	ret ifNil: [ ^ self ].
-	self settingAt: aSymbol put: ret
+	ret = (self settingAt: aSymbol) ifTrue: [ ^ self ].
+	self settingAt: aSymbol put: ret.
+	aSymbol = #language ifFalse: [ ^ self ].
+	(self confirm: 'Language settings has changed. Restart application?') 
+		ifFalse: [ ^ self ].
+	old := self settingAt: #dontClose.
+	self settingAt: #dontClose put: false.
+	presenter updateWindowSettings.
+	self closeAllWindows.
+	self settingAt: #dontClose put: old.
+	self class openWithSettings: settings

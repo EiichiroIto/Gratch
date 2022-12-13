@@ -7,9 +7,10 @@ importFileWithExtension: aString isBinary: aBoolean
 	file := UIManager default
 		        chooseExistingFileReference: 'Import ...' localized
 		        extensions: { aString }
-		        path: self projectDirectory.
+		        path: self extraDirectory.
 	file ifNil: [ ^ nil ].
 	file isFile ifFalse: [ ^ nil ].
+	self extraDirectory: file parent.
 	f := aBoolean
 		     ifTrue: [ file binaryReadStream ]
 		     ifFalse: [ file readStream ].

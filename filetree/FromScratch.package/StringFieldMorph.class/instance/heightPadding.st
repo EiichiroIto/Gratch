@@ -1,0 +1,4 @@
+private
+heightPadding
+
+	^ 3

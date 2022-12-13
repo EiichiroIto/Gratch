@@ -7,8 +7,9 @@ exportString: aContentsString extension: aString isBinary: aBoolean
 	file := UIManager default
 		        chooseForSaveFileReference: 'Export ...' localized
 		        extensions: { aString }
-		        path: self projectPath.
+		        path: self extraPath.
 	file ifNil: [ ^ self ].
+	self extraDirectory: file parent.
 	f := nil.
 	self class
 		try: [ 

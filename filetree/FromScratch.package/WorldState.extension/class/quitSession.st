@@ -1,0 +1,4 @@
+*FromScratch
+quitSession
+
+	SpScratchApp quit

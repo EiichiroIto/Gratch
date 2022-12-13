@@ -4,5 +4,5 @@ menuCommandOn: aBuilder
 	(aBuilder item: self appName asSymbol)
 		order: 0.5;
 		target: self;
-		action: [self new open]; 
+		action: [self open]; 
 		icon: self icon

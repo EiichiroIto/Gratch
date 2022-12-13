@@ -9,8 +9,6 @@ initialize
 
 	"To allow for editing in place."
 	labelMorph := StringFieldMorph new
-		forExpressionArg;
-		doResizing: true;
 		font: ScratchTranslator argFont;
 		color: Color transparent.
 	self addMorph: labelMorph.

@@ -6,7 +6,7 @@ characterOffsetForXOffset: screenX
 	stringMorph contents size = 0 ifTrue: [^ 0].
 
 	x := screenX - stringMorph leftMargin.  "x offset within the string"
-	xRanges := stringMorph xRangesFor: stringMorph stringToDisplay.
+	xRanges := stringMorph xRangesFor: stringMorph contents.
 
 	1 to: xRanges size do: [:i |
 		p := xRanges at: i.

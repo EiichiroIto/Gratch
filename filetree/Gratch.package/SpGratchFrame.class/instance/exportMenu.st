@@ -12,9 +12,9 @@ exportMenu
 		addItem: [ :item | 
 			item
 				name: 'Export Script image' localized;
-				action: [ application saveScriptsToImage ] ];
+				action: [ application exportScriptImage ] ];
 		addItem: [ :item | 
 			item
 				name: 'Export Graph image' localized;
-				action: [ application saveGraphAsImage ] ];
+				action: [ application exportGraphImage ] ];
 		yourself

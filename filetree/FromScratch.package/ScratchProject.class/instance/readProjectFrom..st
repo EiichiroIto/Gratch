@@ -12,8 +12,8 @@ readProjectFrom: aFileReference
 			projData := f contents.
 			newProj := self extractProjectFrom: projData.
 			newProj extractInfoFrom: projData ]
-		onFailure: [ :err :rcvr | 
-			SpScratchApp alert: err.
+		onFailure: [ :err | 
+			SpScratchApp alert: err messageText.
 			^ nil ].
 	self modified: false.
 	^ newProj

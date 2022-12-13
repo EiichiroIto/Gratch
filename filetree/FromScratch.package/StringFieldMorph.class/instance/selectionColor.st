@@ -1,0 +1,4 @@
+private
+selectionColor
+
+	^ ScratchTheme textSelectionColor

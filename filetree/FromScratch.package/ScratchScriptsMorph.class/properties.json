@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "PasteUpMorph",
+	"super" : "BlockPlateMorph",
 	"category" : "FromScratch-Blocks",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"feedbackMorph",
-		"screenshooting",
-		"project"
+		"screenshooting"
 	],
 	"name" : "ScratchScriptsMorph",
 	"type" : "normal"

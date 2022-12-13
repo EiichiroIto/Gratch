@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "PasteUpMorph",
+	"category" : "FromScratch-Blocks",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"draggingPoint",
+		"scrollPoint",
+		"project"
+	],
+	"name" : "BlockPlateMorph",
+	"type" : "normal"
+}

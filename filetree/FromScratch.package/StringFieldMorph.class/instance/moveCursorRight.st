@@ -1,7 +1,8 @@
 text editing
 moveCursorRight
+
 	"Move the cursor (selectionStart) right by one character."
 
-	self moveCursorRightAndSelect.
+	selectionStart := selectionEnd + 1 min: stringMorph contents size.
 	selectionEnd := selectionStart.
-	self changed.
+	self changed

@@ -1,3 +1,7 @@
 accessing
 availableLocaleFiles
-	^ 'locale' asFileReference filesMatching: '*.po'
+
+	| fr |
+	fr := 'locale' asFileReference.
+	fr isDirectory ifFalse: [ ^ #(  ) ].
+	^ fr filesMatching: '*.po'
