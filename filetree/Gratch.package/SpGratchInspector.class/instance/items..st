@@ -1,7 +1,7 @@
 accessing
 items: aCollection
 
-	| items |
-	items := tableVars selectedItems.
+	| index |
+	index := tableVars selectionMode selectedIndex.
 	tableVars items: aCollection.
-	items notEmpty ifTrue: [ tableVars selectItems: items ]
+	index > 0 ifTrue: [ tableVars selectIndex: index ]

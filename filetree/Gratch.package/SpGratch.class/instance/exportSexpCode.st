@@ -1,3 +1,7 @@
 menu actions
 exportSexpCode
-	self export: (ScratchSexpExporter appName: self appName) extension: self sexpExtension
+
+	self
+		export: (ScratchSexpExporter appName: self appName)
+		extension: self sexpExtension
+		isBinary: false

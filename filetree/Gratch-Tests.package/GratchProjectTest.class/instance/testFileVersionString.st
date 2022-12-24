@@ -1,5 +1,6 @@
 test
 testFileVersionString
-	| p |
-	p := self newProject.
-	self assert: p class fileVersionString equals: 'GratchV02'
+
+	| obj |
+	obj := self newProject newProjectReadWriter.
+	self assert: obj fileVersionString equals: 'GratchV02'

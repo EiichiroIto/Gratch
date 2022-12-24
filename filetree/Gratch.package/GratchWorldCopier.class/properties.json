@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Gratch-Converter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"from",
+		"to",
+		"fromVarIds",
+		"toVarIds",
+		"fromNodes",
+		"toNodes"
+	],
+	"name" : "GratchWorldCopier",
+	"type" : "normal"
+}

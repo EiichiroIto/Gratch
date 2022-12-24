@@ -2,4 +2,4 @@ test
 testFileVersion
 	| p |
 	p := self newProject.
-	self assert: p fileVersion equals: 2
+	self assert: p class fileVersion equals: 2

@@ -1,4 +1,4 @@
-acccessing
+accessing
 import: aString to: anApplication
 	| reader |
 	reader := GrGdfReader new.

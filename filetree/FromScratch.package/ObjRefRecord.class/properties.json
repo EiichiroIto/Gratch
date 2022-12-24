@@ -1,7 +1,7 @@
 {
-	"commentStamp" : "jm 9/28/2003 11:18",
+	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "FromScratch-Project",
+	"category" : "FromScratch-Converter",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

@@ -6,4 +6,4 @@ testStringOfWorldName
 	self assert: r equals: ' (test)'.
 	a privRecorder: true.
 	r := a stringOfWorldName: 'abc'.
-	self assert: r equals: ' (abc) (Recording)'
+	self assert: r equals: ' (abc)' , ' (Recording)' localized

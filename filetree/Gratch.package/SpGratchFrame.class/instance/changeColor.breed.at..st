@@ -1,10 +1,24 @@
 inspecting
 changeColor: vno breed: bno at: id
 
-	| dialog cno |
-	dialog := self instantiate: SpColorList.
-	dialog openModal cancelled ifTrue: [ ^ self ].
-	cno := dialog selectedColor.
+	| selection cno |
+	selection := SpSelectDialog new
+		             title: 'Color selection' localized;
+		             label: 'Select a color' localized;
+		             acceptLabel: 'OK' localized;
+		             cancelLabel: 'Cancel' localized;
+		             items: ColorList colorNames;
+		             display: [ :each | each ];
+		             displayIcon: [ :each | 
+			             Morph new
+				             extent: 20 @ 20;
+				             color:
+					             (ColorList default realColorAt:
+							              (ColorList colorOf: each asSymbol));
+				             yourself ];
+		             openModal.
+	selection ifNil: [ ^ self ].
+	cno := ColorList colorOf: selection.
 	self grWorld
 		var: vno
 		breed: bno

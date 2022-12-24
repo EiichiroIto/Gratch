@@ -1,3 +1,3 @@
-file read/write
+accessing
 thumbnailForm: aForm
 	info at: 'thumbnail' put: aForm

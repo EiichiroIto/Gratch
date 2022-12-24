@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "FromScratch-Converter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"objStream",
+		"fileVersion",
+		"fileVersionTag"
+	],
+	"name" : "ScratchProjectReadWriter",
+	"type" : "normal"
+}

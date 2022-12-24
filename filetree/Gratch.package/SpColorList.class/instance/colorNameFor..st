@@ -1,3 +1,0 @@
-private
-colorNameFor: anObject
-	^ anObject

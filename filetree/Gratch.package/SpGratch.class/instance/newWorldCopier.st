@@ -1,0 +1,4 @@
+private
+newWorldCopier
+
+	^ GratchWorldCopier new

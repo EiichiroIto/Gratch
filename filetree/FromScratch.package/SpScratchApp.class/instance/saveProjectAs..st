@@ -4,7 +4,7 @@ saveProjectAs: aFileReference
 	targetName := presenter target objName.
 	project
 		thumbnailForm: (presenter stageShotExtent: self class thumbnailExtent).
-	(project writeProjectAs: aFileReference)
+	(self writeProjectAs: aFileReference)
 		ifFalse: [ ^ false ].
 	self projectName: aFileReference base.
 	self projectDirectory: aFileReference parent.

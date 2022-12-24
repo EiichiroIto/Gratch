@@ -1,0 +1,4 @@
+accessing
+objStream
+
+	^ objStream

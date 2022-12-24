@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "ObjStream",
-	"category" : "Gratch-Project",
+	"category" : "Gratch-Converter",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

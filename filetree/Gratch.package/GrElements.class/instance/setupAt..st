@@ -1,3 +1,4 @@
 microworld
 setupAt: index
-	self subclassResponsibility.
+
+	self clearAt: index

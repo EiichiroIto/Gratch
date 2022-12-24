@@ -1,3 +1,4 @@
 constants
 labelFont
-	^ nil
+
+	^ StandardFonts balloonFont
