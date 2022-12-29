@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Gratch-Model",
+	"category" : "Microworld-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [

@@ -13,7 +13,7 @@ changeColor: vno breed: bno at: id
 			             Morph new
 				             extent: 20 @ 20;
 				             color:
-					             (ColorList default realColorAt:
+					             (ColorList default colorAt:
 							              (ColorList colorOf: each asSymbol));
 				             yourself ];
 		             openModal.

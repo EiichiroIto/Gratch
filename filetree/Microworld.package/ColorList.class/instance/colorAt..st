@@ -1,5 +1,5 @@
 accessing
-realColorAt: anInteger
+colorAt: anInteger
 
 	| index |
 	index := self normalize: anInteger.
