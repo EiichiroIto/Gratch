@@ -5,7 +5,7 @@ setLocale: aString
 	fr := ('locale/' , aString , '.po') asFileReference.
 	fr isFile
 		ifFalse: [ self current: nil.
-			GraphicFontSettings setFontsToStyleNamed: #medium.
+			GraphicFontSettings resetAllFontToDefault.
 			^ aString = 'en' ].
 	tr := self new.
 	tr readFrom: fr readStream.
