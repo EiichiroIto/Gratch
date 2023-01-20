@@ -1,5 +1,5 @@
 menu building
-buildMenu
+setupMenu
 
 	menu
 		addItem: [ :item | 

@@ -6,13 +6,21 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"logo",
-		"menu",
 		"buttonSave",
 		"buttonOpen",
 		"inspectorPane",
 		"inspectorTarget",
-		"libraryPane"
+		"buttonClearEdges",
+		"buttonClearNodes",
+		"buttonEvent",
+		"buttonLoop",
+		"buttonSetup",
+		"buttonLoopSlow",
+		"buttonStop",
+		"buttonStep",
+		"buttonEdges",
+		"buttonGraph",
+		"buttonNodes"
 	],
 	"name" : "SpGratchFrame",
 	"type" : "normal"

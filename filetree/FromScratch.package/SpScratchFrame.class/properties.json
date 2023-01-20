@@ -8,8 +8,11 @@
 	"instvars" : [
 		"viewerPane",
 		"stageFrame",
-		"titlePane",
-		"editorPane"
+		"editorPane",
+		"projectNameLabel",
+		"modifiedProjectLabel",
+		"logo",
+		"menu"
 	],
 	"name" : "SpScratchFrame",
 	"type" : "normal"

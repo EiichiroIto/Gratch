@@ -1,5 +1,12 @@
-private
+initialization
 setupButtons
+
+	buttonOpen
+		icon: (ScratchTheme formAt: #openButton);
+		help: 'Open Project' localized.
+	buttonSave
+		icon: (ScratchTheme formAt: #saveButton);
+		help: 'Save Project' localized.
 	buttonClearNodes
 		label: 'ClearN';
 		icon: (ScratchTheme formAt: #clearNodesButtonGray);
@@ -31,4 +38,11 @@ setupButtons
 	buttonLoop
 		label: 'Loop';
 		icon: (ScratchTheme formAt: #loopButtonGray);
-		help: 'Loop' localized
+		help: 'Loop' localized.
+	buttonGraph label: 'Graph' localized.
+	buttonNodes
+		label: 'Nodes' localized;
+		icon: (ScratchTheme formAt: #clearNodesButtonPressed).
+	buttonEdges
+		label: 'Edges' localized;
+		icon: (ScratchTheme formAt: #clearEdgesButtonPressed)

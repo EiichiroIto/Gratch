@@ -2,6 +2,6 @@ accessing
 target: aScript
 
 	super target: aScript.
-	libraryPane selectButton: aScript objName.
-	libraryPane graphForm: (self stageShotExtent: 40 @ 40).
+	self selectButton: aScript objName.
+	self graphForm: (self stageShotExtent: 40 @ 40).
 	inspectorPane selectIndex: 0

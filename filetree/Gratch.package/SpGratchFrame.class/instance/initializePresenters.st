@@ -1,16 +1,21 @@
 initialization
 initializePresenters
-	logo := self newImage.
-	buttonSave := self newButton.
+
+	super initializePresenters.
+	inspectorPane := self newInspector.
 	buttonOpen := self newButton.
-	menu := self newMenuBar.
-	viewerPane := self instantiate: SpScratchListViewer.
-	inspectorPane := self instantiate: SpGratchInspector.
-	editorPane := self instantiate: SpScratchEditor.
-	titlePane := self instantiate: SpGratchTitle.
-	stageFrame := self instantiate: SpGratchStage.
-	libraryPane := self instantiate: SpGratchLibrary.
-	self setupTopPane.
-	self setupTitlePane.
-	self focusOrder
-		add: editorPane
+	buttonSave := self newButton.
+	buttonClearEdges := self newButton.
+	buttonClearNodes := self newButton.
+	buttonEvent := self newButton.
+	buttonLoop := self newButton.
+	buttonSetup := self newButton.
+	buttonLoopSlow := self newButton.
+	buttonStop := self newButton.
+	buttonStep := self newButton.
+	buttonGraph := self newButton.
+	buttonNodes := self newButton.
+	buttonEdges := self newButton.
+	self setupButtons.
+	self selectButton: 'Graph'.
+	self focusOrder add: editorPane

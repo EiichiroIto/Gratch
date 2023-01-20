@@ -8,6 +8,6 @@ drawHighlightNode: anInteger color: aColor
 	p := self screenPointFrom: p.
 	canvas
 		fillOval: (self nodeRectangleCenterAt: p)
-		color: aColor
-		borderWidth: 0
-		borderColor: Color red
+		color: Color transparent
+		borderWidth: self highlightNodeBorderWidth
+		borderColor: aColor

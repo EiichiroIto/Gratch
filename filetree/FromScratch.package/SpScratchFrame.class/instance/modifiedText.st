@@ -1,0 +1,4 @@
+accessing
+modifiedText
+
+	^ modifiedProjectLabel label

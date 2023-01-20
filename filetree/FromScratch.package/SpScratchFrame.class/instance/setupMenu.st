@@ -1,0 +1,4 @@
+initialization
+setupMenu
+
+	self subclassResponsibility

@@ -24,9 +24,29 @@ defaultLayout
 								     add: #editorPane;
 								     yourself);
 						    add: (SpBoxLayout newVertical
-								     add: #titlePane withConstraints: [ :c | c expand: false ];
+								     add: (SpBoxLayout newHorizontal
+										      add: #modifiedProjectLabel
+										      withConstraints: [ :c | c expand: false ];
+										      add: #projectNameLabel;
+										      yourself)
+								     withConstraints: [ :c | c expand: false ];
+								     add: (SpBoxLayout newHorizontal
+										      add: #buttonClearNodes;
+										      add: #buttonClearEdges;
+										      add: #buttonSetup;
+										      add: #buttonStop;
+										      add: #buttonLoop;
+										      add: #buttonStep;
+										      add: #buttonEvent;
+										      add: #buttonLoopSlow;
+										      yourself)
+								     withConstraints: [ :c | c expand: false ];
 								     add: #stageFrame;
-								     add: #libraryPane
+								     add: (SpBoxLayout newHorizontal
+										      add: #buttonGraph;
+										      add: #buttonNodes;
+										      add: #buttonEdges;
+										      yourself)
 								     withConstraints: [ :c | c height: self libraryPaneHeight ];
 								     yourself);
 						    yourself);

@@ -1,0 +1,4 @@
+constants
+highlightNodeBorderWidth
+
+	^ 3
