@@ -1,9 +1,14 @@
 argument menus
 addArgBuilder
+
 	argBuilder
 		addBooleanArg: $b;
 		addEventTitleArg: $e;
-		addChoiceArg: $f selector: #mathFunctionNames initialChoice: 'sqrt';
+		addChoiceArg: $f
+		options:
+			#( 'abs' 'sqrt' 'sin' 'cos' 'tan' 'asin' 'acos' 'atan' 'ln' 'log'
+			   'e ^' '10 ^' )
+		initialChoice: 'sqrt';
 		addLocalVarArg: $l;
 		addChoiceArg: $L selector: #listVarNames;
 		addSpriteArg: $m;

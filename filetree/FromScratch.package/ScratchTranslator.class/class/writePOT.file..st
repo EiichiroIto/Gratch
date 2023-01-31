@@ -1,10 +1,8 @@
 utilities
-writePOT: aCollection fileNamed: aString
+writePOT: aCollection file: aFileReference
 
-	| file |
-	file := FileSystem workingDirectory / aString.
-	file isFile ifTrue: [ file delete ].
-	file writeStreamDo: [ :stream | 
+	aFileReference isFile ifTrue: [ aFileReference delete ].
+	aFileReference writeStreamDo: [ :stream | 
 		aCollection asSortedCollection do: [ :each | 
 			stream
 				nextPutAll: 'msgid "';

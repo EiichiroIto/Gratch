@@ -1,0 +1,4 @@
+testing
+isSquareArg
+
+	^ isNumber not

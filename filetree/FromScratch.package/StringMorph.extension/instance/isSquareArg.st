@@ -1,0 +1,4 @@
+*FromScratch
+isSquareArg
+
+	^ true

@@ -1,11 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "CommandBlockMorph",
+	"super" : "ArgMorph",
 	"category" : "FromScratch-Blocks",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "SetterBlockMorph",
+	"instvars" : [
+		"menuIconMorph",
+		"choice",
+		"options"
+	],
+	"name" : "StaticChoiceArgMorph",
 	"type" : "normal"
 }
