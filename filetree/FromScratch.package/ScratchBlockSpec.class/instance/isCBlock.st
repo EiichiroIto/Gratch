@@ -1,0 +1,4 @@
+testing
+isCBlock
+
+	^ type = #c

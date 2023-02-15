@@ -1,4 +1,4 @@
-blocks
+block building
 createBlock: block atPosition: pos onPage: page
 	"Creates a block on the given page. If the block is one that can become a watcher, then a toggle button is created as well."
 

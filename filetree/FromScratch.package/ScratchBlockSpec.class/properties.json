@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractBlockSpec",
+	"category" : "FromScratch-Project",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"label",
+		"type",
+		"selector",
+		"arguments",
+		"color"
+	],
+	"name" : "ScratchBlockSpec",
+	"type" : "normal"
+}

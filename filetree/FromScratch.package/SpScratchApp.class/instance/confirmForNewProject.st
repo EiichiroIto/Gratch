@@ -5,6 +5,6 @@ confirmForNewProject
 	self closeMediaEditorsAndDialogs.
 	self stopAllProcesses.
 	(project notNil and: [ project modified ]) ifTrue: [ 
-		response := self confirm: 'Save the current project?' localized.
+		response := presenter confirm: 'Save the current project?' localized.
 		response ifTrue: [ ^ self saveProjectNoDialog ] ].
 	^ true

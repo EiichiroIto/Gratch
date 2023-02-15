@@ -1,4 +1,4 @@
-accessing
+api
 addChoiceArg: aCharacter options: aCollection initialChoice: aString
 
 	self add: aCharacter builder: [ 

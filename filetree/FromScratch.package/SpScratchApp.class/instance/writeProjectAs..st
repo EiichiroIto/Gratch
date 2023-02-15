@@ -25,13 +25,13 @@ writeProjectAs: aFileReference
 					do: [  ] ].
 			saveError := err ].
 	saveError ifNotNil: [ 
-		self alert: saveError.
+		presenter alert: saveError.
 		^ false ].
 	aFileReference deleteIfAbsent: [  ].
 	[ tmpFile renameTo: aFileReference basename ]
 		on: Error
 		do: [ 
-			self alert:
+			presenter alert:
 				'Save failed. The folder may be read-only.' localized.
 			^ false ].
 	project modified: false.

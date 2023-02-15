@@ -1,4 +1,4 @@
-blocks
+block building
 viewerPageForCategory: aCategoryName
 
 	| bin x y |
@@ -6,11 +6,12 @@ viewerPageForCategory: aCategoryName
 	bin := self newBlockPaletteMorph.
 	x := 12.
 	y := 10.
-	(self blocksFor: aCategoryName) do: [ :blockOrSym | 
-		blockOrSym = #- | (blockOrSym = #~)
-			ifTrue: [ "insert a half space"
-				blockOrSym = #- ifTrue: [ y := y + 15 ]. "insert a full space"
-				blockOrSym = #~ ifTrue: [ y := y + 5 ] ]
-			ifFalse: [ 
-			y := self createBlock: blockOrSym atPosition: x @ y onPage: bin ] ].
+	(self blocksFor: aCategoryName) do: [ :each | 
+		y := each isBlockMorph
+			     ifTrue: [ 
+			     self createBlock: each atPosition: x @ y onPage: bin ]
+			     ifFalse: [ 
+				     each isSeparator
+					     ifTrue: [ y + 15 ]
+					     ifFalse: [ self error ] ] ].
 	^ bin

@@ -6,19 +6,19 @@ selectSetting: aSymbol
 	list := settings optionsFor: aSymbol.
 	ret := list = #string
 		       ifTrue: [ 
-			       self
+			       presenter
 				       request: 'Enter for ' localized , aSymbol
 				       initialAnswer: (self settingAt: aSymbol) ]
 		       ifFalse: [ 
 			       list isEmpty ifTrue: [ ^ self ].
-			       self
+			       presenter
 				       select: 'Select an option for ' localized , aSymbol
 				       chooseFrom: list ].
 	ret ifNil: [ ^ self ].
 	ret = (self settingAt: aSymbol) ifTrue: [ ^ self ].
 	self settingAt: aSymbol put: ret.
 	aSymbol = #language ifFalse: [ ^ self ].
-	(self confirm: 'Language settings has changed. Restart application?') 
+	(presenter confirm: 'Language settings has changed. Restart application?') 
 		ifFalse: [ ^ self ].
 	old := self settingAt: #dontClose.
 	self settingAt: #dontClose put: false.

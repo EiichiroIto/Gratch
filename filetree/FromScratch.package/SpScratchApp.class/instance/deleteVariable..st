@@ -6,7 +6,7 @@ deleteVariable: aScript
 	list := aScript varNames.
 	list isEmpty
 		ifTrue: [ ^ self ].
-	choice := self select: 'Choose variable to delete.' localized chooseFrom: list.
+	choice := presenter select: 'Choose variable to delete.' localized chooseFrom: list.
 	choice ifNil: [ ^ self ].
 	aScript deleteVariable: choice.
 	presenter currentCategory: #variables

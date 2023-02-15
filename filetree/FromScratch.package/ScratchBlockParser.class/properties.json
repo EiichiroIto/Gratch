@@ -4,10 +4,7 @@
 	"category" : "FromScratch-Process",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [
-		"InvOperatorDict",
-		"OperatorDict"
-	],
+	"classvars" : [ ],
 	"instvars" : [
 		"codeGenerator"
 	],

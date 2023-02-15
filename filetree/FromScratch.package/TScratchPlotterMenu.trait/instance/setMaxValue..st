@@ -2,7 +2,7 @@ menu actions
 setMaxValue: aPlotter
 
 	| ret |
-	ret := SpScratchApp
+	ret := SpScratchFrame
 		       request: 'maximum plot value?' localized
 		       initialAnswer: (aPlotter max ifNil: [ '' ]) asString.
 	ret ifNil: [ ^ self ].

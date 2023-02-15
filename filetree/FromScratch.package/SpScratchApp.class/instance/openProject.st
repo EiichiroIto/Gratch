@@ -3,7 +3,7 @@ openProject
 	| file newProj |
 	self confirmForNewProject
 		ifFalse: [ ^ self ].
-	file := UIManager default
+	file := presenter
 		chooseExistingFileReference: 'Open Project' localized
 		extensions: {self class extension}
 		path: self projectDirectory

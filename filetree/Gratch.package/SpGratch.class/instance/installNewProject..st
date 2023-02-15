@@ -5,6 +5,7 @@ installNewProject: aProject
 	project := aProject.
 	project application: self.
 	project scripts do: [ :each | grWorld addBreed: each breed ].
+	project setupBlockSpecs.
 	project fixVars.
 	project updateLabels.
 	self setupView.

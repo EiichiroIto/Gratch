@@ -1,0 +1,4 @@
+*FromScratch
+localized
+
+	^ self

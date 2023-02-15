@@ -5,7 +5,7 @@ readProjectFrom: aFileReference
 	reader := project newProjectReadWriter.
 	f := aFileReference binaryReadStream.
 	f ifNil: [ 
-		self alert:
+		presenter alert:
 			'Could not read file: ' localized , aFileReference pathString.
 		^ nil ].
 	^ self class
@@ -15,5 +15,5 @@ readProjectFrom: aFileReference
 			  newProj info: (reader extractInfoFrom: projData).
 			  newProj ]
 		  onFailure: [ :err | 
-			  self alert: err messageText.
+			  presenter alert: err messageText.
 			  nil ]

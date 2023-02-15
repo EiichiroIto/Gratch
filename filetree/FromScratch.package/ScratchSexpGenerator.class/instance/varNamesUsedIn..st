@@ -1,0 +1,4 @@
+code generator
+varNamesUsedIn: aMorph
+
+	^ #()

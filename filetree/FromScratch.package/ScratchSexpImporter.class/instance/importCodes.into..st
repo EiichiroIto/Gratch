@@ -6,7 +6,7 @@ importCodes: aCollection into: aScript
 	aCollection
 		do: [ :each | 
 			tuple := self tupleFrom: each.
-			block := aScript blockFromTuple: tuple receiver: aScript.
+			block := aScript blockFromTuple: tuple.
 			top
 				ifNil: [ top := block.
 					prev addMorph: block ]

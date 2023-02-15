@@ -1,0 +1,4 @@
+testing
+isStartupHatBlock
+
+	^ type = #T

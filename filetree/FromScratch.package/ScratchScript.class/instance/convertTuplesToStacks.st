@@ -1,4 +1,4 @@
-object i/o
+block building
 convertTuplesToStacks
 	| tuplesList stack |
 	blocksBin isArray
@@ -9,6 +9,6 @@ convertTuplesToStacks
 		yourself.
 	tuplesList
 		do: [ :pair | 
-			stack := self stackFromTupleList: pair second receiver: self.
+			stack := blockMorphBuilder stackFromTupleList: pair second.
 			stack position: pair first.
 			blocksBin addMorph: stack ]

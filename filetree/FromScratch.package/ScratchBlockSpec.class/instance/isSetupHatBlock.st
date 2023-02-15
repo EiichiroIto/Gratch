@@ -1,0 +1,4 @@
+testing
+isSetupHatBlock
+
+	^ type = #S

@@ -1,8 +1,7 @@
-blocks
+block building
 addSubBlock: aPoint name: aString
+
 	| morph |
-	morph := self newSubMorph
-		position: aPoint;
-		subName: aString;
-		yourself.
+	morph := blockMorphBuilder subHatBlockFor: aString.
+	morph position: aPoint.
 	blocksBin addMorph: morph

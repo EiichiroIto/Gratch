@@ -1,4 +1,4 @@
-private
+accessing
 falseBlock: aBlockMorph
 	"Add the given block as my false nested block sequence. Delete the old nested blocks, if any."
 

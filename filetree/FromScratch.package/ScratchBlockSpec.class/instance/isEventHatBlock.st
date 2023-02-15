@@ -1,0 +1,4 @@
+testing
+isEventHatBlock
+
+	^ type = #E

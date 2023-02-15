@@ -2,7 +2,7 @@ menu actions
 setMaxPlotSize: aPlotter
 
 	| ret |
-	ret := SpScratchApp
+	ret := SpScratchFrame
 		       request: 'number of max plots?' localized
 		       initialAnswer: (aPlotter maxSize ifNil: [ '' ]) asString.
 	ret ifNil: [ ^ self ].

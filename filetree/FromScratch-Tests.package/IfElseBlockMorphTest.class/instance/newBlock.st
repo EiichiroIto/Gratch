@@ -1,0 +1,4 @@
+private
+newBlock
+
+	^ IfElseBlockMorph new

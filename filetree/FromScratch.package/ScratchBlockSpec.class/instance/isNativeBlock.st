@@ -1,0 +1,4 @@
+testing
+isNativeBlock
+
+	^ true

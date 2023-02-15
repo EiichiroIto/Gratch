@@ -1,4 +1,4 @@
 testing
 isForever
 
-	^ (selector = #doForever) | (selector = #doForeverIf)
+	^ receiver foreverBlocks includes: selector

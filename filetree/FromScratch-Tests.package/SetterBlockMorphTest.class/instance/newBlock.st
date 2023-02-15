@@ -1,0 +1,4 @@
+private
+newBlock
+
+	^ SetterBlockMorph new

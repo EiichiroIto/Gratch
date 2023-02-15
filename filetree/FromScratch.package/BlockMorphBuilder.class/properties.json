@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "FromScratch-Project",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"script",
+		"categoryColors",
+		"lastCategory",
+		"blockSpecsInCategory",
+		"blockSpecDictionary",
+		"compatibilityDictionary"
+	],
+	"name" : "BlockMorphBuilder",
+	"type" : "normal"
+}

@@ -1,4 +1,4 @@
-blocks
+block building
 createToggleButtonFor: block
 	| toggleButton |
 	toggleButton := ToggleButton

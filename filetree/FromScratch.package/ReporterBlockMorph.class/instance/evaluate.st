@@ -1,3 +1,3 @@
 evaluation
 evaluate
-	^ receiver evaluateFor: self
+	^ receiver evaluateBlock: self

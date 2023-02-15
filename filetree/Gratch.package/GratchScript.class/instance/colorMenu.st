@@ -1,3 +1,3 @@
 argument menus
 colorMenu
-	^ ColorList colorNames collect: [ :each | Array with: each with: (ColorList perform: each) ]
+	^ ColorList colorNames collect: [ :each | Array with: each localized with: (ColorList perform: each) ]

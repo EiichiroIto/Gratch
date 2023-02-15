@@ -2,5 +2,5 @@ test
 testPrivDict
 	| b |
 	b := self newBuilder.
-	self assert: b privDict isDictionary.
-	self assert: b privDict isEmpty
+	self assert: b dict isDictionary.
+	self assert: b dict isEmpty

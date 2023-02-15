@@ -4,7 +4,7 @@ exportStageImage
 	| file saveForm |
 	saveForm := presenter stageShotExtent: self class screenshotExtent.
 	saveForm ifNil: [ ^ self ].
-	file := UIManager default
+	file := presenter
 		        chooseForSaveFileReference: 'Export ...' localized
 		        extensions: { self imageExtension }
 		        path: self extraPath.

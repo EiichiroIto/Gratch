@@ -2,4 +2,5 @@ initialization
 initialize
 
 	super initialize.
-	borderWidth := 0
+	borderWidth := 0.
+	screenshooting := false

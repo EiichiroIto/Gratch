@@ -4,7 +4,7 @@ importFileWithExtension: aString isBinary: aBoolean
 	| file f code |
 	self closeMediaEditorsAndDialogs.
 	self stopAllProcesses.
-	file := UIManager default
+	file := presenter
 		        chooseExistingFileReference: 'Import ...' localized
 		        extensions: { aString }
 		        path: self extraDirectory.
@@ -23,5 +23,6 @@ importFileWithExtension: aString isBinary: aBoolean
 				  file } ]
 		  onFailure: [ 
 			  f ifNotNil: [ f close ].
-			  self alert: 'Could not read file: ' localized , file basename.
+			  presenter alert:
+				  'Could not read file: ' localized , file basename.
 			  nil ]

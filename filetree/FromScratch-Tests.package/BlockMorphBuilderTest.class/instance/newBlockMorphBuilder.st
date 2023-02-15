@@ -1,0 +1,4 @@
+private
+newBlockMorphBuilder
+
+	^ BlockMorphBuilder new

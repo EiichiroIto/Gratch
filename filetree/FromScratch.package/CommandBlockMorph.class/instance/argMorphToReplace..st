@@ -10,7 +10,7 @@ argMorphToReplace: aMorph
 	argM := self argMorphFor: (argSpecs at: i).
 	(#setVar:to: = selector and: [ (argSpecs at: i) = '%n' ])
 		ifTrue: [ ^ argM stringExpression: '0' ].
-	spec := self script blockSpecAt: selector.
+	spec := receiver blockSpecAt: selector.
 	spec ifNil: [ ^ argM ].
 	defaults := receiver defaultArgsFor: spec.
 	i <= defaults size

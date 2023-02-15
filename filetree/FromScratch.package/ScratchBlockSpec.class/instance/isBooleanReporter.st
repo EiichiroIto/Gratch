@@ -1,0 +1,4 @@
+testing
+isBooleanReporter
+
+	^ type = #b

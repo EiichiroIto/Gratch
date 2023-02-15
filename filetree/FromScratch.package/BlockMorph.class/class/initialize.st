@@ -8,4 +8,4 @@ initialize
 	PuzzleWidth := 14.
 	CBlockBracketThickness := 12.
 
-	DebugMenu := true
+	"DebugMenu := true"

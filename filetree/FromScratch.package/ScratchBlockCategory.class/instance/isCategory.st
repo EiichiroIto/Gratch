@@ -1,0 +1,4 @@
+testing
+isCategory
+
+	^ true

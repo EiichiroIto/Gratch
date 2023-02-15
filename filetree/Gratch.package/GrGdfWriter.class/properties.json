@@ -8,8 +8,6 @@
 		"ColumnType"
 	],
 	"instvars" : [
-		"nodes",
-		"edges",
 		"grWorld",
 		"stream",
 		"nodeColumns",

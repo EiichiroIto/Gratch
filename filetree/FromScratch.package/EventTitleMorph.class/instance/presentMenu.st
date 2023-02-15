@@ -17,7 +17,7 @@ presentMenu
 	choice ifNil: [ ^ self ].
 	choice second = 1
 		ifTrue: [ 
-			choice := SpScratchApp request: 'Message name:' localized.
+			choice := SpScratchFrame request: 'Message name:' localized.
 			(choice isNil or: [ choice isEmpty ]) ifTrue: [ ^ self ] ]
 		ifFalse: [ choice := choice first ].
 	self eventName: choice

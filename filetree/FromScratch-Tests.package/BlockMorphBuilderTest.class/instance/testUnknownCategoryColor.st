@@ -1,0 +1,4 @@
+test
+testUnknownCategoryColor
+
+	self assert: self newBlockMorphBuilder unknownCategoryColor isColor

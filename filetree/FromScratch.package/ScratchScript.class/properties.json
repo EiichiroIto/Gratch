@@ -8,8 +8,8 @@
 	"instvars" : [
 		"blocksBin",
 		"project",
-		"blockDef",
-		"argBuilder"
+		"blockMorphBuilder",
+		"argMorphBuilder"
 	],
 	"name" : "ScratchScript",
 	"type" : "normal"

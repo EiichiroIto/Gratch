@@ -8,7 +8,7 @@ changeColor: vno breed: bno at: id
 		             acceptLabel: 'OK' localized;
 		             cancelLabel: 'Cancel' localized;
 		             items: ColorList colorNames;
-		             display: [ :each | each ];
+		             display: [ :each | each localized ];
 		             displayIcon: [ :each | 
 			             Morph new
 				             extent: 20 @ 20;

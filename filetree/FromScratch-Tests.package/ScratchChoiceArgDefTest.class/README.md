@@ -1,0 +1,1 @@
+A ScratchChoiceArgDefTest is a test class for testing the behavior of ScratchChoiceArgDef

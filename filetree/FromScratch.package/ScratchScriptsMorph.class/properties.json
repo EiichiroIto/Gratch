@@ -6,8 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"feedbackMorph",
-		"screenshooting"
+		"feedbackMorph"
 	],
 	"name" : "ScratchScriptsMorph",
 	"type" : "normal"

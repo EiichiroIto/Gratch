@@ -4,7 +4,7 @@ exportString: aContentsString extension: aString isBinary: aBoolean
 	| file f |
 	self closeMediaEditorsAndDialogs.
 	self stopAllProcesses.
-	file := UIManager default
+	file := presenter
 		        chooseForSaveFileReference: 'Export ...' localized
 		        extensions: { aString }
 		        path: self extraPath.
@@ -20,4 +20,4 @@ exportString: aContentsString extension: aString isBinary: aBoolean
 			f close ]
 		onFailure: [ 
 			f ifNotNil: [ f close ].
-			self alert: 'Could not write file: ' localized , file basename ]
+			presenter alert: 'Could not write file: ' localized , file basename ]

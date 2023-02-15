@@ -1,3 +1,3 @@
-blocks
+block building
 cleanUp
 	blocksBin cleanUp

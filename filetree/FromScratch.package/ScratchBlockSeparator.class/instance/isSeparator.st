@@ -1,0 +1,4 @@
+testing
+isSeparator
+
+	^ true

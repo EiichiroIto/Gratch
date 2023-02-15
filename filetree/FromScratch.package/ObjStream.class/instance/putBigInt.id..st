@@ -1,7 +1,9 @@
 fixed format-writing
 putBigInt: anObject id: classID
 
-	firstPass ifTrue: [^ self].
+	| len |
+	firstPass ifTrue: [ ^ self ].
 	stream nextPut: classID.
-	stream uint16: anObject digitLength.
-	1 to: anObject digitLength do: [:i | stream nextPut: (anObject digitAt: i)].
+	len := anObject numberOfDigitsInBase: 256.
+	stream uint16: len.
+	1 to: len do: [ :i | stream nextPut: (anObject byteAt: i) ]

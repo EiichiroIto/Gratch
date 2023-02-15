@@ -3,7 +3,7 @@ drawOn: aCanvas
 	"Fill with my texture patch. Fill with a solid color if there is no texture in the current skin dictionary."
 
 	| patchF clipC y x |
-	self isScreenshooting
+	screenshooting
 		ifTrue: [ aCanvas fillRectangle: self bounds color: Color transparent.
 			^ self ].
 	patchF := ScratchTheme formAt: #scriptsPaneTexture.

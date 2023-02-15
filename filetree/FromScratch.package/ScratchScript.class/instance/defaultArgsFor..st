@@ -1,8 +1,8 @@
-blocks
+block building
 defaultArgsFor: blockSpec
-	| defaultArgs sel |
-	defaultArgs := blockSpec copyFrom: 4 to: blockSpec size.
-	sel := (blockSpec at: 3) asSymbol.
-	(#(broadcast: doBroadcastAndWait) includes: sel)
+
+	| defaultArgs |
+	defaultArgs := blockSpec arguments copy.
+	(#( broadcast: doBroadcastAndWait ) includes: blockSpec selector) 
 		ifTrue: [ defaultArgs := Array with: project defaultEventName ].
 	^ defaultArgs

@@ -1,4 +1,4 @@
-blocks
+block building
 variablesPage
 
 	| page y maxX |

@@ -1,6 +1,6 @@
 menu building
 scriptMenuFor: aScript
-	| menu |
-	menu := self newMenu.
-	self addScriptMenu: menu for: aScript.
-	^ menu
+
+	^ self newMenu in: [ :m | 
+		  self addScriptMenu: m for: aScript.
+		  m ]

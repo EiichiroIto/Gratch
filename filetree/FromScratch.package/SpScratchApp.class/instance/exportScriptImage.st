@@ -4,7 +4,7 @@ exportScriptImage
 	| file saveForm |
 	saveForm := presenter scriptForm.
 	saveForm ifNil: [ ^ self ].
-	file := UIManager default
+	file := presenter
 		        chooseForSaveFileReference: 'Export ...' localized
 		        extensions: { self imageExtension }
 		        path: self extraPath.

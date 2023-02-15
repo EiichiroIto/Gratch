@@ -1,0 +1,4 @@
+testing
+isSpecialForm
+
+	^ type = #s

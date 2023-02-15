@@ -1,0 +1,4 @@
+testing
+isLoopHatBlock
+
+	^ type = #L

@@ -2,7 +2,7 @@ menu actions
 setMinValue: aPlotter
 
 	| ret |
-	ret := SpScratchApp
+	ret := SpScratchFrame
 		       request: 'minimum plot value?' localized
 		       initialAnswer: (aPlotter min ifNil: [ '' ]) asString.
 	ret ifNil: [ ^ self ].

@@ -4,5 +4,5 @@ evaluate
 
 	self checkForDeletedMorph.
 	morph isString
-		ifTrue: [ morph := owner script project findObjName: morph ].
+		ifTrue: [ morph := owner receiver project findObjName: morph ].
 	^ morph

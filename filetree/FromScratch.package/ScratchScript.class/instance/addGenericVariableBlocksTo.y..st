@@ -1,4 +1,4 @@
-blocks
+block building
 addGenericVariableBlocksTo: page y: startY
 	| addButton deleteButton x y |
 	addButton := ScratchTheme

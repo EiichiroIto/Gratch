@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractBlockSpec",
+	"category" : "FromScratch-Project",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"arg",
+		"options"
+	],
+	"name" : "ScratchChoiceArgDef",
+	"type" : "normal"
+}

@@ -1,5 +1,5 @@
 private
 newScript
-	^ ScratchScript new
-		setupArgBuilder;
+	^ ScTestScript new
+		setupBlockSpecs;
 		yourself

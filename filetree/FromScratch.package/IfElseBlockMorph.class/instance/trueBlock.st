@@ -1,3 +1,3 @@
-code generation
+accessing
 trueBlock
 	^ trueBlock

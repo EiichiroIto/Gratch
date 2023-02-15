@@ -1,4 +1,4 @@
-accessing
+api
 addLocalVarArg: aCharacter initialVarName: aString
 	self
 		add: aCharacter

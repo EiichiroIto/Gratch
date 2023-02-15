@@ -12,6 +12,6 @@ emitSubHatBlock: aMorph indent: indent
 				generateIndent: i2;
 				generateEmptySubBody ]
 		ifNotNil: [ 
-			self emitGlobalVars: aMorph varNames indent: i2.
+			self emitSubVarDeclaration: aMorph indent: i2.
 			self emitCode: aMorph nextBlock indent: i2 ].
 	codeGenerator generateSubFooter: str

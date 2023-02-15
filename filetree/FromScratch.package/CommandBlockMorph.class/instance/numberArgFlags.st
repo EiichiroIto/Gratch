@@ -9,5 +9,5 @@ numberArgFlags
 	argSpecs := self organizeArgs: argSpecs.
 	numberArgFlags := argSpecs
 		collect:
-			[ :spec | (self script uncoloredArgMorphFor: spec) isNumberExpression ].
+			[ :spec | (receiver uncoloredArgMorphFor: spec) isNumberExpression ].
 	^ numberArgFlags

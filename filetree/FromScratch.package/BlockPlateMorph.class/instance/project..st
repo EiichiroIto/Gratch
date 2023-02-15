@@ -1,4 +1,4 @@
-acessing
+accessing
 project: aProject
 
 	project := aProject

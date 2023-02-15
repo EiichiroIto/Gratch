@@ -1,0 +1,4 @@
+private
+newObj
+
+	^ ScratchBlockSpec new

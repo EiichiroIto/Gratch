@@ -1,11 +1,16 @@
 accessing
 allSymbols
+
 	"self allSymbols inspect."
+
 	| list |
-	list := ScratchScript allBlockSpecs.
-	list := list select: [ :each | each isArray ].
-	list := list collect: [ :each | each third ].
-	list := list collect: [ :each | self operatorAt: each ifAbsent: [ each ] ].
+	list := ScratchScript allSubclasses collect: [ :each | 
+		        each new
+			        setupBlockSpecs;
+			        yourself ].
+	list := list flatCollect: [ :each | 
+		        each blockMorphBuilder blockSpecs ].
+	list := list collect: [ :each | each selector ].
 	list := list asSet.
 	list := list asSortedCollection.
 	^ list asArray

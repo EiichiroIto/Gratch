@@ -1,14 +1,17 @@
 accessing
 setLocale: aString
+
 	| fr tr |
-	aString ifEmpty: [ ^ false ].
+	(aString isNil or: [ aString isEmpty ]) ifTrue: [ ^ self ].
 	fr := ('locale/' , aString , '.po') asFileReference.
+	tr := nil.
 	fr isFile
-		ifFalse: [ self current: nil.
-			GraphicFontSettings resetAllFontToDefault.
-			^ aString = 'en' ].
-	tr := self new.
-	tr readFrom: fr readStream.
-	tr setupFonts.
-	self current: tr.
-	^ true
+		ifTrue: [ 
+			tr := self new.
+			tr locale: aString.
+			tr readFrom: fr readStream.
+			tr setupFonts ]
+		ifFalse: [ 
+			GraphicFontSettings setFontsToStyleNamed: #small.
+			tr := self defaultTranslator ].
+	self current: tr

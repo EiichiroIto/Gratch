@@ -1,4 +1,4 @@
-object i/o
+block building
 convertStacksToTuples
 	"Convert my blocks bin from a morph containing block stack into a collection of (<point>, <tuple>) pairs the represent the same stacks in compact, language-independent form."
 

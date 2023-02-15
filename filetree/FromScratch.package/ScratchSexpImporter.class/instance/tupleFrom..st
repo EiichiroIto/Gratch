@@ -2,8 +2,8 @@ private
 tupleFrom: aCollection
 	| selector tuple |
 	selector := aCollection first asSymbol.
-	(ScratchBlockParser isInvOperator: selector)
-		ifTrue: [ ^ self operatorTupleFrom: aCollection ].
+	"(ScratchBlockParser isInvOperator: selector)
+		ifTrue: [ ^ self operatorTupleFrom: aCollection ]."
 	selector = #getVar
 		ifTrue: [ ^ self getVarTupleFrom: aCollection ].
 	(#(setVar:to: changeVar:by:) includes: selector)

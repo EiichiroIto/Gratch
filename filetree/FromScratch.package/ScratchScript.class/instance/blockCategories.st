@@ -1,3 +1,3 @@
-accessing
+block specs
 blockCategories
-	^ self blockDef blockCategories
+	^ blockMorphBuilder blockCategories

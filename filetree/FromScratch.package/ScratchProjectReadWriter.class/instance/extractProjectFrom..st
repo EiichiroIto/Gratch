@@ -14,7 +14,7 @@ extractProjectFrom: aByteArray
 			  'Invalid project format:' localized , project class asString ].
 	project scripts do: [ :m | 
 		m
-			setupBlockDef;
+			setupBlockSpecs;
 			convertStacksToTuples;
 			convertTuplesToStacks;
 			project: project ].

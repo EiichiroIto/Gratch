@@ -1,4 +1,4 @@
-accessing
+api
 addChoiceArg: aCharacter selector: aSymbol target: anObject initialChoice: aString
 	self
 		add: aCharacter

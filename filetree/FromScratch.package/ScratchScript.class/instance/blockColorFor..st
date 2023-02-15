@@ -1,3 +1,3 @@
-accessing
+block specs
 blockColorFor: aCategory
-	^ self blockDef blockColorFor: aCategory
+	^ blockMorphBuilder blockColorFor: aCategory

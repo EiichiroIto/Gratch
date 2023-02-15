@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "jm 8/22/2006 08:22",
+	"commentStamp" : "",
 	"super" : "SimpleButtonMorph",
 	"category" : "FromScratch-Morphic",
 	"classinstvars" : [ ],

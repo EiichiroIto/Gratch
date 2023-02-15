@@ -1,0 +1,4 @@
+testing
+isStartHatBlock
+
+	^ type = #G

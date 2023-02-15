@@ -1,5 +1,5 @@
 private
 newTestScript
 	^ ScTestScript new
-		setupArgBuilder;
+		setupBlockSpecs;
 		yourself

@@ -1,8 +1,7 @@
 menu building
 blockMenuFor: aBlockMorph inScriptEditor: aBoolean
-	| menu |
-	aBoolean
-		ifFalse: [ ^ nil ].
-	menu := self newMenu.
-	self addBlockMenu: menu for: aBlockMorph.
-	^ menu
+
+	aBoolean ifFalse: [ ^ nil ].
+	^ self newMenu in: [ :m | 
+		  self addBlockMenu: m for: aBlockMorph.
+		  m ]
