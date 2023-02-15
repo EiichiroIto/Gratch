@@ -1,0 +1,702 @@
+msgid "Language-Name"
+msgstr "日本語"
+
+msgid "ArgFont"
+msgstr "MS UI Gothic:12"
+
+msgid "ButtonFont"
+msgstr "MS UI Gothic:13"
+
+msgid "CodeFont"
+msgstr "MS Gothic:12"
+
+msgid "LabelFont"
+msgstr "MS UI Gothic:13"
+
+msgid "TitleFont"
+msgstr "MS Mincho:10"
+
+msgid " (Recording)"
+msgstr " (録画中)"
+
+msgid "# of edges"
+msgstr "エッジ数"
+
+msgid "# of nodes"
+msgstr "ノード数"
+
+msgid "%C of nodes' %N"
+msgstr "ノードの %N の %C"
+
+msgid "%D of edges' %E"
+msgstr "エッジの %E の %D"
+
+msgid "%L contains %n"
+msgstr "リスト %L が %n を含む"
+
+msgid "%b and %b"
+msgstr "%b かつ %b"
+
+msgid "%b or %b"
+msgstr "%b または %b"
+
+msgid "%f of %n"
+msgstr "%n の %f"
+
+msgid "%n * %n"
+msgstr "%n × %n"
+
+msgid "%n + %n"
+msgstr "%n ＋ %n"
+
+msgid "%n - %n"
+msgstr "%n − %n"
+
+msgid "%n / %n"
+msgstr "%n ÷ %n"
+
+msgid "%n between %n and %n"
+msgstr "%n が %n と %n の間"
+
+msgid "%n mod %n"
+msgstr "%n を %n で割った余り"
+
+msgid "%s < %s"
+msgstr "%s ＜ %s"
+
+msgid "%s <= %s"
+msgstr "%s ≦ %s"
+
+msgid "%s = %s"
+msgstr "%s ＝ %s"
+
+msgid "%s > %s"
+msgstr "%s ＞ %s"
+
+msgid "%s >= %s"
+msgstr "%s ≧ %s"
+
+msgid "- %n"
+msgstr "− %n"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Choose list var to delete."
+msgstr "削除するリストを選んでください."
+
+msgid "Choose variable to delete."
+msgstr "削除する変数を選んでください."
+
+msgid "Clear edges"
+msgstr "エッジを消す"
+
+msgid "Clear nodes"
+msgstr "ノードを消す"
+
+msgid "Clear plots"
+msgstr "プロットの消去"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "Color selection"
+msgstr "色選択"
+
+msgid "Could not generate code: "
+msgstr "コードを生成できません: "
+
+msgid "Could not read file: "
+msgstr "ファイルを読めません: "
+
+msgid "Could not write file: "
+msgstr "ファイルに書けません: "
+
+msgid "Data"
+msgstr "データ"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Delete a list"
+msgstr "リストを削除する"
+
+msgid "Delete a variable"
+msgstr "変数を削除する"
+
+msgid "Edges"
+msgstr "エッジ"
+
+msgid "Edit"
+msgstr "編集"
+
+msgid "Enter for "
+msgstr "入力してください"
+
+msgid "Enter number"
+msgstr "数を入力してください"
+
+msgid "Enter string"
+msgstr "文字を入力してください"
+
+msgid "Error!"
+msgstr "エラー!"
+
+msgid "Event"
+msgstr "イベント"
+
+msgid "Examples"
+msgstr "例"
+
+msgid "Export ..."
+msgstr "エクスポート ..."
+
+msgid "Export GDF"
+msgstr "GDF形式でエクスポートする"
+
+msgid "Export Graph image"
+msgstr "グラフ画像をエクスポートする"
+
+msgid "Export S-EXP"
+msgstr "S式としてエクスポートする"
+
+msgid "Export Script image"
+msgstr "スクリプト画像をエクスポートする"
+
+msgid "File"
+msgstr "ファイル"
+
+msgid "Folder may be locked or read-only"
+msgstr "フォルダがロック中か読み込み専用です"
+
+msgid "Graph"
+msgstr "グラフ"
+
+msgid "Help"
+msgstr "ヘルプ"
+
+msgid "Import ..."
+msgstr "インポート ..."
+
+msgid "Import GDF"
+msgstr "GDF形式をインポートする"
+
+msgid "Import Graph"
+msgstr "グラフをインポートする"
+
+msgid "Import S-EXP"
+msgstr "S式をインポートする"
+
+msgid "Important confirmation"
+msgstr "重要な確認"
+
+msgid "Information request"
+msgstr "情報を入力してください"
+
+msgid "Invalid file version!"
+msgstr "ファイルバージョンが不正です!"
+
+msgid "Invalid project format:"
+msgstr "プロジェクト形式が違います:"
+
+msgid "List name?"
+msgstr "リストの名前は?"
+
+msgid "Loop"
+msgstr "ループ"
+
+msgid "Loop slowly"
+msgstr "低速ループ"
+
+msgid "Make a list"
+msgstr "リストを作る"
+
+msgid "Make a variable"
+msgstr "変数を作る"
+
+msgid "Message name:"
+msgstr "メッセージの名前:"
+
+msgid "Multiple Select"
+msgstr "複数選択"
+
+msgid "Name"
+msgstr "名前"
+
+msgid "New"
+msgstr "新規"
+
+msgid "Nodes"
+msgstr "ノード"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Open"
+msgstr "開く"
+
+msgid "Open Project"
+msgstr "プロジェクトを開く"
+
+msgid "Plot data"
+msgstr "プロットデータ"
+
+msgid "Plotter menu"
+msgstr "プロットメニュー"
+
+msgid "Project Notes"
+msgstr "プロジェクトのメモ"
+
+msgid "Quit"
+msgstr "終了する"
+
+msgid "Quit Application?"
+msgstr "アプリを終了しますか?"
+
+msgid "Reading"
+msgstr "読み込み中"
+
+msgid "Save"
+msgstr "保存する"
+
+msgid "Save As"
+msgstr "名前を付けて保存する"
+
+msgid "Save Plots Snapshot"
+msgstr "プロット画像の保存"
+
+msgid "Save Project"
+msgstr "プロジェクトを保存する"
+
+msgid "Save Stage as PNG"
+msgstr "ステージをPNGで保存する"
+
+msgid "Save failed. The folder may be read-only."
+msgstr "保存失敗. フォルダが読み込み専用の可能性があります."
+
+msgid "Save plot data"
+msgstr "プロットデータを保存する"
+
+msgid "Save settings"
+msgstr "設定を保存する"
+
+msgid "Save the current project?"
+msgstr "現在のプロジェクトを保存しますか?"
+
+msgid "Scripts"
+msgstr "スクリプト"
+
+msgid "Select Message name"
+msgstr "メッセージ名を選んでください"
+
+msgid "Select a color"
+msgstr "色を選んでください"
+
+msgid "Select an option for "
+msgstr "オプションを選んでください"
+
+msgid "Select one"
+msgstr "1つ選んでください"
+
+msgid "Set max plots"
+msgstr "最大プロット数を設定する"
+
+msgid "Set max value"
+msgstr "最大値を設定する"
+
+msgid "Set min value"
+msgstr "最小値を設定する"
+
+msgid "Set update period"
+msgstr "更新間隔を設定する"
+
+msgid "Setup"
+msgstr "設定"
+
+msgid "Start Stage Recording"
+msgstr "ステージを録画する"
+
+msgid "Step"
+msgstr "ステップ"
+
+msgid "Stop"
+msgstr "停止"
+
+msgid "Stop Stage Recording"
+msgstr "ステージ録画を止める"
+
+msgid "Sub name?"
+msgstr "サブルーチン名?"
+
+msgid "That list name is already in use!"
+msgstr "そのリストは既に使われています!"
+
+msgid "That sub name is already in use!"
+msgstr "そのサブルーチンは既に使われています!"
+
+msgid "That variable name is already in use!"
+msgstr "その変数は既に使われています!"
+
+msgid "Value"
+msgstr "値"
+
+msgid "Variable name?"
+msgstr "変数名?"
+
+msgid "View on stage"
+msgstr "ステージの上に表示"
+
+msgid "[modified]"
+msgstr "[変更あり]"
+
+msgid "abs %n"
+msgstr "%n の絶対値"
+
+msgid "add %n to %L"
+msgstr "リスト %L に %n を追加する"
+
+msgid "add sub block"
+msgstr "サブルーチンを追加する"
+
+msgid "adjacent nodes to %n into %L"
+msgstr "ノード %n の隣接ノードを %L に入れる"
+
+msgid "alert!"
+msgstr "警告!"
+
+msgid "basic"
+msgstr "基本"
+
+msgid "black"
+msgstr "黒色"
+
+msgid "blue"
+msgstr "青色"
+
+msgid "broadcast %e"
+msgstr "%e を送る"
+
+msgid "brown"
+msgstr "茶色"
+
+msgid "bytecode"
+msgstr "バイトコード"
+
+msgid "call %S"
+msgstr "%S を呼び出す"
+
+msgid "change %v by %n"
+msgstr "%v を %n だけ増やす"
+
+msgid "change edge %n 's %E by %n"
+msgstr "エッジ %n の %E を %n だけ変える"
+
+msgid "change node %n 's %N by %n"
+msgstr "ノード %n の %N を %n だけ変える"
+
+msgid "change x by %n"
+msgstr "x座標を %n ずつ変える"
+
+msgid "change y by %n"
+msgstr "y座標を %n ずつ変える"
+
+msgid "clean up"
+msgstr "きれいにする"
+
+msgid "clear edges"
+msgstr "エッジを消す"
+
+msgid "clear list %L"
+msgstr "リスト %L を消去する"
+
+msgid "clear nodes"
+msgstr "ノードを消す"
+
+msgid "color"
+msgstr "色"
+
+msgid "color of edge %n"
+msgstr "エッジ %n の色"
+
+msgid "color of node %n"
+msgstr "ノード %n の色"
+
+msgid "control"
+msgstr "制御"
+
+msgid "copy"
+msgstr "コピー"
+
+msgid "create %n nodes"
+msgstr "%n 個のノードを作る"
+
+msgid "create edge to %n"
+msgstr "%n へのエッジを作る"
+
+msgid "cut"
+msgstr "切り取り"
+
+msgid "cyan"
+msgstr "シアン"
+
+msgid "degrees"
+msgstr "次数"
+
+msgid "degrees of %n"
+msgstr "%n の次数"
+
+msgid "delete"
+msgstr "削除"
+
+msgid "delete %n of %L"
+msgstr "リスト %L の %n 番目を削除する"
+
+msgid "die"
+msgstr "死ぬ"
+
+msgid "direction"
+msgstr "向き"
+
+msgid "direction from %n to %n"
+msgstr "ノード %n から %n への向き"
+
+msgid "direction to %n"
+msgstr "%n への向き"
+
+msgid "distance"
+msgstr "距離"
+
+msgid "distance from %n to %n"
+msgstr "ノード %n から %n への距離"
+
+msgid "distance to %n"
+msgstr "%n への距離"
+
+msgid "duplicate"
+msgstr "複製"
+
+msgid "edge %n 's %E"
+msgstr "エッジ %n の %E"
+
+msgid "edge to %n"
+msgstr "エッジを %n にする"
+
+msgid "edges"
+msgstr "エッジ"
+
+msgid "else"
+msgstr "でなければ"
+
+msgid "graph is connected"
+msgstr "連結している"
+
+msgid "graph's %G"
+msgstr "グラフの %G"
+
+msgid "gray"
+msgstr "グレー"
+
+msgid "green"
+msgstr "緑色"
+
+msgid "id"
+msgstr "id"
+
+msgid "if %b"
+msgstr "もし %b なら"
+
+msgid "invalid sub name!"
+msgstr "サブルーチン名がおかしい"
+
+msgid "item %n of %L"
+msgstr "リスト %L の %n 番目"
+
+msgid "kill %n of %m"
+msgstr "%n 番目の %m を殺す"
+
+msgid "length of %L"
+msgstr "リスト %L の個数"
+
+msgid "lime"
+msgstr "ライム"
+
+msgid "magenta"
+msgstr "マジェンタ"
+
+msgid "maximum plot value?"
+msgstr "プロットの最大値?"
+
+msgid "minimum plot value?"
+msgstr "プロットの最小値?"
+
+msgid "mouse-pointer"
+msgstr "マウスのポインター"
+
+msgid "name"
+msgstr "名前"
+
+msgid "nearest from %n"
+msgstr "%n に最も近いノード"
+
+msgid "new"
+msgstr "新規"
+
+msgid "no object"
+msgstr "オブジェクトなし"
+
+msgid "node %n 's %N"
+msgstr "ノード %n の %N"
+
+msgid "node1"
+msgstr "ノード1"
+
+msgid "node2"
+msgstr "ノード2"
+
+msgid "nodes"
+msgstr "ノード"
+
+msgid "not %b"
+msgstr "%b ではない"
+
+msgid "number of max plots?"
+msgstr "プロットの最大数は?"
+
+msgid "operators"
+msgstr "演算"
+
+msgid "orange"
+msgstr "オレンジ色"
+
+msgid "other node"
+msgstr "他のノード"
+
+msgid "paste"
+msgstr "貼り付け"
+
+msgid "pick random %n to %n"
+msgstr "%n から %n までの乱数"
+
+msgid "pink"
+msgstr "ピンク"
+
+msgid "purple"
+msgstr "紫色"
+
+msgid "random"
+msgstr "ランダム色"
+
+msgid "red"
+msgstr "赤色"
+
+msgid "repeat %n"
+msgstr "%n 回繰り返す"
+
+msgid "repeat until %b"
+msgstr "%b まで繰り返す"
+
+msgid "replace item %n of %L with %n"
+msgstr "リスト %L の %n 番目を %n で置き換える"
+
+msgid "return %n"
+msgstr "リターン値を %n にして終了"
+
+msgid "returned value"
+msgstr "リターン値"
+
+msgid "round %n"
+msgstr "%n を丸める"
+
+msgid "scale %v color %c from %n to %n"
+msgstr "変数 %v を %n1 から %n2 の範囲の %c 色にする"
+
+msgid "sensing"
+msgstr "調べる"
+
+msgid "set %v to %n"
+msgstr "%v を %n にする"
+
+msgid "set all edges to %L"
+msgstr "全てのエッジを %L に入れる"
+
+msgid "set all nodes to %L"
+msgstr "全てのノードを %L に入れる"
+
+msgid "set color %c of edge %n"
+msgstr "エッジ %n の色を %c にする"
+
+msgid "set color %c of node %n"
+msgstr "ノード %n の色を %c にする"
+
+msgid "set color to %c"
+msgstr "色を %c にする"
+
+msgid "set edge %n 's %E to %n"
+msgstr "エッジ %n の %E を %n にする"
+
+msgid "set node %n 's %N to %n"
+msgstr "ノード %n の %N を %n にする"
+
+msgid "set node1 to %n"
+msgstr "ノード1を %n にする"
+
+msgid "set node2 to %n"
+msgstr "ノード2を %n にする"
+
+msgid "set random seed %n"
+msgstr "乱数を %n で初期化する"
+
+msgid "set x to %n"
+msgstr "x座標を %n にする"
+
+msgid "set y to %n"
+msgstr "y座標を %n にする"
+
+msgid "sky"
+msgstr "空色"
+
+msgid "stop all"
+msgstr "すべてを止める"
+
+msgid "stop script"
+msgstr "スクリプトを止める"
+
+msgid "test"
+msgstr "テスト"
+
+msgid "ticks"
+msgstr "カウント"
+
+msgid "truncate %n"
+msgstr "%n を切り捨て"
+
+msgid "turquoise"
+msgstr "トルコ石色"
+
+msgid "unknown %s"
+msgstr "不明なブロック %s"
+
+msgid "update plot period? (in milliseconds)"
+msgstr "プロットの時間間隔(ミリ秒)は?"
+
+msgid "variables"
+msgstr "変数"
+
+msgid "when I receive"
+msgstr "イベントを受け取ったとき"
+
+msgid "white"
+msgstr "白色"
+
+msgid "within %n from %n"
+msgstr "%n から %n 以内のノード"
+
+msgid "x position"
+msgstr "x座標"
+
+msgid "y position"
+msgstr "y座標"
+
+msgid "yellow"
+msgstr "黄色"
+
