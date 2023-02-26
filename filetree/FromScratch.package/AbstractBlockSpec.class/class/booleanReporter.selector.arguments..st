@@ -3,7 +3,7 @@ booleanReporter: aString selector: aSymbol arguments: aCollection
 
 	^ ScratchBlockSpec new
 		  label: aString;
-		  type: #b;
+		  type: #isBooleanReporter;
 		  selector: aSymbol;
 		  arguments: aCollection copy;
 		  yourself

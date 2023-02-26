@@ -1,3 +1,4 @@
 argument menus
 graphVarNames
-	^ self graph varNames
+
+	^ self graphScript varNames

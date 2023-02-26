@@ -6,8 +6,8 @@ graphFormExtent: aPoint
 	painter grWorld: grWorld.
 	painter graphRect: grWorld graphRectangle.
 	painter expandGraphRect.
-	painter nodeLabels: project nodes labelNos.
-	painter edgeLabels: project edges labelNos.
+	painter nodeLabels: project nodesScript labelNos.
+	painter edgeLabels: project edgesScript labelNos.
 	scale := painter graphRect extent scaleTo: aPoint.
 	extent := (painter graphRect extent * scale) rounded.
 	extent := extent - (5 @ 10).

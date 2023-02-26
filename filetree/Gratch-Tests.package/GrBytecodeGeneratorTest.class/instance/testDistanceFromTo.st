@@ -7,14 +7,14 @@ testDistanceFromTo
 	w pointAt: 2 put: 1 @ 0.
 	w pointAt: 3 put: 0 @ 0.
 	b := self newGenerator.
-	b distanceFrom: 1 to: 3.
+	b distanceFrom: (self literalValue: 1) to: (self literalValue: 3).
 	t := self newThread: w.
 	t forBreedNo: GrBreedId nodesBreedNo index: 1.
 	t codes: b code.
 	r := t evaluate: 1.
 	self assert: r closeTo: 5 sqrt.
 	b := self newGenerator.
-	b distanceFrom: 1 to: 2.
+	b distanceFrom: (self literalValue: 1) to: (self literalValue: 2).
 	t := self newThread: w.
 	t forBreedNo: GrBreedId nodesBreedNo index: 1.
 	t codes: b code.

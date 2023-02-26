@@ -2,7 +2,7 @@ test
 testCreateNodes
 	| g |
 	g := self newGenerator.
-	g createNodes: 5.
+	g createNodes: (self literalValue: 5).
 	self
 		assertCollection: g code
 		equals:

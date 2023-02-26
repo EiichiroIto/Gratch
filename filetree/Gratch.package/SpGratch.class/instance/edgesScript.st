@@ -1,3 +1,3 @@
 accessing
 edgesScript
-	^ project edges
+	^ project edgesScript

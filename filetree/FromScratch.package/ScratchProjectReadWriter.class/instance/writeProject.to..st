@@ -1,10 +1,9 @@
 api
 writeProject: aProject to: aStream
 
-	aProject scripts do: [ :m | 
-		m blocksBin allMorphsDo: [ :b | 
-			b isBlockMorph ifTrue: [ b stopProcess ] ].
-		m convertStacksToTuples ].
+	aProject scripts do: [ :script | 
+		script fixScriptBeforeWriting.
+		script convertStacksToTuples ].
 	[ 
 	aStream nextPutAll: self fileVersionString asByteArray.
 	self storeProjectInfo: aProject info on: aStream.

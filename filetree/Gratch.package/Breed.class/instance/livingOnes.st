@@ -1,0 +1,4 @@
+accessing
+livingOnes
+
+	self subclassResponsibility

@@ -1,4 +1,4 @@
-api
+block building
 localVarBlockFor: aString
 
 	^ LocalVarBlockMorph new

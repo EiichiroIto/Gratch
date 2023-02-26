@@ -4,4 +4,4 @@ testWriteIndent
 	ex := self newExporter.
 	ex privStream: '' writeStream.
 	ex writeIndent.
-	self assert: ex privStream contents equals: String lf, '   '
+	self assert: ex stream contents equals: String lf, '   '

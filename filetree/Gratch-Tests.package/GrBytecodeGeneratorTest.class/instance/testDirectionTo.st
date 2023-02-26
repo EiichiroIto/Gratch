@@ -7,7 +7,7 @@ testDirectionTo
 	w pointAt: 2 put: 2 @ 1.
 	w pointAt: 3 put: 1 @ 0.
 	b := self newGenerator.
-	r := b directionTo: 2.
+	r := b directionTo: (self literalValue: 2).
 	self assert: r isNil.
 	t := self newThread: w.
 	t forBreedNo: GrBreedId nodesBreedNo index: 1.

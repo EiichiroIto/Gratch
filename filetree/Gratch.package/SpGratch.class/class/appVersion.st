@@ -1,4 +1,4 @@
 constants
 appVersion
 
-	^ '1.4.1'
+	^ '1.5'

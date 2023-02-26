@@ -1,5 +1,5 @@
 button actions
 clearEdges
-	grWorld clearBreed: project edges breedNo.
+	grWorld clearBreed: project edgesScript breedNo.
 	self updateStatusForced: true.
 	presenter updateDisplay

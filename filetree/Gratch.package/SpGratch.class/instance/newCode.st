@@ -1,5 +1,5 @@
-processes
+instance creation
 newCode
-	^ GratchCode new
-		generator: GrBytecodeGenerator new;
+	^ GrBytecodeGenerator new
+		parser: ScratchBlockParser new;
 		yourself

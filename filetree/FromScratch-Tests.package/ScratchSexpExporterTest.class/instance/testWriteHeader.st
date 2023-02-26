@@ -5,4 +5,4 @@ testWriteHeader
 	ex := self newExporter.
 	ex privStream: '' writeStream.
 	ex writeHeader: proj.
-	self assert: ex privStream contents equals: '(abc ()', String lf, ' ('
+	self assert: ex stream contents equals: '(abc ()', String lf, ' ('

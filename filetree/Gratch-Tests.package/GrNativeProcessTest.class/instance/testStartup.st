@@ -1,7 +1,11 @@
 test
 testStartup
+
 	| p |
 	p := self newProcess.
+	p grWorld: self newWorld.
 	p startup.
-	self assert: p privTransition equals: #afterStartup.
-	self assertCollection: p privRunningEvents equals: {EventId startupEventNo}.
+	self assert: p transition equals: #afterStartup.
+	self
+		assertCollection: p runningEvents
+		equals: { EventId startupEventNo }

@@ -1,4 +1,0 @@
-testing
-isSubHatBlock
-
-	^ type = #C

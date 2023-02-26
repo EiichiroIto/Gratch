@@ -1,4 +1,4 @@
 initialization
 reset
-	varId := GrEdgesVarDef new.
-	variables := Variables new updateVarDef: varId.
+	varDef := GrEdgesVarDef new.
+	variables := Variables new updateVarDef: varDef.

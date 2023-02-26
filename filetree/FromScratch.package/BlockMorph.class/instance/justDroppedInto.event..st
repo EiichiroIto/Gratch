@@ -31,7 +31,7 @@ justDroppedInto: newOwner event: evt
 						ifNotNil: [ bottomBlockUsed := true.
 							targetAssoc value owner isBlockMorph
 								ifTrue: [ targetAssoc := nil ] ] ] ].
-	targetAssoc ifNil: [ ^ self ].
+	targetAssoc ifNil: [ ^ self onlyDroppedIntoScriptEditor ].
 
 	"make sure no processes are running"
 	self = self topBlock

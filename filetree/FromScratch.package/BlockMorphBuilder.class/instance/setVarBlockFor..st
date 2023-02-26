@@ -1,4 +1,4 @@
-api
+block building
 setVarBlockFor: aString
 
 	^ SetterBlockMorph new

@@ -1,3 +1,3 @@
 code generator
 emitBlockBegin: aMorph 
-	codeGenerator generateBegin: aMorph selector morph: aMorph.
+	generator generateBegin: aMorph selector morph: aMorph.

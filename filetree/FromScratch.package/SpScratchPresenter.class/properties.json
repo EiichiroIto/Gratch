@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "FromScratch-Spec2",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"viewerPane",
+		"stageFrame",
+		"editorPane",
+		"projectNameLabel",
+		"modifiedProjectLabel",
+		"logo",
+		"menu"
+	],
+	"name" : "SpScratchPresenter",
+	"type" : "normal"
+}

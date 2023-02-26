@@ -1,4 +1,4 @@
 testing
 isEventHatBlock
 
-	^ type = #E
+	^ type = #isEventHatBlock

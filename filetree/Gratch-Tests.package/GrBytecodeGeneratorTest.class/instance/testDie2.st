@@ -1,5 +1,6 @@
 test
 testDie2
+
 	| w b t |
 	w := self newWorld.
 	w createNodes: 3.
@@ -12,15 +13,15 @@ testDie2
 	b die.
 	t := self newThread: w.
 	t forBreedNo: GrBreedId nodesBreedNo index: 1.
-	self assert: (w flag: GrNodesVarDef aliveFlagNo breed: GrBreedId nodesBreedNo at: 1).
-	self assert: (w flag: GrNodesVarDef aliveFlagNo breed: GrBreedId nodesBreedNo at: 2).
+	self assert: (w aliveBreed: GrBreedId nodesBreedNo at: 1).
+	self assert: (w aliveBreed: GrBreedId nodesBreedNo at: 2).
 	t codes: b code.
 	t execute: 1.
-	self deny: (w flag: GrNodesVarDef aliveFlagNo breed: GrBreedId nodesBreedNo at: 1).
-	self assert: (w flag: GrNodesVarDef aliveFlagNo breed: GrBreedId nodesBreedNo at: 2).
+	self deny: (w aliveBreed: GrBreedId nodesBreedNo at: 1).
+	self assert: (w aliveBreed: GrBreedId nodesBreedNo at: 2).
 	t := self newThread: w.
 	t forBreedNo: GrBreedId edgesBreedNo index: 1.
 	t codes: b code.
 	t execute: 1.
-	self deny: (w alive: GrBreedId edgesBreedNo at: 1).
-	self assert: (w alive: GrBreedId edgesBreedNo at: 2)
+	self deny: (w aliveBreed: GrBreedId edgesBreedNo at: 1).
+	self assert: (w aliveBreed: GrBreedId edgesBreedNo at: 2)

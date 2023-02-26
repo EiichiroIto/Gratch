@@ -2,16 +2,16 @@ test
 testLabelsAndJumpsFor
 	| b arr |
 	b := self newGenerator.
-	b appendLabel: b privLabelId newNo.
+	b appendLabel: b labelId newNo.
 	b appendValue: 1.
 	b appendValue: 2.
-	b appendLabel: b privLabelId newNo.
+	b appendLabel: b labelId newNo.
 	b appendSymbol: #a.
-	b appendLabel: b privLabelId newNo.
+	b appendLabel: b labelId newNo.
 	b appendValue: 2.
 	b appendSymbol: #a withJump: 1.
 
-	arr := b labelsAndJumpsFor: b privStream contents.
+	arr := b labelsAndJumpsFor: b stream contents.
 
 	self assertCollection: arr first equals: #(1 5 6).
 	self assert: arr second size equals: 1.

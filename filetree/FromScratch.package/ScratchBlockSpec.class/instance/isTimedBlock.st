@@ -1,4 +1,4 @@
 testing
 isTimedBlock
 
-	^ type = #t
+	^ type = #isTimedBlock

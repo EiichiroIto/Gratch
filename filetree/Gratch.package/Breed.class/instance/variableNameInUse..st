@@ -1,3 +1,3 @@
-accessing
+accessing variable
 variableNameInUse: aString
-	^ varId includes: aString
+	^ varDef includes: aString

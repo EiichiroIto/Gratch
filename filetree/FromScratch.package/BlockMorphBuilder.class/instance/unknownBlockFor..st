@@ -1,4 +1,4 @@
-api
+block building
 unknownBlockFor: aSymbol
 
 	^ CommandBlockMorph new

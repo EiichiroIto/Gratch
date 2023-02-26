@@ -10,7 +10,7 @@ testExportNodes
 	w := self newWriter: g.
 	w nodeColumns: #(x y).
 	w exportNodes.
-	ret := w privStream contents.
+	ret := w stream contents.
 	self
 		assert: ret
 		equals:

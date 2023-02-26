@@ -1,8 +1,9 @@
 sensing ops
 distanceFrom: n1 to: n2
-	self appendValue: n2.
+
+	self appendValue: [ n2 argString: parser ].
 	self appendSymbol: #xyOf.
-	self appendValue: n1.
+	self appendValue: [ n1 argString: parser ].
 	self appendSymbol: #xyOf.
 	self appendSymbol: #rot.
 	self appendSymbol: #minus.

@@ -13,13 +13,13 @@ addGenericListBlocksTo: page y: startY
 	x := 13.
 	y := startY + 10.
 	page addMorph: (addButton
-			 target: self project application;
+			 target: project application;
 			 arguments: { self };
 			 position: x @ y).
 	y := addButton bottom + 3.
 	self listVarNames isEmpty ifTrue: [ ^ y ].
 	page addMorph: (deleteButton
-			 target: self project application;
+			 target: project application;
 			 arguments: { self };
 			 position: x @ y).
 	y := deleteButton bottom + 10.

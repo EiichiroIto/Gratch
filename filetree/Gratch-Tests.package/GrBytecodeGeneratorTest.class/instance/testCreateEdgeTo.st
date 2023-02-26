@@ -2,7 +2,7 @@ test
 testCreateEdgeTo
 	| g |
 	g := self newGenerator.
-	g createEdgeTo: 4.
+	g createEdgeTo: (self literalValue: 4).
 	self
 		assertCollection: g code
 		equals:

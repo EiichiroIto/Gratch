@@ -13,10 +13,10 @@ testWriteEdgeAtColumn
 	g var: GrEdgesVarDef colorVarNo breed: GrBreedId edgesBreedNo at: 1 put: ColorList blue.
 	w := self newWriter: g.
 	w writeEdge: 1 atColumn: 'node1'.
-	self assert: w privStream contents equals: 's1'.
+	self assert: w stream contents equals: 's1'.
 	w := self newWriter: g.
 	w writeEdge: 1 atColumn: 'node2'.
-	self assert: w privStream contents equals: 's2'.
+	self assert: w stream contents equals: 's2'.
 	w := self newWriter: g.
 	w writeEdge: 1 atColumn: 'color'.
-	self assert: w privStream contents equals: '''0,0,255'''.
+	self assert: w stream contents equals: '''0,0,255'''.

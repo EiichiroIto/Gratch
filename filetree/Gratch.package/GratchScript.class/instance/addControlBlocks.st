@@ -3,8 +3,8 @@ addControlBlocks
 
 	blockMorphBuilder
 		addCategory: 'control';
-		addHatBlock: 'when loop' type: #L arguments: #(  );
-		addHatBlock: 'when I receive %e' type: #E arguments: #(  );
+		addStartHatBlock: 'when loop' selector: #loop;
+		addEventHatBlock: 'when I receive' selector: #event: eventName: '';
 		addSeparator;
 		addCBlock: 'repeat %n' selector: #doRepeat arguments: #( 10 );
 		addSeparator;

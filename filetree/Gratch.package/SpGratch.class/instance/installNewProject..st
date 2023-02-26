@@ -1,10 +1,11 @@
 private
 installNewProject: aProject
+
 	self stopAllProcesses.
 	self grWorld: self newWorld.
 	project := aProject.
 	project application: self.
-	project scripts do: [ :each | grWorld addBreed: each breed ].
+	project setupWorld: grWorld.
 	project setupBlockSpecs.
 	project fixVars.
 	project updateLabels.

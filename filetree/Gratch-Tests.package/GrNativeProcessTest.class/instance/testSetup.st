@@ -1,7 +1,10 @@
 test
 testSetup
+
 	| p |
 	p := self newProcess.
 	p setup.
-	self assert: p privTransition equals: #afterSetup.
-	self assertCollection: p privRunningEvents equals: {EventId setupEventNo}.
+	self assert: p transition equals: #afterSetup.
+	self
+		assertCollection: p runningEvents
+		equals: { EventId setupEventNo }

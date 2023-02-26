@@ -1,0 +1,4 @@
+private
+newMorph
+
+	^ HatBlockMorph new

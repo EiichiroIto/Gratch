@@ -1,3 +1,3 @@
-private
+instance creation
 newWorld
 	^ GrNativeWorld new

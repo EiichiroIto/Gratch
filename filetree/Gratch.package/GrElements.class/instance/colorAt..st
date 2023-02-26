@@ -1,3 +1,3 @@
 accessing variable
 colorAt: anInteger
-	^ variables var: varId class colorVarNo at: anInteger
+	^ variables var: varDef class colorVarNo at: anInteger

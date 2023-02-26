@@ -1,6 +1,6 @@
-private
+instance creation
 newPresenter
-	^ SpGratchFrame basicNew
+	^ SpGratchPresenter basicNew
 		application: self;
 		initialize;
 		whenStepsDo: [ self stepProcesses ]

@@ -1,4 +1,4 @@
 initialization
 initialize
 
-	blocksBin := ScratchScriptsMorph new
+	blocksBin := self newScriptsMorph

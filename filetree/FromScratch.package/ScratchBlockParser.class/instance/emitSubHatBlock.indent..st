@@ -4,14 +4,14 @@ emitSubHatBlock: aMorph indent: indent
 	| str i2 |
 	str := aMorph subName.
 	str isEmpty ifTrue: [ ^ self ].
-	codeGenerator generateSubHeader: str.
-	i2 := indent + (codeGenerator indentLevelFor: str).
+	generator generateSubHeader: str.
+	i2 := indent + (generator indentLevelFor: aMorph).
 	aMorph nextBlock
 		ifNil: [ 
-			codeGenerator
+			generator
 				generateIndent: i2;
 				generateEmptySubBody ]
 		ifNotNil: [ 
 			self emitSubVarDeclaration: aMorph indent: i2.
 			self emitCode: aMorph nextBlock indent: i2 ].
-	codeGenerator generateSubFooter: str
+	generator generateSubFooter: str

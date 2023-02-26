@@ -12,7 +12,7 @@ importGraph
 	newProj := self readProjectFrom: file.
 	newProj ifNil: [ ^ self ].
 	fromWorld := self newWorld.
-	newProj scripts do: [ :each | fromWorld addBreed: each breed ].
+	newProj setupWorld: fromWorld.
 	newProj fixVars.
 	copier := self newWorldCopier
 		from: fromWorld;

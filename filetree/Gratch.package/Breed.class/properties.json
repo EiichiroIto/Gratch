@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"varId",
-		"variables"
+		"variables",
+		"varDef"
 	],
 	"name" : "Breed",
 	"type" : "normal"

@@ -1,3 +1,4 @@
 accessing edges
 allEdges
-	^ self livingBreeds: GrBreedId edgesBreedNo
+
+	^ (breeds at: GrBreedId edgesBreedNo) livingOnes

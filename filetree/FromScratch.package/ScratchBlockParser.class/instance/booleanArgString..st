@@ -1,3 +1,3 @@
 arg generator
 booleanArgString: anArgMorph 
-	^ codeGenerator falseString.
+	^ generator falseString.

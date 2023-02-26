@@ -1,3 +1,10 @@
 variable ops
-getGraphVar: vno
-	^ self getVar: [vno] breedNo: GrBreedId graphBreedNo at: 1
+getGraphVar: var
+
+	| v |
+	v := var choice.
+	v isEmpty ifTrue: [ self error ].
+	^ self
+		  getVar: (script project graphScript varNoFor: v)
+		  breedNo: GrBreedId graphBreedNo
+		  at: 1

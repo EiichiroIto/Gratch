@@ -1,4 +1,4 @@
-accessing graph
+api
 setRandomSeed: aNumber
 	| seed |
 	seed := aNumber asInteger.

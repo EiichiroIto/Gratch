@@ -1,4 +1,4 @@
 object i/o
 initFieldsFrom: anObjStream version: classVersion
 	super initFieldsFrom: anObjStream version: classVersion.
-	self initFieldsNamed: #(defaultColor #breedNo) from: anObjStream.
+	self initFieldsNamed: #(defaultColor) from: anObjStream.

@@ -1,4 +1,4 @@
-private
+code injection
 appendValue: anObject
 	| v |
 	v := anObject isBlock

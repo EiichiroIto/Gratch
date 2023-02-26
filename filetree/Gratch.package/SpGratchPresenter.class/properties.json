@@ -1,0 +1,27 @@
+{
+	"commentStamp" : "",
+	"super" : "SpScratchPresenter",
+	"category" : "Gratch-Spec2",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"buttonSave",
+		"buttonOpen",
+		"inspectorPane",
+		"inspectorTarget",
+		"buttonClearEdges",
+		"buttonClearNodes",
+		"buttonEvent",
+		"buttonLoop",
+		"buttonSetup",
+		"buttonLoopSlow",
+		"buttonStop",
+		"buttonStep",
+		"buttonEdges",
+		"buttonGraph",
+		"buttonNodes"
+	],
+	"name" : "SpGratchPresenter",
+	"type" : "normal"
+}

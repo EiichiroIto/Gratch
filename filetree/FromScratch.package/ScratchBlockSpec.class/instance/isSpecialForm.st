@@ -1,4 +1,4 @@
 testing
 isSpecialForm
 
-	^ type = #s
+	^ type = #isSpecialForm

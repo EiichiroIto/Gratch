@@ -1,3 +1,3 @@
-processes
+instance creation
 newProgram
 	^ GrProgram new

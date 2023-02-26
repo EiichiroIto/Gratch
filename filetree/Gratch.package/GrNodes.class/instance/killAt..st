@@ -1,3 +1,3 @@
 accessing variable
 killAt: index
-	self flag: varId class aliveFlagNo at: index put: false.
+	self flag: varDef class aliveFlagNo at: index put: false.

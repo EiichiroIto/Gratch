@@ -4,7 +4,7 @@ testSetupEdgeVarDefFrom
 	r := self newReader.
 	w := self newWorld.
 	self deny: (w edges userDefinedVarNames includes: 'a').
-	r privGrWorld: w.
+	r grWorld: w.
 	r
 		setupEdgeVarDefFrom:
 			{{'node1' . 'VARCHAR'}.

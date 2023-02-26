@@ -1,0 +1,4 @@
+private
+code
+
+	self subclassResponsibility

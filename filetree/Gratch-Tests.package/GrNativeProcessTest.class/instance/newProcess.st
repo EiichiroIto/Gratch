@@ -1,3 +1,6 @@
 private
 newProcess
-	^ self newWorld newProcess program: GrProgram new
+
+	^ GrNativeProcess new
+		  program: GrProgram new;
+		  yourself

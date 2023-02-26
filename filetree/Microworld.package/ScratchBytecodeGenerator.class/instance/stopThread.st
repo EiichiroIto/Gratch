@@ -1,3 +1,4 @@
 control ops
 stopThread
-	self nullaryCommand: #stop.
+
+	self subclassResponsibility

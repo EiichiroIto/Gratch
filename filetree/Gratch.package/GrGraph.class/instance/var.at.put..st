@@ -1,7 +1,7 @@
-microworld
+accessing variable
 var: anInteger at: dummy put: anObject
 	| v |
-	v := varId class.
+	v := varDef class.
 	anInteger = v widthVarNo
 		ifTrue: [ ^ self ].
 	anInteger = v heightVarNo
@@ -9,7 +9,7 @@ var: anInteger at: dummy put: anObject
 	anInteger = v maxBreedNoVarNo
 		ifTrue: [ ^ self ].
 	anInteger = v ticksVarNo
-		ifTrue: [ ^ ticks := anObject ].
+		ifTrue: [ ^ grWorld ticks: anObject ].
 	anInteger = v countAliveVarNo
 		ifTrue: [ ^ self ].
 	anInteger = v sizeVarNo

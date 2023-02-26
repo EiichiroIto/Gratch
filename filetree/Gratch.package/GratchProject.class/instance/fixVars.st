@@ -1,3 +1,4 @@
-accessing
+api
 fixVars
-	self breeds do: #fixVars
+
+	scripts do: [ :each | each breed fixVars ]

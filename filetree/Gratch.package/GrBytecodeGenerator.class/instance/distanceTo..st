@@ -1,14 +1,15 @@
 sensing ops
 distanceTo: pno
-	self appendValue: pno.
+
+	self appendValue: (pno argString: parser).
 	self appendSymbol: #xyOf.
 	self appendSymbol: #swap.
-	self getVar: GrNodesVarDef xVarNo.
+	self unaryCommand: #getVar arg: GrNodesVarDef xVarNo.
 	self appendSymbol: #minus.
 	self appendSymbol: #dup.
 	self appendSymbol: #mul.
 	self appendSymbol: #swap.
-	self getVar: GrNodesVarDef yVarNo.
+	self unaryCommand: #getVar arg: GrNodesVarDef yVarNo.
 	self appendSymbol: #minus.
 	self appendSymbol: #dup.
 	self appendSymbol: #mul.

@@ -1,4 +1,4 @@
 initialization
 reset
-	varId := GrNodesVarDef new.
-	variables := Variables new updateVarDef: varId.
+	varDef := GrNodesVarDef new.
+	variables := Variables new updateVarDef: varDef.

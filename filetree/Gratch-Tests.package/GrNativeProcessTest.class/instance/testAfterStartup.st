@@ -1,18 +1,21 @@
 test
 testAfterStartup
+
 	| p w |
 	w := self newWorld.
-	p := w newProcess program: GrProgram new.
-	p privRunningEvents: #().
-	p privTransition: #afterStartup.
+	p := self newProcess.
+	p runningEvents: #(  ).
+	p transition: #afterStartup.
 	p afterStartup.
-	self assert: p privTransition equals: #afterSetup.
-	self assertCollection: p privRunningEvents equals: {EventId setupEventNo}.
-	p privRunningEvents: #(8 9) asSet.
-	p privTransition: #afterStartup.
+	self assert: p transition equals: #afterSetup.
+	self
+		assertCollection: p runningEvents
+		equals: { EventId setupEventNo }.
+	p runningEvents: #( 8 9 ) asSet.
+	p transition: #afterStartup.
 	p afterStartup.
-	self assert: p privTransition equals: #afterStartup.
-	self assert: (p privRunningEvents isKindOf: Set).
-	self assert: p privRunningEvents size equals: 2.
-	self assert: (p privRunningEvents includes: 8).
-	self assert: (p privRunningEvents includes: 9).
+	self assert: p transition equals: #afterStartup.
+	self assert: (p runningEvents isKindOf: Set).
+	self assert: p runningEvents size equals: 2.
+	self assert: (p runningEvents includes: 8).
+	self assert: (p runningEvents includes: 9)

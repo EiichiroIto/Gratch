@@ -1,3 +1,7 @@
 control ops
-broadcast: anInteger
-	self unaryCommand: #broadcast arg: anInteger.
+broadcast: msg
+
+	| eno |
+	eno := msg argString: parser.
+	eno ifNil: [ ^ self ].
+	self unaryCommand: #broadcast arg: eno

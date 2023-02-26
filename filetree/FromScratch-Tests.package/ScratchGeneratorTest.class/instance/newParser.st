@@ -1,0 +1,4 @@
+private
+newParser
+
+	^ ScratchBlockParser new

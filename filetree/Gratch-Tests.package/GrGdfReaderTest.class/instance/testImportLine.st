@@ -3,7 +3,7 @@ testImportLine
 	| r w |
 	r := self newReader.
 	w := self newWorld.
-	r privGrWorld: w.
+	r grWorld: w.
 	r
 		importLine:
 			'nodedef>name VARCHAR,label VARCHAR,width DOUBLE,height DOUBLE,x DOUBLE,y DOUBLE,color VARCHAR'.

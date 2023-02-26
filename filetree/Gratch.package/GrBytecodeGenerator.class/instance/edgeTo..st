@@ -1,6 +1,7 @@
 sensing ops
-edgeTo: num
+edgeTo: node
+
 	self appendSymbol: #getId.
-	self appendValue: num.
+	self appendValue: (node argString: parser).
 	self appendSymbol: #edgeFromTo.
 	^ nil

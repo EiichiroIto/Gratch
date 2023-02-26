@@ -1,0 +1,4 @@
+private
+newScriptsMorph
+
+	^ ScratchScriptsMorph new

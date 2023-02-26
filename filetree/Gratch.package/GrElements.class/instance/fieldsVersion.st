@@ -1,3 +1,3 @@
 object i/o
 fieldsVersion
-	^ 1
+	^ 2

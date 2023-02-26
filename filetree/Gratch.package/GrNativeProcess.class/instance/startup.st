@@ -1,4 +1,4 @@
-accessing
+api
 startup
 	transition := #afterStartup.
 	runningEvents := {EventId startupEventNo}.

@@ -3,7 +3,7 @@ testNewEdge
 	| r w ret |
 	r := self newReader.
 	w := self newWorld.
-	r privGrWorld: w.
+	r grWorld: w.
 	ret := r newEdge.
 	self assert: ret equals: 1.
 	ret := r newEdge.

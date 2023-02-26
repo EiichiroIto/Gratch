@@ -4,7 +4,7 @@ savePlotImage: aPlotter
 	| file saveForm |
 	saveForm := self formFrom: aPlotter extent: 400 @ 400.
 	saveForm ifNil: [ ^ self ].
-	file := SpScratchFrame
+	file := SpScratchPresenter
 		        chooseForSaveFileReference: 'Save Plots Snapshot' localized
 		        extensions: { self application imageExtension }
 		        path: self application extraPath.

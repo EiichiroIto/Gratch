@@ -6,9 +6,10 @@ setupEvent: aHatBlock program: aProgram table: aDictionary events: aDictionary2
 		ifPresent: [ :eventNo | 
 			addr := aProgram nextAddress.
 			code := project newCode
-				startAddress: addr;
+				address: addr;
 				subTable: aDictionary;
-				parse: aHatBlock target: self.
+				script: self;
+				parseBlock: aHatBlock.
 			aProgram
 				addCode: code;
 				addEntryPoint: addr eventNo: eventNo breedNo: self breedNo ]

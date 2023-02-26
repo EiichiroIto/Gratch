@@ -1,3 +1,4 @@
 argument menus
 nodesVarNames
-	^ self nodes varNames
+
+	^ self nodesScript varNames

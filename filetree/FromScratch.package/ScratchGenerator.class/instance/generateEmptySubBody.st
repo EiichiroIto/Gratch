@@ -1,0 +1,4 @@
+code generator
+generateEmptySubBody
+
+	self subclassResponsibility

@@ -18,7 +18,7 @@ testExportEdges
 	w := self newWriter: g.
 	w edgeColumns: #(node1 node2).
 	w exportEdges.
-	ret := w privStream contents.
+	ret := w stream contents.
 	self
 		assert: ret
 		equals:

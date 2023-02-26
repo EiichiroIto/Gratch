@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"codeGenerator"
+		"generator"
 	],
 	"name" : "ScratchBlockParser",
 	"type" : "normal"

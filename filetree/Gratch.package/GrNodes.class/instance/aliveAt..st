@@ -1,3 +1,3 @@
 accessing variable
 aliveAt: index
-	^ self flag: varId class aliveFlagNo at: index
+	^ self flag: varDef class aliveFlagNo at: index

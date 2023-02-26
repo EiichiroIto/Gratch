@@ -2,6 +2,6 @@ instance creation
 newGraph
 	| w g |
 	w := GrNativeWorld new.
-	g := w newGraph.
+	g := GrGraph new.
 	g grWorld: w.
 	^ g

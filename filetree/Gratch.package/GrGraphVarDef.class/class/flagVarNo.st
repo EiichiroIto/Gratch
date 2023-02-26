@@ -1,0 +1,4 @@
+accessing
+flagVarNo
+
+	^ 2

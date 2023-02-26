@@ -14,4 +14,4 @@ testWriteEdge
 	w := self newWriter: g.
 	w edgeColumns: #(node1 node2 color).
 	w writeEdge: 1.
-	self assert: w privStream contents equals: 's1,s2,''0,0,255'''.
+	self assert: w stream contents equals: 's1,s2,''0,0,255'''.

@@ -3,6 +3,6 @@ testPrivStream
 	| w s |
 	w := self newWriter.
 	s := WriteStream on: ''.
-	self assert: w privStream isStream.
+	self assert: w stream isStream.
 	w privStream: s.
-	self assert: w privStream equals: s
+	self assert: w stream equals: s

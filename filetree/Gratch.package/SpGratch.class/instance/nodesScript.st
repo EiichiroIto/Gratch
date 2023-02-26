@@ -1,3 +1,3 @@
 accessing
 nodesScript
-	^ project nodes
+	^ project nodesScript

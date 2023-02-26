@@ -1,4 +1,4 @@
-variable ops
+code injection
 setVar: var breedNo: bno at: id put: aNumber
 	self appendValue: id.
 	self appendValue: aNumber.

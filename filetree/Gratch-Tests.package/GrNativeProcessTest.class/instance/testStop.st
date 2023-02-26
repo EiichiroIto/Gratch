@@ -1,6 +1,7 @@
 test
 testStop
+
 	| p |
 	p := self newProcess.
-	self assert: p privTransition equals: #idle.
-	self assert: p privRunningEvents isEmpty.
+	self assert: p transition equals: #idle.
+	self assert: p runningEvents isEmpty

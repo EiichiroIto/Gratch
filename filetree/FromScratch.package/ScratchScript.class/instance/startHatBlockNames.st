@@ -1,0 +1,4 @@
+block specs
+startHatBlockNames
+
+	self subclassResponsibility

@@ -1,4 +1,4 @@
 testing
 isStartHatBlock
 
-	^ type = #G
+	^ type = #isStartHatBlock

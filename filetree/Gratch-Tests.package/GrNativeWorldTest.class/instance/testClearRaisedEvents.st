@@ -2,8 +2,8 @@ test
 testClearRaisedEvents
 	| w |
 	w := self newWorld.
-	self assert: w privRaisedEvents isEmpty.
+	self assert: w raisedEvents isEmpty.
 	w raiseEvent: #a.
-	self assert: w privRaisedEvents notEmpty.
+	self assert: w raisedEvents notEmpty.
 	w clearRaisedEvents.
-	self assert: w privRaisedEvents isEmpty.
+	self assert: w raisedEvents isEmpty.

@@ -1,5 +1,8 @@
 menu actions
 showBytecode: topBlock
+
 	| code |
-	code := self newCode parse: topBlock target: presenter target.
-	code inspect
+	code := self newCode
+		        script: presenter target;
+		        yourself.
+	(code parseBlock: topBlock) inspect

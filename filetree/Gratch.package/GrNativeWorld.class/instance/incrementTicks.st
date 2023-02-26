@@ -1,3 +1,3 @@
-accessing graph
+microworld
 incrementTicks
-	self graph incrementTicks.
+	ticks := ticks + 1.

@@ -1,3 +1,3 @@
-microworld
+accessing
 countAlive
 	^ self size

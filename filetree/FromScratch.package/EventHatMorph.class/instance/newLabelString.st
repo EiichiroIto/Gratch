@@ -1,6 +1,7 @@
 initialization
 newLabelString
+
 	^ StringMorph new
-		font: ScratchTranslator labelFont;
-		color: Color white;
-		yourself
+		  font: ScratchTranslator labelFont;
+		  color: Color white;
+		  yourself

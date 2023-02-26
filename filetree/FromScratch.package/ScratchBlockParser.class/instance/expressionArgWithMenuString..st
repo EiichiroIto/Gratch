@@ -1,3 +1,3 @@
 arg generator
 expressionArgWithMenuString: t1 
-	^ codeGenerator expressionArgWithMenuString: t1
+	^ generator expressionArgWithMenuString: t1

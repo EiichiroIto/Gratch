@@ -1,5 +1,5 @@
 sensing ops
 otherNode
 	| x |
-	x := grWorld random: breedId except: id.
+	x := grWorld randomBreed: breedId except: id.
 	self push: x

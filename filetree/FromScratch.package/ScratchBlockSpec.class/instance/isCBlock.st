@@ -1,4 +1,4 @@
 testing
 isCBlock
 
-	^ type = #c
+	^ type = #isCBlock

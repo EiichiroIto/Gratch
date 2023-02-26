@@ -1,3 +1,0 @@
-accessing
-newGraph
-	^ grWorld newGraph

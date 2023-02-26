@@ -1,3 +1,3 @@
 arg generator
 variableArgString: aVariableMorph
-	^ codeGenerator variableArgString: aVariableMorph variable.
+	^ generator variableArgString: aVariableMorph variable.

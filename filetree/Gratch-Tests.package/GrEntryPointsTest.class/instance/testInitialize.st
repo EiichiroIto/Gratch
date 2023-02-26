@@ -1,3 +1,3 @@
 test
 testInitialize
-	self testPrivBreeds.
+	self testBreeds.

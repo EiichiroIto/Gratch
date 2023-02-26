@@ -1,3 +1,3 @@
 code generator
 emitBlockCenter: aMorph 
-	codeGenerator generateCenter: aMorph selector morph: aMorph.
+	generator generateCenter: aMorph selector morph: aMorph.

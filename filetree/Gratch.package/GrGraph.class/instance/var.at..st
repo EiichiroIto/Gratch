@@ -1,7 +1,7 @@
-microworld
+accessing variable
 var: anInteger at: id
 	| v |
-	v := varId class.
+	v := varDef class.
 	anInteger = v widthVarNo
 		ifTrue: [ ^ grWorld extent x ].
 	anInteger = v heightVarNo
@@ -9,11 +9,11 @@ var: anInteger at: id
 	anInteger = v maxBreedNoVarNo
 		ifTrue: [ ^ grWorld maxBreedNo ].
 	anInteger = v ticksVarNo
-		ifTrue: [ ^ ticks ].
+		ifTrue: [ ^ grWorld ticks ].
 	anInteger = v countAliveVarNo
 		ifTrue: [ ^ grWorld countAliveOf: id ].
 	anInteger = v sizeVarNo
 		ifTrue: [ ^ grWorld sizeOf: id ].
 	anInteger = v maxVarVarNo
-		ifTrue: [ ^ varId size ].
+		ifTrue: [ ^ varDef size ].
 	^ super var: anInteger at: id

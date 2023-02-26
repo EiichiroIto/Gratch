@@ -2,10 +2,10 @@ test
 testRaiseEvent
 	| w |
 	w := self newWorld.
-	self assert: w privRaisedEvents isEmpty.
+	self assert: w raisedEvents isEmpty.
 	w raiseEvent: #a.
-	self assertCollection: w privRaisedEvents asArray equals: #(a).
+	self assertCollection: w raisedEvents asArray equals: #(a).
 	w raiseEvent: #b.
-	self assert: w privRaisedEvents size equals: 2.
-	self assert: (w privRaisedEvents includes: #a).
-	self assert: (w privRaisedEvents includes: #b).
+	self assert: w raisedEvents size equals: 2.
+	self assert: (w raisedEvents includes: #a).
+	self assert: (w raisedEvents includes: #b).

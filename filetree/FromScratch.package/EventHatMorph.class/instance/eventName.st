@@ -1,5 +1,4 @@
-other
+accessing
 eventName
-	"Answer the name of this script."
 
 	^ scriptNameMorph eventName

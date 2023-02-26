@@ -6,8 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"defaultColor",
-		"breedNo"
+		"defaultColor"
 	],
 	"name" : "GrElements",
 	"type" : "normal"

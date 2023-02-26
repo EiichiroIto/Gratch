@@ -1,4 +1,4 @@
-accessing
+accessing variable
 varsBreed: bno at: id
 	| stream breed v vno |
 	stream := WriteStream on: Array new.

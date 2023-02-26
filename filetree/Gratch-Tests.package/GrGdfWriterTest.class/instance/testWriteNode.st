@@ -8,4 +8,4 @@ testWriteNode
 	g yAt: 1 put: 2.
 	g var: GrNodesVarDef colorVarNo breed: GrBreedId nodesBreedNo at: 1 put: ColorList green.
 	w writeNode: 1.
-	self assert: w privStream contents equals: '1.0,2.0,''0,255,0'''.
+	self assert: w stream contents equals: '1.0,2.0,''0,255,0'''.

@@ -1,4 +1,4 @@
-accessing
+api
 step
 	self isRunning
 		ifFalse: [ ^ self ].

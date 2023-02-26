@@ -1,6 +1,8 @@
 initialization
 initialize
+
 	super initialize.
 	raisedEvents := Set new.
 	breeds := Array new.
-	random := SharedRandom globalGenerator
+	random := SharedRandom globalGenerator.
+	ticks := 0

@@ -1,3 +1,3 @@
-accessing
+accessing variable
 userDefinedVarNoAndNames
-	^ varId userDefinedVarNoAndNames
+	^ varDef userDefinedVarNoAndNames

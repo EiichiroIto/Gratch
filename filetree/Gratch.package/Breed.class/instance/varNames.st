@@ -1,3 +1,3 @@
-accessing
+accessing variable
 varNames
-	^ varId varNames
+	^ varDef varNames

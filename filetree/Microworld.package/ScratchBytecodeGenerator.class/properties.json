@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "ScratchGenerator",
 	"category" : "Microworld-Bytecode",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -9,7 +9,8 @@
 		"stream",
 		"labelId",
 		"address",
-		"subTable"
+		"subTable",
+		"script"
 	],
 	"name" : "ScratchBytecodeGenerator",
 	"type" : "normal"

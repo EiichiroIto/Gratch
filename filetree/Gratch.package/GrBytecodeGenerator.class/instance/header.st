@@ -1,0 +1,4 @@
+private
+header
+
+	self shouldNotImplement

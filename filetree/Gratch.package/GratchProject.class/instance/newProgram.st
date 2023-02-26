@@ -1,3 +1,3 @@
-private
+instance creation
 newProgram
 	^ GrProgram new

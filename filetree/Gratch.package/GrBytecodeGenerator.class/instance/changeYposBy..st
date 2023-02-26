@@ -1,7 +1,8 @@
 basic ops
 changeYposBy: aNumber
+
 	self appendValue: GrNodesVarDef yVarNo.
-	self getVar: GrNodesVarDef yVarNo.
-	self appendValue: aNumber.
+	self unaryCommand: #getVar arg: GrNodesVarDef yVarNo.
+	self appendValue: [ aNumber argString: parser ].
 	self appendSymbol: #plus.
-	self appendSymbol: #setVarTo.
+	self appendSymbol: #setVarTo

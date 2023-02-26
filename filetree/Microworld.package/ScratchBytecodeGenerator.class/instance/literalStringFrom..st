@@ -1,4 +1,4 @@
-accessing
+private
 literalStringFrom: anObject
 	anObject isString
 		ifTrue: [ ^ anObject asNumberNoError ].

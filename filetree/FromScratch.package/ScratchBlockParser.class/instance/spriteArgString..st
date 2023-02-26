@@ -1,3 +1,3 @@
 arg generator
 spriteArgString: aSpriteArgMorph
-	^ codeGenerator spriteArgString: aSpriteArgMorph evaluate
+	^ generator spriteArgString: aSpriteArgMorph evaluate

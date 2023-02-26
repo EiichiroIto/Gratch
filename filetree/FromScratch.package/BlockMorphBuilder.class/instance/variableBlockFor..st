@@ -1,4 +1,4 @@
-api
+block building
 variableBlockFor: aString
 
 	^ VariableBlockMorph new

@@ -1,0 +1,7 @@
+arithmetic ops
+divide: x by: y
+
+	^ self
+		  binaryCommand: #div
+		  arg1: [ x argString: parser ]
+		  arg2: [ y argString: parser ]

@@ -1,0 +1,4 @@
+private
+newGenerator
+
+	^ ScratchGenerator new

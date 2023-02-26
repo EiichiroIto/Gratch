@@ -3,7 +3,7 @@ testSetEdgeAtColumnTo
 	| r w |
 	r := self newReader.
 	w := self newWorld.
-	r privGrWorld: w.
+	r grWorld: w.
 	r privNodes at: 1 put: 1.
 	r privNodes at: 2 put: 2.
 	r setEdge: 1 atColumn: 'node1' to: 1.

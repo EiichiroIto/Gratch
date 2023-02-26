@@ -1,4 +1,4 @@
-variable ops
+code injection
 changeVar: var breedNo: bno at: id by: aNumber
 	self appendValue: id.
 	self appendSymbol: #dup.

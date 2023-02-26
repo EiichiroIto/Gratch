@@ -1,3 +1,0 @@
-accessing
-newNodes
-	^ grWorld newNodes

@@ -3,5 +3,5 @@ testReset
 	| b |
 	b := Breed basicNew.
 	b reset.
-	self assert: b privVarId class equals: VarDef.
-	self assert: b privVariables class equals: Variables.
+	self assert: b varDef class equals: VarDef.
+	self assert: b variables class equals: Variables.

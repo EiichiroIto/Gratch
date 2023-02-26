@@ -1,4 +1,5 @@
 initialization
 initialize
+
 	super initialize.
-	subName := ''.
+	subName := ''

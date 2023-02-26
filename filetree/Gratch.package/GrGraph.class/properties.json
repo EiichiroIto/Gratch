@@ -6,7 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"ticks",
 		"grWorld"
 	],
 	"name" : "GrGraph",

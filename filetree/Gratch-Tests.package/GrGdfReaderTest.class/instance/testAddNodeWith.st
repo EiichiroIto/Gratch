@@ -3,7 +3,7 @@ testAddNodeWith
 	| r w |
 	r := self newReader.
 	w := self newWorld.
-	r privGrWorld: w.
+	r grWorld: w.
 	self assert: r privNodes isEmpty.
 	r
 		addNodeWith:

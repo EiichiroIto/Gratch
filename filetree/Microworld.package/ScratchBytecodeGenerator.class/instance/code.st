@@ -1,5 +1,6 @@
-accessing
+private
 code
+
 	| firstPass array out |
 	firstPass := stream contents.
 	array := self labelsAndJumpsFor: firstPass.

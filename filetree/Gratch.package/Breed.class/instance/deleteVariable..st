@@ -1,4 +1,4 @@
-accessing
+api
 deleteVariable: aString
-	varId delete: aString.
-	variables updateVarDef: varId.
+	varDef delete: aString.
+	variables updateVarDef: varDef.

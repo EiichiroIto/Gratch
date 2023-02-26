@@ -3,5 +3,5 @@ addControlBlocks
 
 	blockMorphBuilder
 		addCategory: 'control';
-		addHatBlock: 'when setup' type: #T arguments: #( #- ).
+		addStartHatBlock: 'when setup' selector: #startup.
 	super addControlBlocks

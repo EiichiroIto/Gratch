@@ -1,3 +1,6 @@
 private
 eventBlockTupleFor: aString
-	^ { #EventHatMorph. aString }
+
+	^ { 
+		  #EventHatMorph.
+		  aString }

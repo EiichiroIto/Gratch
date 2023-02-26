@@ -1,4 +1,4 @@
-accessing
+api
 kill: id breed: bno
 	bno = GrBreedId graphBreedNo
 		ifTrue: [ ^ self ].

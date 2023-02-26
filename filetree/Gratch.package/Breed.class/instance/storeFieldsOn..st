@@ -1,3 +1,3 @@
 object i/o
 storeFieldsOn: anObjStream
-	self storeFieldsNamed: #(varId variables) on: anObjStream.
+	self storeFieldsNamed: #(#varDef variables) on: anObjStream.

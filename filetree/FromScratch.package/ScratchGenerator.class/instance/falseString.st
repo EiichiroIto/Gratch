@@ -1,0 +1,4 @@
+arg generator
+falseString
+
+	^ false

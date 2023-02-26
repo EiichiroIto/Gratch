@@ -4,4 +4,4 @@ testWriteFooter
 	ex := self newExporter.
 	ex privStream: '' writeStream.
 	ex writeFooter: nil.
-	self assert: ex privStream contents equals: '))'
+	self assert: ex stream contents equals: '))'

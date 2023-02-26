@@ -1,4 +1,4 @@
 testing
 isBooleanReporter
 
-	^ type = #b
+	^ type = #isBooleanReporter

@@ -1,9 +1,8 @@
-variable ops
-getVar: aBlock1 breedNo: aBlock2 at: index
-	| bno |
+code injection
+getVar: vno breedNo: bno at: index
+
 	self appendValue: index.
-	bno := aBlock2 value.
-	self appendValue: (aBlock1 cull: bno).
+	self appendValue: vno.
 	self appendValue: bno.
 	self appendSymbol: #getBreedVar.
 	^ nil

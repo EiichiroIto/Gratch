@@ -1,4 +1,4 @@
 testing
 isReporterBlock
 
-	^ #(r b) includes: type
+	^ #(isReporterBlock isBooleanReporter) includes: type

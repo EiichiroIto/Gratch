@@ -1,4 +1,4 @@
-variable ops
+code injection
 compute: anInteger var: anInteger2 breed: anInteger3
 	self appendValue: anInteger.
 	self appendValue: anInteger2.

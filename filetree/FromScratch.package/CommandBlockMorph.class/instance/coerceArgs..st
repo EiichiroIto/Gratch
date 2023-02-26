@@ -4,7 +4,7 @@ coerceArgs: argList
 
 	| args |
 	args := argList asArray.
-	(receiver specialCommands includes: selector)
+	(receiver specialCommandSelectors includes: selector)
 		ifFalse: [ "ensure args are numbers where numbers are expected"
 			args := argList asArray
 				with: self numberArgFlags

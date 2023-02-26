@@ -1,3 +1,3 @@
 testing
 isStop
-	^ receiver stopBlocks includes: selector
+	^ receiver stopBlockSelectors includes: selector

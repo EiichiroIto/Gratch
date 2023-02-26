@@ -1,18 +1,20 @@
 private
 setupScripts
-	graph := GrGraphScript new
-		breed: application newGraph;
-		project: self;
-		yourself.
-	nodes := GrNodesScript new
-		breed: application newNodes;
-		project: self;
-		yourself.
-	edges := GrEdgesScript new
-		breed: application newEdges;
-		project: self;
-		yourself.
-	self
-		addScript: graph;
-		addScript: nodes;
-		addScript: edges
+
+	| script |
+	scripts := Array new: 3.
+	script := GrGraphScript new
+		          breed: self newGraph;
+		          project: self;
+		          yourself.
+	scripts at: script breedNo put: script.
+	script := GrNodesScript new
+		          breed: self newNodes;
+		          project: self;
+		          yourself.
+	scripts at: script breedNo put: script.
+	script := GrEdgesScript new
+		          breed: self newEdges;
+		          project: self;
+		          yourself.
+	scripts at: script breedNo put: script

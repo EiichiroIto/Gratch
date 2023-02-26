@@ -3,7 +3,7 @@ testAddEdgeWith
 	| r w |
 	r := self newReader.
 	w := self newWorld.
-	r privGrWorld: w.
+	r grWorld: w.
 	r privNodes at: 'a' put: 1.
 	r privNodes at: 'b' put: 2.
 	r

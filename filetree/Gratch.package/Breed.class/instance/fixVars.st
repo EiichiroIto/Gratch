@@ -1,4 +1,4 @@
-accessing
+api
 fixVars
-	varId fixVars.
-	variables ifNotNil: [ variables fixVars: varId ].
+	varDef fixVars.
+	variables ifNotNil: [ variables fixVars: varDef ].

@@ -3,7 +3,7 @@ testScaleVarNoColorFromToIndex
 	| br a |
 	br := self newNodes.
 	a := br addVariable: 'a'.
-	br privVariables forceSize: 2.
+	br variables forceSize: 2.
 	br var: a at: 1 put: 0.
 	br
 		scaleVarNo: a

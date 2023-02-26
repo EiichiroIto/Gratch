@@ -6,7 +6,7 @@ testDeleteVariable
 	b := br addVariable: 'b'.
 	self assert: a ~= b.
 	br deleteVariable: 'b'.
-	self assert: (br privVariables privVarNames includes: 'a' ).
-	self deny: (br privVariables privVarNames includes: 'b' ).
-	self assert: (br varId privVarNames includes: 'a' ).
-	self deny: (br varId privVarNames includes: 'b' ).
+	self assert: (br variables privVarNames includes: 'a' ).
+	self deny: (br variables privVarNames includes: 'b' ).
+	self assert: (br varDef privVarNames includes: 'a' ).
+	self deny: (br varDef privVarNames includes: 'b' ).

@@ -1,7 +1,8 @@
-api
+block building
 subHatBlockFor: aString
 
 	^ SubHatMorph new
-		  scriptOwner: script;
+		  receiver: script;
+		  selector: #sub:;
 		  subName: aString;
 		  yourself

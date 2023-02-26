@@ -20,7 +20,9 @@
 		"hadError",
 		"blockLayoutNeeded",
 		"cachedForm",
-		"cachedFeedbackForm"
+		"cachedFeedbackForm",
+		"receiver",
+		"selector"
 	],
 	"name" : "BlockMorph",
 	"type" : "normal"

@@ -1,3 +1,3 @@
-microworld
+accessing
 size
 	self subclassResponsibility.

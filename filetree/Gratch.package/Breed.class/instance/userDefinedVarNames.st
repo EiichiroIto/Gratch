@@ -1,3 +1,3 @@
-accessing
+accessing variable
 userDefinedVarNames
-	^ (varId userDefinedVarNames \ self userDefinedListNames) sorted
+	^ (varDef userDefinedVarNames \ self userDefinedListNames) sorted

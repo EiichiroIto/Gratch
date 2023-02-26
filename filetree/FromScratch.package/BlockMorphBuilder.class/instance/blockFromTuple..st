@@ -1,41 +1,19 @@
 api
-blockFromTuple: tuple
+blockFromTuple: anArray
 
 	"Answer a new block for the given tuple."
 
-	| k spec block argCount arg argBlock |
+	| k spec block argCount arg argBlock tuple |
+	tuple := script convertEventHatTuple: anArray.
 	k := tuple first.
-	k = #localVar ifTrue: [ 
-		^ self localVarBlockFor: tuple second ].
-	(#( readVariable changeVariable ) includes: k) ifTrue: [ 
+	k = #localVar ifTrue: [ ^ self localVarBlockFor: tuple second ].
+	(script variableBlockSelectors includes: k) ifTrue: [ 
 		^ self variableBlockFromTuple: tuple ].
-	(#( EventHatMorph SubHatMorph ) includes: k) ifTrue: [ 
-		^ script hatBlockFromTuple: tuple ].
-	"#scratchComment = k
-		ifTrue: [ block := ScratchCommentMorph new.
-			tuple size > 1
-				ifTrue: [ block commentMorph contents: (tuple at: 2) ].
-			tuple size > 2
-				ifTrue: [ (tuple at: 3)
-						ifFalse: [ block toggleShowing ] ].
-			tuple size > 3
-				ifTrue: [ block width: (tuple at: 4) ].
-			tuple size > 4
-				ifTrue: [ block anchor: (self blockWithID: (tuple at: 5)) ].
-			^ block ].
-	#comment: = k
-		ifTrue: [ block := CommentBlockMorph new.
-			tuple size > 1
-				ifTrue: [ block comment: (tuple at: 2) ].
-			tuple size > 2
-				ifTrue: [ (tuple at: 3)
-						ifFalse: [ block toggleShowing ] ].
-			block color: (Color r: 0.8 g: 0 b: 0).
-			^ block ]."
+	k = #sub: ifTrue: [ ^ self subHatBlockFor: tuple second ].
 	spec := self blockSpecAt: k.
-	spec ifNil: [ 
-		^ self unknownBlockFor: k ].
+	spec ifNil: [ ^ self unknownBlockFor: k ].
 	block := self blockFromSpec: spec.
+	block isHatBlock ifTrue: [ block defaultArgs: tuple copyWithoutFirst ].
 	block isCommandBlock ifTrue: [ 
 		argCount := block argumentCount min: tuple size - 1.
 		1 to: argCount do: [ :i | 
@@ -50,8 +28,7 @@ blockFromTuple: tuple
 				(block argumentAt: i) defaultValue: arg ] ].
 		block isCBlock ifTrue: [ 
 			tuple last isArray ifTrue: [ 
-				block firstBlockList:
-					(self stackFromTupleList: tuple last) ] ].
+				block firstBlockList: (self stackFromTupleList: tuple last) ] ].
 		block isIfElseBlock ifTrue: [ 
 			arg := tuple at: tuple size - 1.
 			arg isArray ifTrue: [ 
@@ -59,6 +36,6 @@ blockFromTuple: tuple
 			arg := tuple last.
 			arg isArray ifTrue: [ 
 				block falseBlock: (self stackFromTupleList: arg) ] ].
-		block isReporter ifTrue: [ 
-			(spec type includes: $b) ifTrue: [ block isBoolean: true ] ] ].
+		(block isReporter and: [ spec isBooleanReporter ]) ifTrue: [ 
+			block isBoolean: true ] ].
 	^ block

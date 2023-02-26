@@ -11,7 +11,7 @@ addGenericVariableBlocksTo: page y: startY
 	page
 		addMorph:
 			(addButton
-				target: self project application;
+				target: project application;
 				arguments: {self};
 				position: x @ startY).
 	y := addButton bottom + 3.
@@ -19,7 +19,7 @@ addGenericVariableBlocksTo: page y: startY
 		ifTrue: [ page
 				addMorph:
 					(deleteButton
-						target: self project application;
+						target: project application;
 						arguments: {self};
 						position: x @ y).
 			y := deleteButton bottom + 10.

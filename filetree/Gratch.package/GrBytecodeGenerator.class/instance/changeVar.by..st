@@ -1,8 +1,12 @@
 variable ops
-changeVar: id by: aNumber
-	self appendValue: id.
+changeVar: var by: aNumber
+
+	| v |
+	v := var choice.
+	v isEmpty ifTrue: [ self error ].
+	self appendValue: [ script varNoFor: v ].
 	self appendSymbol: #dup.
 	self appendSymbol: #getVar.
-	self appendValue: aNumber.
+	self appendValue: [ aNumber argString: parser ].
 	self appendSymbol: #plus.
-	self appendSymbol: #setVarTo.
+	self appendSymbol: #setVarTo

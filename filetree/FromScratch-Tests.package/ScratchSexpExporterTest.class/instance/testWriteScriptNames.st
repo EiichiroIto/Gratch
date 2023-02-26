@@ -14,4 +14,4 @@ testWriteScriptNames
 	ex := self newExporter.
 	ex privStream: '' writeStream.
 	ex writeScriptNames: proj.
-	self assert: ex privStream contents equals: '(a b)'
+	self assert: ex stream contents equals: '(a b)'

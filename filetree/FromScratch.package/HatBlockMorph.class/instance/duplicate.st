@@ -4,5 +4,5 @@ duplicate
 
 	| m |
 	m := self fullCopy.
-	scriptOwner ifNotNil: [m scriptOwner: scriptOwner].
+	receiver ifNotNil: [m receiver: receiver].
 	self world activeHand attachMorph: m.

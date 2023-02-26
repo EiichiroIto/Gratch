@@ -1,3 +1,4 @@
 control ops
-doIfEnd: id
-	self appendLabel: id.
+doIfEnd: anInteger
+
+	self subclassResponsibility

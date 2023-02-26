@@ -3,7 +3,7 @@ testNewNode
 	| r w ret |
 	r := self newReader.
 	w := self newWorld.
-	r privGrWorld: w.
+	r grWorld: w.
 	self assert: (w countAliveOf: GrBreedId nodesBreedNo) equals: 0.
 	ret := r newNode.
 	self assert: ret equals: 1.

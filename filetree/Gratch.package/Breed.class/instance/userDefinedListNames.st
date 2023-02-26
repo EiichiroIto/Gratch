@@ -1,3 +1,3 @@
-accessing
+accessing variable
 userDefinedListNames
-	^ varId listNames
+	^ varDef listNames

@@ -12,6 +12,6 @@ startEvent
 	menu openWithSpecAt: self uiManager world cursorPoint.
 	eno = 0 ifTrue: [ ^ self ].
 	program := project programOf: events.
-	process := grWorld newProcess program: program.
+	process := self newProcess program: program.
 	process event: eno.
 	^ process

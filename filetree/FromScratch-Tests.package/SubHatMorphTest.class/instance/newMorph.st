@@ -1,0 +1,4 @@
+private
+newMorph
+
+	^ SubHatMorph new

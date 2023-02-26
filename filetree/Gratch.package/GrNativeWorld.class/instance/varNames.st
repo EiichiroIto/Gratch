@@ -1,4 +1,4 @@
-accessing
+accessing variable
 varNames
 	| list |
 	list := Set new.

@@ -5,7 +5,7 @@ importCodes: aCollection into: aScript
 	top := nil.
 	aCollection
 		do: [ :each | 
-			tuple := self tupleFrom: each.
+			tuple := self tupleFrom: each script: aScript.
 			block := aScript blockFromTuple: tuple.
 			top
 				ifNil: [ top := block.

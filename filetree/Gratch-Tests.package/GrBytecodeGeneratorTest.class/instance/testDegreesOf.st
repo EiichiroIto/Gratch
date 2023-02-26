@@ -1,5 +1,6 @@
 test
 testDegreesOf
+
 	| w t b |
 	w := self newWorld.
 	w createNodes: 4.
@@ -11,28 +12,28 @@ testDegreesOf
 	w n1At: 3 put: 1.
 	w n2At: 3 put: 3.
 	b := self newGenerator.
-	b degreesOf: 1.
+	b degreesOf: (self literalValue: 1).
 	t := self newThread: w.
 	t forBreedNo: GrBreedId nodesBreedNo index: 1.
 	t codes: b code.
 	self assert: (t evaluate: 1) equals: 2.
 
 	b := self newGenerator.
-	b degreesOf: 2.
+	b degreesOf: (self literalValue: 2).
 	t := self newThread: w.
 	t forBreedNo: GrBreedId nodesBreedNo index: 1.
 	t codes: b code.
 	self assert: (t evaluate: 1) equals: 3.
 
 	b := self newGenerator.
-	b degreesOf: 3.
+	b degreesOf: (self literalValue: 3).
 	t := self newThread: w.
 	t forBreedNo: GrBreedId nodesBreedNo index: 1.
 	t codes: b code.
 	self assert: (t evaluate: 1) equals: 1.
 
 	b := self newGenerator.
-	b degreesOf: 4.
+	b degreesOf: (self literalValue: 4).
 	t := self newThread: w.
 	t forBreedNo: GrBreedId nodesBreedNo index: 1.
 	t codes: b code.

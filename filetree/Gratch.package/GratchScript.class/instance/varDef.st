@@ -1,0 +1,3 @@
+accessing
+varDef
+	^ breed varDef

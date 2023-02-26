@@ -1,4 +1,4 @@
-accessing edges
+api
 createEdgeFrom: n1 to: n2
 	| list |
 	(n1 = 0 or: [ n2 = 0 ])

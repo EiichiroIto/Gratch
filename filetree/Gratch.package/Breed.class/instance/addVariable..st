@@ -1,6 +1,6 @@
-accessing
+api
 addVariable: aString
 	| id |
-	id := varId addVariable: aString.
-	variables updateVarDef: varId.
+	id := varDef addVariable: aString.
+	variables updateVarDef: varDef.
 	^ id

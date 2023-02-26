@@ -1,0 +1,4 @@
+accessing
+defaultEventName
+
+	^ project defaultEventName

@@ -1,3 +1,4 @@
 converting
 asBlockTuple
-	^ Array with: self class name with: self subName
+
+	^ Array with: selector with: subName

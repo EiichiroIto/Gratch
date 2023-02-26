@@ -9,8 +9,6 @@
 		"commandSpec",
 		"argPermutation",
 		"argMorphs",
-		"receiver",
-		"selector",
 		"isTimed",
 		"numberArgFlags",
 		"labelId"

@@ -6,7 +6,7 @@ testChangeYposBy
 	w yAt: 1 put: 3.
 	w yAt: 2 put: 4.
 	b := self newGenerator.
-	b changeYposBy: 3.
+	b changeYposBy: (self literalValue: 3).
 	t := self newThread: w.
 	t forBreedNo: GrBreedId nodesBreedNo index: 2.
 	t codes: b code.

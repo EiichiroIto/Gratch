@@ -1,3 +1,3 @@
-accessing graph
+microworld
 clearTicks
-	self graph clearTicks.
+	ticks := 0.

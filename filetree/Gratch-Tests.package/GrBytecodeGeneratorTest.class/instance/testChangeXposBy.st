@@ -6,7 +6,7 @@ testChangeXposBy
 	w xAt: 1 put: 3.
 	w xAt: 2 put: 4.
 	b := self newGenerator.
-	b changeXposBy: 3.
+	b changeXposBy: (self literalValue: 3).
 	t := self newThread: w.
 	t forBreedNo: GrBreedId nodesBreedNo index: 2.
 	t codes: b code.

@@ -1,3 +1,3 @@
-microworld
+enumerating
 livingOnesDo: aBlock
 	self subclassResponsibility.

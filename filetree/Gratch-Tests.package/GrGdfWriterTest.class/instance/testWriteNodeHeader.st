@@ -4,4 +4,4 @@ testWriteNodeHeader
 	w := self newWriter.
 	w nodeColumns: #(x y).
 	w writeNodeHeader.
-	self assert: w privStream contents equals: ('nodedef>x DOUBLE,y DOUBLE', String crlf).
+	self assert: w stream contents equals: ('nodedef>x DOUBLE,y DOUBLE', String crlf).

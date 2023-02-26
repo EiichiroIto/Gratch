@@ -3,7 +3,7 @@ command: aString selector: aSymbol arguments: aCollection
 
 	^ ScratchBlockSpec new
 		  label: aString;
-		  type: #-;
+		  type: #isCommandBlock;
 		  selector: aSymbol;
 		  arguments: aCollection copy;
 		  yourself

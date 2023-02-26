@@ -1,4 +1,4 @@
 initialization
 reset
-	varId := VarDef new.
-	variables := Variables new updateVarDef: varId.
+	varDef := VarDef new.
+	variables := Variables new updateVarDef: varDef.

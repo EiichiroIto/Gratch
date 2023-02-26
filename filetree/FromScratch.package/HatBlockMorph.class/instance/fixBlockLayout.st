@@ -16,7 +16,7 @@ fixBlockLayout
 				ifTrue: [ m fixArgLayout ].
 			m position: x @ (centerY - (m height // 2)).
 			x := x + m width + 5 ].
-	x + x + 4.
+	"x + x + 4."
 	self width: (x - self left max: self hatTopForm width).
 	nonBlockSubmorphs := self submorphs
 		select: [ :m | m isBlockMorph not or: [ m isArgMorph ] ].

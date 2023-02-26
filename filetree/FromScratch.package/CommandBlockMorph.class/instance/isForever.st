@@ -1,4 +1,4 @@
 testing
 isForever
 
-	^ receiver foreverBlocks includes: selector
+	^ receiver foreverBlockSelectors includes: selector

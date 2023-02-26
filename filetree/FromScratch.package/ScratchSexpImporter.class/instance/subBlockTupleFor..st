@@ -1,3 +1,4 @@
 private
 subBlockTupleFor: aString
-	^ { #SubHatMorph. aString }
+
+	^ { #sub:. aString }

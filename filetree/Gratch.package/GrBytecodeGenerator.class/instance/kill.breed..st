@@ -1,3 +1,7 @@
 basic ops
-kill: id breed: bid
-	self binaryCommand: #kill arg1: bid arg2: id.
+kill: tno breed: bno
+
+	self
+		binaryCommand: #kill
+		arg1: [ bno argString: parser ]
+		arg2: [ tno argString: parser ]

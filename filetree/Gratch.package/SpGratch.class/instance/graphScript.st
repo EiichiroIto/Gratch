@@ -1,3 +1,3 @@
 accessing
 graphScript
-	^ project graph
+	^ project graphScript

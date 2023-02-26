@@ -1,6 +1,6 @@
 processes
 startProcess
 	self stopProcess.
-	scriptOwner ifNil: [ ^ self ].
+	receiver ifNil: [ ^ self ].
 	self applicationDo: [ :app | app startProcessFor: self ].
 	self changed

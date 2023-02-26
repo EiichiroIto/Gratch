@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "GrWorld",
+	"super" : "Object",
 	"category" : "Gratch-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -8,7 +8,8 @@
 	"instvars" : [
 		"breeds",
 		"raisedEvents",
-		"random"
+		"random",
+		"ticks"
 	],
 	"name" : "GrNativeWorld",
 	"type" : "normal"

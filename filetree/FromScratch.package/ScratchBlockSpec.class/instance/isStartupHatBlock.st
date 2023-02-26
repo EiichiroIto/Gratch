@@ -1,4 +1,0 @@
-testing
-isStartupHatBlock
-
-	^ type = #T

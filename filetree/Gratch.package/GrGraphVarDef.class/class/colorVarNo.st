@@ -1,0 +1,4 @@
+accessing
+colorVarNo
+
+	^ 1

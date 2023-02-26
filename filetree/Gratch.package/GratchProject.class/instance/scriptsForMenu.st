@@ -1,3 +1,6 @@
 accessing
 scriptsForMenu
-	^ self scripts \ { graph }
+
+	^ { 
+		  self nodesScript.
+		  self edgesScript }

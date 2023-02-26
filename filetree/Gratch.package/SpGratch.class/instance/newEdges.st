@@ -1,3 +1,0 @@
-accessing
-newEdges
-	^ grWorld newEdges

@@ -1,9 +1,10 @@
 test
 testIsRunning
+
 	| p |
-	p := self newWorld newProcess program: GrProgram new.
-	p privTransition: #idle.
+	p := self newProcess.
+	p transition: #idle.
 	self assert: p isRunning not.
-	p privTransition: #loop.
+	p transition: #loop.
 	self assert: p isRunning.
-	p privTransition: #setup.
+	p transition: #setup

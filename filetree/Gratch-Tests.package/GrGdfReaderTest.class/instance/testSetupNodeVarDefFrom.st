@@ -4,7 +4,7 @@ testSetupNodeVarDefFrom
 	r := self newReader.
 	w := self newWorld.
 	self deny: (w nodes userDefinedVarNames includes: 'a').
-	r privGrWorld: w.
+	r grWorld: w.
 	r
 		setupNodeVarDefFrom:
 			{{'name' . 'VARCHAR'}.

@@ -1,7 +1,7 @@
 initialization
 initialize
 	super initialize.
-	parser := ScratchBlockParser codeGenerator: self.
+	parser := ScratchBlockParser new generator: self.
 	stream := WriteStream on: String new.
 	indents := Array with: 0.
 	indentLevel := 1.

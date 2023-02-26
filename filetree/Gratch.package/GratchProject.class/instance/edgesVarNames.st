@@ -1,3 +1,4 @@
 argument menus
 edgesVarNames
-	^ self edges varNames
+
+	^ self edgesScript varNames
