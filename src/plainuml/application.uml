@@ -1,0 +1,62 @@
+@startuml
+class GratchProject {
+  {field} application
+  {field} scripts
+  {method} graphScript
+  {method} nodesScript
+  {method} edgesScript
+}
+
+abstract class SpScratchApp
+class SpGratch {
+  {field} project
+  {field} world
+  {field} presenter
+}
+
+class GrNativeWorld {
+  {field} breeds
+  {method} graph
+  {method} nodes
+  {method} edges
+}
+
+SpScratchApp <|-- SpGratch
+SpGratch "1" *--* "1" GratchProject
+SpGratch "1" *--* "1" GrNativeWorld
+
+class GrGraphScript {
+  {field} breed
+}
+
+class GrNodesScript {
+  {field} breed
+}
+
+class GrEdgesScript {
+  {field} breed
+}
+
+GratchProject "1" -- "1" GrGraphScript
+GratchProject "1" -- "1" GrNodesScript
+GratchProject "1" -- "1" GrEdgesScript
+
+GrGraph "1" -- "1" GrNativeWorld 
+GrNodes "1" -- "1" GrNativeWorld
+GrEdges "1" -- "1" GrNativeWorld
+
+GrGraphScript "1" -- "1" GrGraph
+GrNodesScript "1" -- "1" GrNodes
+GrEdgesScript "1" -- "1" GrEdges
+
+class SpGratchPresenter {
+  {field} application
+  {field} stagePane
+  {field} inspectorPane
+}
+
+SpGratchPresenter -- SpGratchInspector
+SpGratchPresenter -- SpGratchStage
+
+SpGratch *-- SpGratchPresenter
+@enduml
