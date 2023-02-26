@@ -1,0 +1,38 @@
+@startuml
+abstract class ScratchProject
+class GratchProject {
+  {field} scripts
+  {method} edgesScript
+  {method} nodesScript
+  {method} graphScript
+}
+
+ScratchProject <|-- GratchProject
+
+abstract class ScratchScript {
+  {method} project
+}
+abstract class GratchScript {
+  {field} breed
+}
+
+class GrEdgesScript
+class GrNodesScript
+class GrGraphScript
+
+ScratchScript <|-- GratchScript
+GratchScript <|-- GrEdgesScript
+GratchScript <|-- GrNodesScript
+GratchScript <|-- GrGraphScript
+
+GrEdgesScript "1" -- "1" GrEdges
+GrNodesScript "1" -- "1" GrNodes
+GrGraphScript "1" -- "1" GrGraph
+
+GratchProject "1" *-- "1" GrEdgesScript
+GratchProject "1" *-- "1" GrNodesScript
+GratchProject "1" *-- "1" GrGraphScript
+
+ScratchScript -- ScratchProject
+
+@enduml

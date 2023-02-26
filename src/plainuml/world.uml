@@ -1,0 +1,54 @@
+@startuml
+abstract class Breed {
+  {field} varDef
+  {field} variables
+}
+
+abstract class GrElements
+
+Breed <|-- GrElements
+
+class GrEdges
+class GrNodes
+class GrGraph {
+  {field} grWorld
+}
+
+GrElements <|-- GrEdges
+GrElements <|-- GrNodes
+Breed <|-- GrGraph
+
+abstract class BaseId
+class GrBreedId
+class GrCommandId
+
+BaseId <|-- GrBreedId
+BaseId <|-- GrCommandId
+
+abstract class VarDef
+class GrEdgesVarDef
+class GrNodesVarDef
+class GrGraphVarDef
+
+class Variables
+
+Breed "1" *-- "1" VarDef
+Breed "1" *-- "1" Variables
+
+BaseId <|-- VarDef
+VarDef <|-- GrEdgesVarDef
+VarDef <|-- GrNodesVarDef
+VarDef <|-- GrGraphVarDef
+
+class GrNativeWorld {
+  {field} breeds
+  {method} edges
+  {method} nodes
+  {method} graph
+}
+
+GrEdges "1" --* "1" GrNativeWorld
+GrNodes "1" --* "1" GrNativeWorld
+GrGraph "1" --* "1" GrNativeWorld
+
+@enduml
