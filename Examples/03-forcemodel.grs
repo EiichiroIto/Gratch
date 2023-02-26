@@ -1,12 +1,10 @@
 (Gratch (Graph Nodes Edges)
  ((for Graph ( )
-   (
-   (when startup
+   ((when startup
     ((clearNodes)
      (createNodes: 30)))))
   (for Nodes ((var "a") (var "b") (var "vx") (var "vy") )
-   (
-   (when setup
+   ((when setup
     ((createEdgeTo: (otherNode))
      (setColor: (colorRandom))))
    (when loop
@@ -20,8 +18,7 @@
      (setVar:to: "vx" 0)
      (setVar:to: "vy" 0)))))
   (for Edges ((var "tmp") )
-   (
-   (when loop
+   ((when loop
     ((setVar:to: "tmp" (multiply:and: (multiply:and: 0.05 (minus:with: (distance) 50)) (computeFunction:of: "cos" (direction))))
      (changeNode:var:by: (getN1) "vx" (getVar "tmp"))
      (changeNode:var:by: (getN2) "vx" (negated: (getVar "tmp")))

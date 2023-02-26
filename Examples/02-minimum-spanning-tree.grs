@@ -1,17 +1,14 @@
 (Gratch (Graph Nodes Edges)
  ((for Graph ((var "cur") )
-   (
-   (when loop
+   ((when loop
     ((setVar:to: "cur" (compute:edges: "id with largest" "value2"))
      (setVar:to: "cur" (getEdge:var: (getVar "cur") "value2"))
      (doIf (equal:to: (getVar "cur") 0)
       ((stopAll)))))))
   (for Nodes ( )
-   (
-   ))
+   ())
   (for Edges ((var "old1") (var "old2") (var "value") (var "value2") )
-   (
-   (when loop
+   ((when loop
     ((doIf (equal:to: (getVar "value2") (getGraphVar: "cur"))
       ((setVar:to: "value2" 0)
        (setVar:to: "old1" (getN1))

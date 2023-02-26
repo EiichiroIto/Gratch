@@ -1,7 +1,6 @@
 (Gratch (Graph Nodes Edges)
  ((for Graph ((var "c2") (var "color") (var "cur") (var "mode") (list "colors"))
-   (
-   (when startup
+   ((when startup
     ((setVar:to: "mode" 1)
      (clearList: "colors")
      (append:toList: (colorRed) "colors")
@@ -28,8 +27,7 @@
        (doIf (equal:to: (getNode:var: (getVar "c2") "d2") 0)
         ((setVar:to: "mode" 1)))))))))
   (for Nodes ((var "d2") (var "degrees") (var "n") (list "adjs"))
-   (
-   (when setup
+   ((when setup
     ((setVar:to: "degrees" (degrees))
      (setColor: (colorWhite))))
    (when loop
@@ -51,5 +49,4 @@
            (setColor: (getGraphVar: "color"))
            (setVar:to: "degrees" 0)))))))))))
   (for Edges ((var "value") )
-   (
-   ))))
+   ())))
