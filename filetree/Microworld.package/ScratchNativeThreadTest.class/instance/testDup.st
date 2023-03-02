@@ -1,4 +1,4 @@
-tests-misc ops
+test
 testDup
 	| t |
 	t := self newThread.

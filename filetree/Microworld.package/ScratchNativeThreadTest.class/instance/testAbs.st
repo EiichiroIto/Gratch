@@ -1,4 +1,4 @@
-tests-arithmetic ops
+test
 testAbs
 	| t |
 	t := self newThread.

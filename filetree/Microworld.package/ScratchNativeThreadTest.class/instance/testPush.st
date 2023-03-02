@@ -1,4 +1,4 @@
-tests-private
+test
 testPush
 	| e |
 	e := self newThread.

@@ -1,4 +1,4 @@
-tests-control ops
+test
 testReturnValue
 	| e c ret |
 	c := self sampleCode2.

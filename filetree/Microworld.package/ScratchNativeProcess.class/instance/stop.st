@@ -1,3 +1,3 @@
-accessing
+api
 stop
 	self subclassResponsibility.

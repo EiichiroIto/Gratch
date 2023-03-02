@@ -1,4 +1,4 @@
-tests-arithmetic ops
+test
 testTruncated
 	| t |
 	t := self newThread.

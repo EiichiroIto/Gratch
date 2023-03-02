@@ -1,4 +1,4 @@
-tests-misc ops
+test
 testRandomFromTo
 	| t |
 	t := self newThread.

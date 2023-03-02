@@ -10,11 +10,11 @@ drawTopBarOn: aCanvas
 		fillRectangle: ((self right - 1)@(self top + 3) corner: self right @topBarBottom)
 		color: shadowColor.
 
-	left := CBlockBracketThickness - 1.
+	left := self cBlockBracketThickness - 1.
 	right := self width - 1.
 	y := topBarBottom - self top.
-	gapStart := left + PuzzleInset + 1.
-	gapEnd := gapStart + PuzzleWidth.
+	gapStart := left + self puzzleInset + 1.
+	gapEnd := gapStart + self puzzleWidth.
 
 	self drawHLineFrom: left to: (right - 1) y: y color: color on: aCanvas.
 	self drawHLineFrom: left to: (right - 2) y: y + 1 color: color on: aCanvas.

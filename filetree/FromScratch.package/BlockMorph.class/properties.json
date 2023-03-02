@@ -4,12 +4,7 @@
 	"category" : "FromScratch-Blocks",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [
-		"CBlockBracketThickness",
-		"LabelColor",
-		"PuzzleInset",
-		"PuzzleWidth"
-	],
+	"classvars" : [ ],
 	"instvars" : [
 		"isSpecialForm",
 		"oldColor",

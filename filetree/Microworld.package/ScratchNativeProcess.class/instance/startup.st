@@ -1,3 +1,3 @@
-accessing
+api
 startup
 	self subclassResponsibility.

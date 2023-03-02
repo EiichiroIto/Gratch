@@ -1,4 +1,4 @@
-tests-control ops
+test
 testReturn
 	| e |
 	e := self newThread.

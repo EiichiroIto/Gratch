@@ -1,4 +1,4 @@
-tests-initialization
+test
 testInitialize
 	self testPc.
 	self testStack.

@@ -1,3 +1,3 @@
 private
-privIsTerminated: aBoolean
+isTerminated: aBoolean
 	isTerminated := aBoolean.

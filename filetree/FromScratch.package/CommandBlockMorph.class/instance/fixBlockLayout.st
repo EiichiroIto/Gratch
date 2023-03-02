@@ -21,7 +21,7 @@ fixBlockLayout
 		h := h max: m height ].
 	minXForArgs := self left
 	               + ((self isCBlock or: [ self isIfElseBlock ])
-			                ifTrue: [ PuzzleInset + PuzzleWidth + 8 ]
+			                ifTrue: [ self puzzleInset + self puzzleWidth + 8 ]
 			                ifFalse: [ 0 ]).
 	h := h + 10.
 	self isReporter ifTrue: [ 

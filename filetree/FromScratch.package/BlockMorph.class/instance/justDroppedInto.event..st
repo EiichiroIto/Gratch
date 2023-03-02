@@ -46,7 +46,7 @@ justDroppedInto: newOwner event: evt
 						ifTrue: [ targetBlock owner attachBlock: self ]
 						ifFalse: [ self
 								position:
-									(targetP x - self bracketThickness)
+									(targetP x - self cBlockBracketThickness)
 										@ (targetP y - self topBarHeight - 3) ].
 					self attachBlockNested: targetBlock.
 					^ self ].

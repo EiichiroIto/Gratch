@@ -1,4 +1,4 @@
-tests-accessing
+test
 testPc
 	| e |
 	e := self newThread.

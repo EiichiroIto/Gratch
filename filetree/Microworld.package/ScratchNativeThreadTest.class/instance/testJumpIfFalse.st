@@ -1,4 +1,4 @@
-tests-control ops
+test
 testJumpIfFalse
 	| t |
 	t := self newThread.

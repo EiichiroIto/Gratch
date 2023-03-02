@@ -1,3 +1,3 @@
-accessing
+api
 single
 	self subclassResponsibility.

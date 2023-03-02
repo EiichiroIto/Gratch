@@ -1,3 +1,3 @@
 private
-privIsRunning: aBoolean
+isRunning: aBoolean
 	isRunning := aBoolean.

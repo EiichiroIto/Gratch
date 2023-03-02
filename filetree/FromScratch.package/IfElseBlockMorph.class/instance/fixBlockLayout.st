@@ -18,7 +18,7 @@ fixBlockLayout
 	trueBlock
 		ifNil: [ newH := newH + 15 ]
 		ifNotNil: [ trueBlock fixBlockLayout.
-			trueBlock position: self position + (CBlockBracketThickness @ newH).
+			trueBlock position: self position + (self cBlockBracketThickness @ newH).
 			newH := newH + trueBlock fullBounds height.
 			trueBlock blockSequence last isStopOrForever
 				ifTrue: [ newH := newH + 4 ] ].
@@ -28,11 +28,11 @@ fixBlockLayout
 		ifNil: [ newH := newH + 15 ]
 		ifNotNil: [ falseBlock fixBlockLayout.
 			falseBlock
-				position: self position + (CBlockBracketThickness @ newH).
+				position: self position + (self cBlockBracketThickness @ newH).
 			newH := newH + falseBlock fullBounds height.
 			falseBlock blockSequence last isStopOrForever
 				ifTrue: [ newH := newH + 4 ] ].
-	newH := newH + CBlockBracketThickness.
+	newH := newH + self cBlockBracketThickness.
 	self height: newH.
 	nextBlock
 		ifNotNil: [ nextBlock position: self left @ (self bottom - 4) ].

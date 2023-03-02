@@ -3,7 +3,7 @@ drawVerticalBarOn: aCanvas
 
 	| left top barRight |
 	left := self left.
-	barRight := (left + CBlockBracketThickness) - 1.
+	barRight := (left + self cBlockBracketThickness) - 1.
 	top := self top.
 	
 	aCanvas

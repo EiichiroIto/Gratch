@@ -5,8 +5,6 @@ updateStatusForced: aBoolean
 	(msec < (lastMSec + 1000) and: [ aBoolean not ])
 		ifTrue: [ ^ self ].
 	presenter updateInspector.
-	str := self stringOfWorldName: grWorld worldName.
-	presenter status: str.
 	ticks := grWorld ticks.
 	fps := ((ticks - lastTicks) * 1000 / (msec - lastMSec)) truncated.
 	nodes := grWorld countAliveOf: GrBreedId nodesBreedNo.

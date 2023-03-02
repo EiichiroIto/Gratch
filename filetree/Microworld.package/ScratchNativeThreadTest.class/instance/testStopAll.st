@@ -1,4 +1,4 @@
-tests-control ops
+test
 testStopAll
 	| t |
 	t := self newThread.

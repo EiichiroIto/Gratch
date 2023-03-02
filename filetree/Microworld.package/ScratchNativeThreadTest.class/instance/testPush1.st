@@ -1,4 +1,4 @@
-tests-misc ops
+test
 testPush1
 	| e |
 	e := self newThread.

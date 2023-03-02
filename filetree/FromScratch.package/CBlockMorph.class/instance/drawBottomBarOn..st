@@ -10,8 +10,8 @@ drawBottomBarOn: aCanvas
 			barBottom := self bottom - 7.
 			self drawBottomEdgeOn: aCanvas].
 
-	barTop := barBottom - (CBlockBracketThickness - 3).
-	left := self left + CBlockBracketThickness - 1.
+	barTop := barBottom - (self cBlockBracketThickness - 3).
+	left := self left + self cBlockBracketThickness - 1.
 
 	"fill in bottom-left corner"
 	aCanvas fillRectangle: (left@(barTop - 2) extent: 1@1) color: color.

@@ -1,4 +1,4 @@
-tests-arithmetic ops
+test
 testDiv
 	| t |
 	t := self newThread.

@@ -1,4 +1,4 @@
-tests-execution
+test
 testDoOneCycle
 	| e c |
 	c := self sampleCode1.

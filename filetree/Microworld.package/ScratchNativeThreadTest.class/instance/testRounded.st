@@ -1,4 +1,4 @@
-tests-arithmetic ops
+test
 testRounded
 	| t |
 	t := self newThread.

@@ -6,6 +6,6 @@ attachBlock: aBlockMorph
 	self addMorph: aBlockMorph.
 	y := aBlockMorph top.
 	y <= (self top + elseBarY) ifTrue: [trueBlock := aBlockMorph. ^ self].
-	y <= (self bottom - CBlockBracketThickness) ifTrue: [falseBlock := aBlockMorph. ^ self].
+	y <= (self bottom - self cBlockBracketThickness) ifTrue: [falseBlock := aBlockMorph. ^ self].
 	nextBlock := aBlockMorph.
 

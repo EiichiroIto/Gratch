@@ -1,4 +1,4 @@
-tests-accessing
+test
 testEvaluate
 	| t c x |
 	t := self newThread.

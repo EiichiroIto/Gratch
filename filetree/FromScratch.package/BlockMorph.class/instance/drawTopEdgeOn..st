@@ -3,8 +3,8 @@ drawTopEdgeOn: aCanvas
 
 	| right gapStart gapEnd |
 	right := self width - 1.
-	gapStart := PuzzleInset.
-	gapEnd := PuzzleInset + PuzzleWidth.
+	gapStart := self puzzleInset.
+	gapEnd := self puzzleInset + self puzzleWidth.
 
 	self drawHLineFrom: 2 to: gapStart y: 0 color: highlightColor1 on: aCanvas.
 	self drawHLineFrom: gapEnd to: right - 2 y: 0 color: highlightColor1 on: aCanvas.

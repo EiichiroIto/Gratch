@@ -1,4 +1,4 @@
-tests-accessing
+test
 testCodes
 	| t |
 	t := self newThread.

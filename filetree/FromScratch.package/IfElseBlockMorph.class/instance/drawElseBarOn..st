@@ -3,7 +3,7 @@ drawElseBarOn: aCanvas
 
 	| left y |
 	"these are in absolute coordinates"
-	left := self left + CBlockBracketThickness - 1.
+	left := self left + self cBlockBracketThickness - 1.
 	y := self top + elseBarY.
 
 	self drawInnerBottomY: y on: aCanvas.

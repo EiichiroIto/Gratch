@@ -1,4 +1,4 @@
-tests-private
+test
 testPop
 	| e |
 	e := self newThread.

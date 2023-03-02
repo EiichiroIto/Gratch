@@ -14,7 +14,7 @@ fixBlockLayout
 		ifTrue: [ nextBlock := nil ].
 	oldExtent := self extent.
 	newW := oldExtent x max: 40.
-	newH := self topBarHeight + CBlockBracketThickness.
+	newH := self topBarHeight + self cBlockBracketThickness.
 	self isForever
 		ifFalse: [ newH := newH + 4 ].
 	nestedBlock
@@ -23,7 +23,7 @@ fixBlockLayout
 			nestedBlock fixBlockLayout.
 			newH := newH + nestedBlock fullBounds height - 1.
 			nestedBlock
-				position: self position + (CBlockBracketThickness @ (self topBarHeight + 3)).
+				position: self position + (self cBlockBracketThickness @ (self topBarHeight + 3)).
 			nestedBlock blockSequence last isStopOrForever
 				ifTrue: [ newH := newH + 4 ] ].
 	self extent: newW @ newH + (0 @ stretchHeight).

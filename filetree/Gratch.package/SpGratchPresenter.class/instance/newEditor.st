@@ -1,4 +1,8 @@
-initialization
+instance creation
 newEditor
 
-	^ self instantiate: SpScratchEditor
+	^ self newMorph
+		  morph: (ScrollFrameMorph new
+				   growthFraction: 0.1;
+				   color: ScratchTheme scriptsPaneColor);
+		  yourself

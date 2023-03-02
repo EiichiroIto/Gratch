@@ -2,8 +2,8 @@ drawing
 drawInnerBottomY: y on: aCanvas
 
 	| left barBottom |
-	left := self left + CBlockBracketThickness - 1.
-	barBottom := y + (CBlockBracketThickness - 3).
+	left := self left + self cBlockBracketThickness - 1.
+	barBottom := y + (self cBlockBracketThickness - 3).
 
 	"fill in bottom-left corner"
 	aCanvas fillRectangle: (left@(y - 2) extent: 1@1) color: color.

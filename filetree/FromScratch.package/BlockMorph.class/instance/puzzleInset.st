@@ -1,0 +1,4 @@
+constants
+puzzleInset
+
+	^ 11

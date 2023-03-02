@@ -1,4 +1,4 @@
-tests-misc ops
+test
 testPushFloat
 	| e |
 	e := self newThread.

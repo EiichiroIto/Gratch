@@ -1,0 +1,4 @@
+constants
+cBlockBracketThickness
+
+	^ 12

@@ -1,4 +1,4 @@
-tests-accessing
+test
 testStack
 	| e |
 	e := self newThread.

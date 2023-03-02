@@ -1,4 +1,4 @@
-tests-misc ops
+test
 testDirection
 	| t |
 	t := self newThread.

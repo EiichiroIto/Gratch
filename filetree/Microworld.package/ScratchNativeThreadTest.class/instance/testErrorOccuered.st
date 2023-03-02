@@ -1,4 +1,4 @@
-tests-private
+test
 testErrorOccuered
 	| t |
 	t := self newThread.
