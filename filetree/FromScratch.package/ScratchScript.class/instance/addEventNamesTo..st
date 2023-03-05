@@ -1,4 +1,4 @@
-accessing
+api
 addEventNamesTo: aSet
 	"Add the names of all events implemented by this morph, excluding keyboard events. Suppress duplicates (ignoring case differences)."
 

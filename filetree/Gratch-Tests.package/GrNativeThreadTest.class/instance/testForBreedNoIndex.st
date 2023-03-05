@@ -1,9 +1,10 @@
 test
 testForBreedNoIndex
+
 	| e |
 	e := self newThread.
-	self assert: e privBreedId isNil.
-	self assert: e privId isNil.
+	self assert: e breedId isNil.
+	self assert: e id isNil.
 	e forBreedNo: 3 index: 123.
-	self assert: e privBreedId equals: 3.
-	self assert: e privId equals: 123.
+	self assert: e breedId equals: 3.
+	self assert: e id equals: 123

@@ -1,4 +1,4 @@
-private
+instance creation
 newBlockMorphBuilder
 
 	^ BlockMorphBuilder new

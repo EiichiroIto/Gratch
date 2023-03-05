@@ -1,3 +1,3 @@
-private
+accessing
 grWorld: anObject
 	grWorld := anObject

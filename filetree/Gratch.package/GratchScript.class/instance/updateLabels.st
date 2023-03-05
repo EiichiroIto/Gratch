@@ -1,3 +1,3 @@
-private
+api
 updateLabels
 	"do nothing"

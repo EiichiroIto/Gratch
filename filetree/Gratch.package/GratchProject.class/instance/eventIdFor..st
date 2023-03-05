@@ -1,3 +1,4 @@
 accessing
 eventIdFor: aSymbol
-	^ self application eventIdFor: aSymbol
+
+	^ application eventIdFor: aSymbol

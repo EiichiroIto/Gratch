@@ -1,0 +1,3 @@
+api
+assureExistsScriptNamed: aString
+	self subclassResponsibility

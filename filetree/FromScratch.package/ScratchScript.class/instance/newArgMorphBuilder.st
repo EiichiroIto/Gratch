@@ -1,4 +1,4 @@
-private
+instance creation
 newArgMorphBuilder
 
 	^ ArgMorphBuilder new

@@ -1,4 +1,4 @@
-accessing
+api
 toggleWatcher: aToggleButton for: aBlockMorph
 	| label |
 	label := self watcherLabelFor: aBlockMorph.

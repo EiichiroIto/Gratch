@@ -1,0 +1,4 @@
+test
+testScriptsForMenu
+
+	self testScripts

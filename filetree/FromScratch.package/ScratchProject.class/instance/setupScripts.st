@@ -1,0 +1,4 @@
+api
+setupScripts
+
+	self subclassResponsibility

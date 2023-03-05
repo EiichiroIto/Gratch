@@ -8,5 +8,5 @@ saveProjectAs: aFileReference
 		ifFalse: [ ^ false ].
 	self projectName: aFileReference base.
 	self projectDirectory: aFileReference parent.
-	presenter target: (project findObjName: targetName).
+	presenter target: (project scriptNamed: targetName).
 	^ true
