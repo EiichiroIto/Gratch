@@ -1,3 +1,4 @@
 private
 windowClosing
-	"do nothing"
+
+	self unregisterDropHandler

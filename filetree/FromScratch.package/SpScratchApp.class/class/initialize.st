@@ -1,4 +1,6 @@
 class initialization
 initialize
+
 	Clipboard := nil.
-	UseErrorCatcher := false
+	UseErrorCatcher := false.
+	UseSingleClick := false

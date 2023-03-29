@@ -10,4 +10,5 @@ testInitialize
 	self deny: obj useErrorCatcher.
 	self deny: obj fullscreen.
 	self assert: obj resizable.
-	self assert: obj projectDir isEmpty
+	self assert: obj projectDir isEmpty.
+	self deny: obj useSingleClick

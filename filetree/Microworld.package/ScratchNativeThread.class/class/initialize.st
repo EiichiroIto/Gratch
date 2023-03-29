@@ -1,5 +1,5 @@
 class initialization
 initialize
-	"self initialize."
-	self setupCachedSymbols.
-	self setupOpTable.
+
+	"ScratchNativeThread initialize."
+	self setupCachedSymbols

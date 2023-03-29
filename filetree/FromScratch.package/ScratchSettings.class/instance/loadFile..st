@@ -5,6 +5,8 @@ loadFile: aFileReference
 	aFileReference isFile ifFalse: [ ^ self ].
 	dict := STON fromString: aFileReference contents.
 	dict isDictionary ifFalse: [ ^ self ].
-	dict keysDo: [ :each | 
-		(self respondsTo: each asSymbol) ifFalse: [ dict removeKey: each ] ].
-	dictionary := dict
+	dict keysAndValuesDo: [ :key :value | 
+		(self respondsTo: key asSymbol) ifTrue: [ 
+			self perform: (key , ':') asSymbol with: value ] ].
+	dictionary keysAndValuesRemove: [ :key :value | 
+		(dict keys includes: key) not ]

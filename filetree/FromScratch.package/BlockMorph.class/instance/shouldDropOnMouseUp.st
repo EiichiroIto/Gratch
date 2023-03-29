@@ -1,0 +1,4 @@
+asserting
+shouldDropOnMouseUp
+
+	^ true

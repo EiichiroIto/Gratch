@@ -1,3 +1,3 @@
 api
 addSpriteArg: aCharacter
-	self add: aCharacter builder: [ SpriteArgMorph new ]
+	self add: aCharacter builder: [ ScriptArgMorph new ]

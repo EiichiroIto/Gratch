@@ -9,4 +9,5 @@ initialize
 	self stickyWindow: false.
 	self useErrorCatcher: false.
 	self fullscreen: false.
-	self resizable: true
+	self resizable: true.
+	self useSingleClick: false

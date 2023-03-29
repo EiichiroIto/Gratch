@@ -1,3 +1,4 @@
 other
 defaultValue: anObject
-	morph := anObject
+
+	selectedScript := anObject

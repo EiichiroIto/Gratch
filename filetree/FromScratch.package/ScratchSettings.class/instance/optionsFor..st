@@ -18,4 +18,6 @@ optionsFor: aSymbol
 		ifTrue: [ ^ {true . false} ].
 	aSymbol = #hideDebugMenu
 		ifTrue: [ ^ {true . false} ].
+	aSymbol = #useSingleClick
+		ifTrue: [ ^ {true . false} ].
 	^ #()
