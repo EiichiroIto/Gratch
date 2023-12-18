@@ -1,7 +1,7 @@
 test
 testIsFixed
 	| l |
-	l := LazyArray className: #FloatArray.
+	l := LazyArray className: #Float32Array.
 	self deny: l isFixed.
 	l at: 20 put: 1.
 	self deny: l isFixed.

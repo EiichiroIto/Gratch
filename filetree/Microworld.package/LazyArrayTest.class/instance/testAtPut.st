@@ -1,7 +1,7 @@
 test
 testAtPut
 	| l |
-	l := LazyArray className: #FloatArray.
+	l := LazyArray className: #Float32Array.
 	self assert: l privArray isNil.
 	l at: 1 put: 1.
 	self assert: l privArray size equals: l defaultAllocationSize.

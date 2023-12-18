@@ -1,7 +1,7 @@
 test
 testPrivFixedSize
 	| l |
-	l := LazyArray className: #FloatArray.
+	l := LazyArray className: #Float32Array.
 	self assert: l fixedSize isNil.
 	l privFixedSize: 10.
 	self assert: l fixedSize equals: 10.

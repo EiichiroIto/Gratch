@@ -1,7 +1,7 @@
 test
 testChangeBy
 	| l |
-	l := LazyArray className: #FloatArray.
+	l := LazyArray className: #Float32Array.
 	l at: 1 put: 10.
 	l at: 2 put: 20.
 	l at: 3 put: 30.

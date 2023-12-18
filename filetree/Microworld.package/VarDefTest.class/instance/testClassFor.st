@@ -5,4 +5,4 @@ testClassFor
 	v addVariable: 'a'.
 	c := v classFor: 'a'.
 	self assert: (c isKindOf: LazyArray).
-	self assert: c className equals: #FloatArray
+	self assert: c className equals: #Float32Array

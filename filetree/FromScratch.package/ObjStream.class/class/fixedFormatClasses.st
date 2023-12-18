@@ -19,7 +19,7 @@ fixedFormatClasses
 		(12	BoxedFloat64					getFloat:id:			putFloat:id:)
 		(13	Bitmap					getBitmap:id:		putBitmap:id:)
 		(14	ByteString				getBytes:id:			putBytes:id:)
-		(15	FloatArray					getArray:id:			putArray:id:)
+		(15	Float32Array					getArray:id:			putArray:id:)
 		(16	ColorArray					getArray:id:			putArray:id:)
 		(17	WideString				getBytes:id:			putBytes:id:)
 		(18	IntegerArray				getArray:id:			putArray:id:)

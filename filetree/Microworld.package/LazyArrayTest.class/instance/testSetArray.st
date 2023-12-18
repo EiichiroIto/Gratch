@@ -1,7 +1,7 @@
 test
 testSetArray
 	| l a b |
-	l := LazyArray className: #FloatArray.
+	l := LazyArray className: #Float32Array.
 	self assert: l privArray isNil.
 	a := #(1 2 3) asFloatArray.
 	b := #(4 5 6) asFloatArray.

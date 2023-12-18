@@ -1,7 +1,7 @@
 test
 testDefaultValue
 	| a |
-	a := self newArray: #FloatArray.
+	a := self newArray: #Float32Array.
 	self assert: a defaultValue equals: 0.
 	a defaultValue: 12.
 	self assert: a defaultValue equals: 12.

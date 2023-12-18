@@ -1,7 +1,7 @@
 test
 testForceSize
 	| l |
-	l := LazyArray className: #FloatArray.
+	l := LazyArray className: #Float32Array.
 	self assert: l size equals: 0.
 	l at: 20 put: 1.
 	self assert: l size equals: l defaultAllocationSize.

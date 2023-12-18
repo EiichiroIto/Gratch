@@ -7,4 +7,4 @@ testClassNameFor
 	self assert: (pv classNameFor: 'n1') equals: #IntegerArray.
 	self assert: (pv classNameFor: 'n2') equals: #IntegerArray.
 	v := pv addVariable: 'abc'.
-	self assert: (pv classNameFor: 'abc') equals: #FloatArray.
+	self assert: (pv classNameFor: 'abc') equals: #Float32Array.

@@ -18,7 +18,7 @@ selectSetting: aSymbol
 	ret = (self settingAt: aSymbol) ifTrue: [ ^ self ].
 	self settingAt: aSymbol put: ret.
 	aSymbol = #language ifFalse: [ ^ self ].
-	(presenter confirm: 'Language settings has changed. Restart application?') 
+	(presenter confirm: 'Language settings has changed. Restart application?' localized) 
 		ifFalse: [ ^ self ].
 	old := self settingAt: #dontClose.
 	self settingAt: #dontClose put: false.

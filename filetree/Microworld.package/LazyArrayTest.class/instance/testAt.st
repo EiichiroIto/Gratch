@@ -1,7 +1,7 @@
 test
 testAt
 	| a |
-	a := self newArray: #FloatArray.
+	a := self newArray: #Float32Array.
 	self assert: (a at: 1) equals: 0.
 	a at: 2 put: 3.
 	a at: 5 put: 9.

@@ -1,3 +1,3 @@
 accessing
 addReservedVariable: aString varNo: anInteger
-	^ self addReserved: aString varNo: anInteger className: #FloatArray
+	^ self addReserved: aString varNo: anInteger className: #Float32Array
