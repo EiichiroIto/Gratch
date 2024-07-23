@@ -8,4 +8,7 @@ All rights reserved.
 Based on Scratch from the MIT Media Lab, v' , self basedVersion , '
 Copyright © 2009 Massachusetts Institute of Technology.
 All rights reserved.
+
+Running ' , SmalltalkImage current version , ' on '
+	  , OSEnvironment current platform version , '
 '
