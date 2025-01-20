@@ -4,6 +4,9 @@ writeProjectAs: aFileReference
 	| saveError out tmpFile writer |
 	writer := project newProjectReadWriter.
 	saveError := nil.
+	aFileReference parent isDirectory ifFalse: [ 
+		presenter alert: 'Invalid file name.' localized.
+		^ false ].
 	tmpFile := (self
 		            unusedNameStartingWith: 'tmp'
 		            in: aFileReference parent) asFileReference.
