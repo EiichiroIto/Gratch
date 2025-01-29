@@ -1,9 +1,7 @@
 utilities
 request: aString
 
-	^ SpRequestDialog new
+	^ self newRequest
 		  title: 'Information request' localized;
 		  label: aString;
-			acceptLabel: 'OK' localized;
-			cancelLabel: 'Cancel' localized;
 		  openModal

@@ -2,11 +2,8 @@ private
 updateWindowSettings
 
 	| win |
-	Display isFullscreen
-		ifTrue: [ 
-		self settings fullscreen ifFalse: [ Display fullscreenOff ] ]
-		ifFalse: [ 
-		self settings fullscreen ifTrue: [ Display fullscreenOn ] ].
+	WorldMorph isFullscreen ~= self settings fullscreen ifTrue: [ 
+		WorldMorph fullscreen: self settings fullscreen ].
 	win := self window window.
 	self settings dontClose
 		ifTrue: [ win makeUnclosable ]

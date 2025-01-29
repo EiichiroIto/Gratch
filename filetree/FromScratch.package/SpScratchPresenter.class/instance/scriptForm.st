@@ -1,3 +1,4 @@
 accessing
 scriptForm
-	^ editorPane screenshot
+
+	self subclassResponsibility

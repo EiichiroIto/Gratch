@@ -1,10 +1,8 @@
 *FromScratch
 initializeWindow: aWindowPresenter
 
-	aWindowPresenter
-		title: self title;
-		initialExtent: self extent;
-		whenOpenedDo: [ 
-			textInput
-				takeKeyboardFocus;
-				selectAll ]
+	super initializeWindow: aWindowPresenter.
+	aWindowPresenter whenOpenedDo: [ 
+		textInput
+			takeKeyboardFocus;
+			selectAll ]

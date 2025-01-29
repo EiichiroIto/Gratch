@@ -1,9 +1,1 @@
-SystemOrganization addCategory: #FromScratch!
-SystemOrganization addCategory: #'FromScratch-Blocks'!
-SystemOrganization addCategory: #'FromScratch-Converter'!
-SystemOrganization addCategory: #'FromScratch-Morphic'!
-SystemOrganization addCategory: #'FromScratch-Plotter'!
-SystemOrganization addCategory: #'FromScratch-Process'!
-SystemOrganization addCategory: #'FromScratch-Project'!
-SystemOrganization addCategory: #'FromScratch-Spec2'!
-SystemOrganization addCategory: #'FromScratch-Translation'!
+self packageOrganizer ensurePackage: #FromScratch withTags: #(#Blocks #Converter #Morphic #Plotter #Process #Project #Spec2 #Translation)!
