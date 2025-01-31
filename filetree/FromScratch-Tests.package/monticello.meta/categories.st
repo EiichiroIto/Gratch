@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'FromScratch-Tests'!
+self packageOrganizer ensurePackage: #'FromScratch-Tests' withTags: #()!

@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #BaselineOfGratch!
+self packageOrganizer ensurePackage: #BaselineOfGratch withTags: #()!
