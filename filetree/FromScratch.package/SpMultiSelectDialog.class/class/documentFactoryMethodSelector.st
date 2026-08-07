@@ -1,4 +1,0 @@
-documentation
-documentFactoryMethodSelector
-	
-	^ #newMultiSelect

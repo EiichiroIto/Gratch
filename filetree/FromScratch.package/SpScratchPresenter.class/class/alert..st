@@ -3,6 +3,6 @@ alert: aString
 
 	SpInformDialog new
 		title: 'alert!' localized;
-		label: aString;
+		message: aString;
 		acceptLabel: 'Close' localized;
 		openModal

@@ -1,1 +1,1 @@
-self packageOrganizer ensurePackage: #Gratch withTags: #(#Converter #Model #Morphic #Process #Project #Spec2)!
+self packageOrganizer ensurePackage: #Gratch withTags: #(#Converter #Manifest #Model #Morphic #Process #Project #Spec2)!

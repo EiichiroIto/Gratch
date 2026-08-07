@@ -1,4 +1,0 @@
-api
-items
-
-	^ table items
